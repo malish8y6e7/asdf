@@ -1,0 +1,11 @@
+<form method= "POST">
+
+	Nombre: <input type = "text" name = "real_name"/> <br />
+
+	Email: <input type = "text" name = "email" /> <br />
+
+	Passowrd: <input type = "password" name = "password" /> <br />
+
+	<input type = "submit" value = "Crear usuario" />
+	
+</form>

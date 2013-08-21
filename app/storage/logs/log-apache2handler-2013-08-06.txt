@@ -1,0 +1,1285 @@
+[2013-08-06 12:24:15] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'public' (T_PUBLIC), expecting ',' or ';'' in C:\wamp\www\laravel\app\models\User.php:34
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-08-06 12:24:39] log.ERROR: exception 'Exception' with message 'SQLSTATE[42703]: Undefined column: 7 ERROR:  no existe la columna «email»
+LINE 1: select * from "USUARIOS" where "email" = $1 limit 1
+                                       ^ (SQL: select * from "USUARIOS" where "email" = ? limit 1) (Bindings: array (
+  0 => '1',
+))' in C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:502
+Stack trace:
+#0 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(475): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'select * from "...', Array)
+#1 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(269): Illuminate\Database\Connection->run('select * from "...', Array, Object(Closure))
+#2 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(966): Illuminate\Database\Connection->select('select * from "...', Array)
+#3 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(956): Illuminate\Database\Query\Builder->runSelect()
+#4 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(943): Illuminate\Database\Query\Builder->getFresh(Array)
+#5 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(397): Illuminate\Database\Query\Builder->get(Array)
+#6 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(112): Illuminate\Database\Eloquent\Builder->getModels(Array)
+#7 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(88): Illuminate\Database\Eloquent\Builder->get(Array)
+#8 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Auth\EloquentUserProvider.php(63): Illuminate\Database\Eloquent\Builder->first()
+#9 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Auth\Guard.php(275): Illuminate\Auth\EloquentUserProvider->retrieveByCredentials(Array)
+#10 [internal function]: Illuminate\Auth\Guard->attempt(Array)
+#11 C:\wamp\www\laravel\bootstrap\compiled.php(6627): call_user_func_array(Array, Array)
+#12 C:\wamp\www\laravel\bootstrap\compiled.php(3320): Illuminate\Support\Manager->__call('attempt', Array)
+#13 C:\wamp\www\laravel\bootstrap\compiled.php(3320): Illuminate\Auth\AuthManager->attempt(Array)
+#14 C:\wamp\www\laravel\app\controllers\AuthController.php(18): Illuminate\Support\Facades\Facade::__callStatic('attempt', Array)
+#15 C:\wamp\www\laravel\app\controllers\AuthController.php(18): Illuminate\Support\Facades\Auth::attempt(Array)
+#16 [internal function]: AuthController->postIndex()
+#17 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#18 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('postIndex', Array)
+#19 C:\wamp\www\laravel\bootstrap\compiled.php(4752): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'postIndex', Array)
+#20 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#21 C:\wamp\www\laravel\bootstrap\compiled.php(7821): call_user_func_array(Object(Closure), Array)
+#22 C:\wamp\www\laravel\bootstrap\compiled.php(7808): Illuminate\Routing\Route->callCallable()
+#23 C:\wamp\www\laravel\bootstrap\compiled.php(4763): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#24 C:\wamp\www\laravel\bootstrap\compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#25 C:\wamp\www\laravel\bootstrap\compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#26 C:\wamp\www\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#27 {main} [] []
+[2013-08-06 12:25:37] log.ERROR: exception 'Exception' with message 'SQLSTATE[42703]: Undefined column: 7 ERROR:  no existe la columna «email»
+LINE 1: select * from "USUARIOS" where "email" = $1 limit 1
+                                       ^ (SQL: select * from "USUARIOS" where "email" = ? limit 1) (Bindings: array (
+  0 => '1',
+))' in C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:502
+Stack trace:
+#0 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(475): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'select * from "...', Array)
+#1 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(269): Illuminate\Database\Connection->run('select * from "...', Array, Object(Closure))
+#2 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(966): Illuminate\Database\Connection->select('select * from "...', Array)
+#3 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(956): Illuminate\Database\Query\Builder->runSelect()
+#4 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(943): Illuminate\Database\Query\Builder->getFresh(Array)
+#5 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(397): Illuminate\Database\Query\Builder->get(Array)
+#6 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(112): Illuminate\Database\Eloquent\Builder->getModels(Array)
+#7 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(88): Illuminate\Database\Eloquent\Builder->get(Array)
+#8 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Auth\EloquentUserProvider.php(63): Illuminate\Database\Eloquent\Builder->first()
+#9 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Auth\Guard.php(275): Illuminate\Auth\EloquentUserProvider->retrieveByCredentials(Array)
+#10 [internal function]: Illuminate\Auth\Guard->attempt(Array)
+#11 C:\wamp\www\laravel\bootstrap\compiled.php(6627): call_user_func_array(Array, Array)
+#12 C:\wamp\www\laravel\bootstrap\compiled.php(3320): Illuminate\Support\Manager->__call('attempt', Array)
+#13 C:\wamp\www\laravel\bootstrap\compiled.php(3320): Illuminate\Auth\AuthManager->attempt(Array)
+#14 C:\wamp\www\laravel\app\controllers\AuthController.php(18): Illuminate\Support\Facades\Facade::__callStatic('attempt', Array)
+#15 C:\wamp\www\laravel\app\controllers\AuthController.php(18): Illuminate\Support\Facades\Auth::attempt(Array)
+#16 [internal function]: AuthController->postIndex()
+#17 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#18 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('postIndex', Array)
+#19 C:\wamp\www\laravel\bootstrap\compiled.php(4752): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'postIndex', Array)
+#20 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#21 C:\wamp\www\laravel\bootstrap\compiled.php(7821): call_user_func_array(Object(Closure), Array)
+#22 C:\wamp\www\laravel\bootstrap\compiled.php(7808): Illuminate\Routing\Route->callCallable()
+#23 C:\wamp\www\laravel\bootstrap\compiled.php(4763): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#24 C:\wamp\www\laravel\bootstrap\compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#25 C:\wamp\www\laravel\bootstrap\compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#26 C:\wamp\www\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#27 {main} [] []
+[2013-08-06 12:28:36] log.ERROR: exception 'Exception' with message 'SQLSTATE[42703]: Undefined column: 7 ERROR:  no existe la columna «email»
+LINE 1: select * from "USUARIOS" where "email" = $1 limit 1
+                                       ^ (SQL: select * from "USUARIOS" where "email" = ? limit 1) (Bindings: array (
+  0 => '1',
+))' in C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:502
+Stack trace:
+#0 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(475): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'select * from "...', Array)
+#1 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(269): Illuminate\Database\Connection->run('select * from "...', Array, Object(Closure))
+#2 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(966): Illuminate\Database\Connection->select('select * from "...', Array)
+#3 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(956): Illuminate\Database\Query\Builder->runSelect()
+#4 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(943): Illuminate\Database\Query\Builder->getFresh(Array)
+#5 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(397): Illuminate\Database\Query\Builder->get(Array)
+#6 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(112): Illuminate\Database\Eloquent\Builder->getModels(Array)
+#7 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(88): Illuminate\Database\Eloquent\Builder->get(Array)
+#8 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Auth\EloquentUserProvider.php(63): Illuminate\Database\Eloquent\Builder->first()
+#9 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Auth\Guard.php(275): Illuminate\Auth\EloquentUserProvider->retrieveByCredentials(Array)
+#10 [internal function]: Illuminate\Auth\Guard->attempt(Array)
+#11 C:\wamp\www\laravel\bootstrap\compiled.php(6627): call_user_func_array(Array, Array)
+#12 C:\wamp\www\laravel\bootstrap\compiled.php(3320): Illuminate\Support\Manager->__call('attempt', Array)
+#13 C:\wamp\www\laravel\bootstrap\compiled.php(3320): Illuminate\Auth\AuthManager->attempt(Array)
+#14 C:\wamp\www\laravel\app\controllers\AuthController.php(18): Illuminate\Support\Facades\Facade::__callStatic('attempt', Array)
+#15 C:\wamp\www\laravel\app\controllers\AuthController.php(18): Illuminate\Support\Facades\Auth::attempt(Array)
+#16 [internal function]: AuthController->postIndex()
+#17 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#18 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('postIndex', Array)
+#19 C:\wamp\www\laravel\bootstrap\compiled.php(4752): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'postIndex', Array)
+#20 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#21 C:\wamp\www\laravel\bootstrap\compiled.php(7821): call_user_func_array(Object(Closure), Array)
+#22 C:\wamp\www\laravel\bootstrap\compiled.php(7808): Illuminate\Routing\Route->callCallable()
+#23 C:\wamp\www\laravel\bootstrap\compiled.php(4763): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#24 C:\wamp\www\laravel\bootstrap\compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#25 C:\wamp\www\laravel\bootstrap\compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#26 C:\wamp\www\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#27 {main} [] []
+[2013-08-06 12:30:15] log.ERROR: exception 'Exception' with message 'SQLSTATE[42703]: Undefined column: 7 ERROR:  no existe la columna «email»
+LINE 1: select * from "USUARIOS" where "email" = $1 limit 1
+                                       ^ (SQL: select * from "USUARIOS" where "email" = ? limit 1) (Bindings: array (
+  0 => '1',
+))' in C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:502
+Stack trace:
+#0 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(475): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'select * from "...', Array)
+#1 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(269): Illuminate\Database\Connection->run('select * from "...', Array, Object(Closure))
+#2 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(966): Illuminate\Database\Connection->select('select * from "...', Array)
+#3 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(956): Illuminate\Database\Query\Builder->runSelect()
+#4 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(943): Illuminate\Database\Query\Builder->getFresh(Array)
+#5 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(397): Illuminate\Database\Query\Builder->get(Array)
+#6 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(112): Illuminate\Database\Eloquent\Builder->getModels(Array)
+#7 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(88): Illuminate\Database\Eloquent\Builder->get(Array)
+#8 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Auth\EloquentUserProvider.php(63): Illuminate\Database\Eloquent\Builder->first()
+#9 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Auth\Guard.php(275): Illuminate\Auth\EloquentUserProvider->retrieveByCredentials(Array)
+#10 [internal function]: Illuminate\Auth\Guard->attempt(Array)
+#11 C:\wamp\www\laravel\bootstrap\compiled.php(6627): call_user_func_array(Array, Array)
+#12 C:\wamp\www\laravel\bootstrap\compiled.php(3320): Illuminate\Support\Manager->__call('attempt', Array)
+#13 C:\wamp\www\laravel\bootstrap\compiled.php(3320): Illuminate\Auth\AuthManager->attempt(Array)
+#14 C:\wamp\www\laravel\app\controllers\AuthController.php(18): Illuminate\Support\Facades\Facade::__callStatic('attempt', Array)
+#15 C:\wamp\www\laravel\app\controllers\AuthController.php(18): Illuminate\Support\Facades\Auth::attempt(Array)
+#16 [internal function]: AuthController->postIndex()
+#17 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#18 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('postIndex', Array)
+#19 C:\wamp\www\laravel\bootstrap\compiled.php(4752): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'postIndex', Array)
+#20 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#21 C:\wamp\www\laravel\bootstrap\compiled.php(7821): call_user_func_array(Object(Closure), Array)
+#22 C:\wamp\www\laravel\bootstrap\compiled.php(7808): Illuminate\Routing\Route->callCallable()
+#23 C:\wamp\www\laravel\bootstrap\compiled.php(4763): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#24 C:\wamp\www\laravel\bootstrap\compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#25 C:\wamp\www\laravel\bootstrap\compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#26 C:\wamp\www\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#27 {main} [] []
+[2013-08-06 12:36:32] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected '->' (T_OBJECT_OPERATOR)' in C:\wamp\www\laravel\app\controllers\AuthController.php:23
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-08-06 12:36:33] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected '->' (T_OBJECT_OPERATOR)' in C:\wamp\www\laravel\app\controllers\AuthController.php:23
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-08-06 12:36:33] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected '->' (T_OBJECT_OPERATOR)' in C:\wamp\www\laravel\app\controllers\AuthController.php:23
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-08-06 12:36:33] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected '->' (T_OBJECT_OPERATOR)' in C:\wamp\www\laravel\app\controllers\AuthController.php:23
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-08-06 12:37:50] log.ERROR: exception 'ErrorException' with message 'Undefined index: password' in C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Auth\EloquentUserProvider.php:75
+Stack trace:
+#0 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Auth\EloquentUserProvider.php(75): Illuminate\Exception\Handler->handleError(8, 'Undefined index...', 'C:\wamp\www\lar...', 75, Array)
+#1 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Auth\Guard.php(282): Illuminate\Auth\EloquentUserProvider->validateCredentials(Object(User), Array)
+#2 [internal function]: Illuminate\Auth\Guard->attempt(Array)
+#3 C:\wamp\www\laravel\bootstrap\compiled.php(6627): call_user_func_array(Array, Array)
+#4 C:\wamp\www\laravel\bootstrap\compiled.php(3320): Illuminate\Support\Manager->__call('attempt', Array)
+#5 C:\wamp\www\laravel\bootstrap\compiled.php(3320): Illuminate\Auth\AuthManager->attempt(Array)
+#6 C:\wamp\www\laravel\app\controllers\AuthController.php(18): Illuminate\Support\Facades\Facade::__callStatic('attempt', Array)
+#7 C:\wamp\www\laravel\app\controllers\AuthController.php(18): Illuminate\Support\Facades\Auth::attempt(Array)
+#8 [internal function]: AuthController->postIndex()
+#9 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#10 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('postIndex', Array)
+#11 C:\wamp\www\laravel\bootstrap\compiled.php(4752): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'postIndex', Array)
+#12 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#13 C:\wamp\www\laravel\bootstrap\compiled.php(7821): call_user_func_array(Object(Closure), Array)
+#14 C:\wamp\www\laravel\bootstrap\compiled.php(7808): Illuminate\Routing\Route->callCallable()
+#15 C:\wamp\www\laravel\bootstrap\compiled.php(4763): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#16 C:\wamp\www\laravel\bootstrap\compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#17 C:\wamp\www\laravel\bootstrap\compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#18 C:\wamp\www\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#19 {main} [] []
+[2013-08-06 12:38:31] log.ERROR: exception 'ErrorException' with message 'Undefined index: password' in C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Auth\EloquentUserProvider.php:75
+Stack trace:
+#0 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Auth\EloquentUserProvider.php(75): Illuminate\Exception\Handler->handleError(8, 'Undefined index...', 'C:\wamp\www\lar...', 75, Array)
+#1 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Auth\Guard.php(282): Illuminate\Auth\EloquentUserProvider->validateCredentials(Object(User), Array)
+#2 [internal function]: Illuminate\Auth\Guard->attempt(Array)
+#3 C:\wamp\www\laravel\bootstrap\compiled.php(6627): call_user_func_array(Array, Array)
+#4 C:\wamp\www\laravel\bootstrap\compiled.php(3320): Illuminate\Support\Manager->__call('attempt', Array)
+#5 C:\wamp\www\laravel\bootstrap\compiled.php(3320): Illuminate\Auth\AuthManager->attempt(Array)
+#6 C:\wamp\www\laravel\app\controllers\AuthController.php(18): Illuminate\Support\Facades\Facade::__callStatic('attempt', Array)
+#7 C:\wamp\www\laravel\app\controllers\AuthController.php(18): Illuminate\Support\Facades\Auth::attempt(Array)
+#8 [internal function]: AuthController->postIndex()
+#9 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#10 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('postIndex', Array)
+#11 C:\wamp\www\laravel\bootstrap\compiled.php(4752): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'postIndex', Array)
+#12 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#13 C:\wamp\www\laravel\bootstrap\compiled.php(7821): call_user_func_array(Object(Closure), Array)
+#14 C:\wamp\www\laravel\bootstrap\compiled.php(7808): Illuminate\Routing\Route->callCallable()
+#15 C:\wamp\www\laravel\bootstrap\compiled.php(4763): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#16 C:\wamp\www\laravel\bootstrap\compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#17 C:\wamp\www\laravel\bootstrap\compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#18 C:\wamp\www\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#19 {main} [] []
+[2013-08-06 12:38:40] log.ERROR: exception 'ErrorException' with message 'Undefined index: password' in C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Auth\EloquentUserProvider.php:75
+Stack trace:
+#0 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Auth\EloquentUserProvider.php(75): Illuminate\Exception\Handler->handleError(8, 'Undefined index...', 'C:\wamp\www\lar...', 75, Array)
+#1 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Auth\Guard.php(282): Illuminate\Auth\EloquentUserProvider->validateCredentials(Object(User), Array)
+#2 [internal function]: Illuminate\Auth\Guard->attempt(Array)
+#3 C:\wamp\www\laravel\bootstrap\compiled.php(6627): call_user_func_array(Array, Array)
+#4 C:\wamp\www\laravel\bootstrap\compiled.php(3320): Illuminate\Support\Manager->__call('attempt', Array)
+#5 C:\wamp\www\laravel\bootstrap\compiled.php(3320): Illuminate\Auth\AuthManager->attempt(Array)
+#6 C:\wamp\www\laravel\app\controllers\AuthController.php(18): Illuminate\Support\Facades\Facade::__callStatic('attempt', Array)
+#7 C:\wamp\www\laravel\app\controllers\AuthController.php(18): Illuminate\Support\Facades\Auth::attempt(Array)
+#8 [internal function]: AuthController->postIndex()
+#9 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#10 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('postIndex', Array)
+#11 C:\wamp\www\laravel\bootstrap\compiled.php(4752): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'postIndex', Array)
+#12 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#13 C:\wamp\www\laravel\bootstrap\compiled.php(7821): call_user_func_array(Object(Closure), Array)
+#14 C:\wamp\www\laravel\bootstrap\compiled.php(7808): Illuminate\Routing\Route->callCallable()
+#15 C:\wamp\www\laravel\bootstrap\compiled.php(4763): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#16 C:\wamp\www\laravel\bootstrap\compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#17 C:\wamp\www\laravel\bootstrap\compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#18 C:\wamp\www\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#19 {main} [] []
+[2013-08-06 12:39:35] log.ERROR: exception 'ErrorException' with message 'Undefined index: password' in C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Auth\EloquentUserProvider.php:75
+Stack trace:
+#0 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Auth\EloquentUserProvider.php(75): Illuminate\Exception\Handler->handleError(8, 'Undefined index...', 'C:\wamp\www\lar...', 75, Array)
+#1 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Auth\Guard.php(282): Illuminate\Auth\EloquentUserProvider->validateCredentials(Object(User), Array)
+#2 [internal function]: Illuminate\Auth\Guard->attempt(Array)
+#3 C:\wamp\www\laravel\bootstrap\compiled.php(6627): call_user_func_array(Array, Array)
+#4 C:\wamp\www\laravel\bootstrap\compiled.php(3320): Illuminate\Support\Manager->__call('attempt', Array)
+#5 C:\wamp\www\laravel\bootstrap\compiled.php(3320): Illuminate\Auth\AuthManager->attempt(Array)
+#6 C:\wamp\www\laravel\app\controllers\AuthController.php(18): Illuminate\Support\Facades\Facade::__callStatic('attempt', Array)
+#7 C:\wamp\www\laravel\app\controllers\AuthController.php(18): Illuminate\Support\Facades\Auth::attempt(Array)
+#8 [internal function]: AuthController->postIndex()
+#9 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#10 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('postIndex', Array)
+#11 C:\wamp\www\laravel\bootstrap\compiled.php(4752): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'postIndex', Array)
+#12 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#13 C:\wamp\www\laravel\bootstrap\compiled.php(7821): call_user_func_array(Object(Closure), Array)
+#14 C:\wamp\www\laravel\bootstrap\compiled.php(7808): Illuminate\Routing\Route->callCallable()
+#15 C:\wamp\www\laravel\bootstrap\compiled.php(4763): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#16 C:\wamp\www\laravel\bootstrap\compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#17 C:\wamp\www\laravel\bootstrap\compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#18 C:\wamp\www\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#19 {main} [] []
+[2013-08-06 12:40:32] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected '}'' in C:\wamp\www\laravel\app\controllers\AuthController.php:23
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-08-06 12:40:46] log.ERROR: exception 'ErrorException' with message 'Undefined index: password' in C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Auth\EloquentUserProvider.php:75
+Stack trace:
+#0 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Auth\EloquentUserProvider.php(75): Illuminate\Exception\Handler->handleError(8, 'Undefined index...', 'C:\wamp\www\lar...', 75, Array)
+#1 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Auth\Guard.php(282): Illuminate\Auth\EloquentUserProvider->validateCredentials(Object(User), Array)
+#2 [internal function]: Illuminate\Auth\Guard->attempt(Array)
+#3 C:\wamp\www\laravel\bootstrap\compiled.php(6627): call_user_func_array(Array, Array)
+#4 C:\wamp\www\laravel\bootstrap\compiled.php(3320): Illuminate\Support\Manager->__call('attempt', Array)
+#5 C:\wamp\www\laravel\bootstrap\compiled.php(3320): Illuminate\Auth\AuthManager->attempt(Array)
+#6 C:\wamp\www\laravel\app\controllers\AuthController.php(18): Illuminate\Support\Facades\Facade::__callStatic('attempt', Array)
+#7 C:\wamp\www\laravel\app\controllers\AuthController.php(18): Illuminate\Support\Facades\Auth::attempt(Array)
+#8 [internal function]: AuthController->postIndex()
+#9 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#10 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('postIndex', Array)
+#11 C:\wamp\www\laravel\bootstrap\compiled.php(4752): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'postIndex', Array)
+#12 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#13 C:\wamp\www\laravel\bootstrap\compiled.php(7821): call_user_func_array(Object(Closure), Array)
+#14 C:\wamp\www\laravel\bootstrap\compiled.php(7808): Illuminate\Routing\Route->callCallable()
+#15 C:\wamp\www\laravel\bootstrap\compiled.php(4763): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#16 C:\wamp\www\laravel\bootstrap\compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#17 C:\wamp\www\laravel\bootstrap\compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#18 C:\wamp\www\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#19 {main} [] []
+[2013-08-06 12:41:56] log.ERROR: exception 'ErrorException' with message 'Undefined index: password' in C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Auth\EloquentUserProvider.php:75
+Stack trace:
+#0 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Auth\EloquentUserProvider.php(75): Illuminate\Exception\Handler->handleError(8, 'Undefined index...', 'C:\wamp\www\lar...', 75, Array)
+#1 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Auth\Guard.php(282): Illuminate\Auth\EloquentUserProvider->validateCredentials(Object(User), Array)
+#2 [internal function]: Illuminate\Auth\Guard->attempt(Array)
+#3 C:\wamp\www\laravel\bootstrap\compiled.php(6627): call_user_func_array(Array, Array)
+#4 C:\wamp\www\laravel\bootstrap\compiled.php(3320): Illuminate\Support\Manager->__call('attempt', Array)
+#5 C:\wamp\www\laravel\bootstrap\compiled.php(3320): Illuminate\Auth\AuthManager->attempt(Array)
+#6 C:\wamp\www\laravel\app\controllers\AuthController.php(18): Illuminate\Support\Facades\Facade::__callStatic('attempt', Array)
+#7 C:\wamp\www\laravel\app\controllers\AuthController.php(18): Illuminate\Support\Facades\Auth::attempt(Array)
+#8 [internal function]: AuthController->postIndex()
+#9 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#10 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('postIndex', Array)
+#11 C:\wamp\www\laravel\bootstrap\compiled.php(4752): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'postIndex', Array)
+#12 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#13 C:\wamp\www\laravel\bootstrap\compiled.php(7821): call_user_func_array(Object(Closure), Array)
+#14 C:\wamp\www\laravel\bootstrap\compiled.php(7808): Illuminate\Routing\Route->callCallable()
+#15 C:\wamp\www\laravel\bootstrap\compiled.php(4763): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#16 C:\wamp\www\laravel\bootstrap\compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#17 C:\wamp\www\laravel\bootstrap\compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#18 C:\wamp\www\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#19 {main} [] []
+[2013-08-06 12:42:23] log.ERROR: exception 'ErrorException' with message 'Undefined index: password' in C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Auth\EloquentUserProvider.php:75
+Stack trace:
+#0 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Auth\EloquentUserProvider.php(75): Illuminate\Exception\Handler->handleError(8, 'Undefined index...', 'C:\wamp\www\lar...', 75, Array)
+#1 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Auth\Guard.php(282): Illuminate\Auth\EloquentUserProvider->validateCredentials(Object(User), Array)
+#2 [internal function]: Illuminate\Auth\Guard->attempt(Array)
+#3 C:\wamp\www\laravel\bootstrap\compiled.php(6627): call_user_func_array(Array, Array)
+#4 C:\wamp\www\laravel\bootstrap\compiled.php(3320): Illuminate\Support\Manager->__call('attempt', Array)
+#5 C:\wamp\www\laravel\bootstrap\compiled.php(3320): Illuminate\Auth\AuthManager->attempt(Array)
+#6 C:\wamp\www\laravel\app\controllers\AuthController.php(18): Illuminate\Support\Facades\Facade::__callStatic('attempt', Array)
+#7 C:\wamp\www\laravel\app\controllers\AuthController.php(18): Illuminate\Support\Facades\Auth::attempt(Array)
+#8 [internal function]: AuthController->postIndex()
+#9 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#10 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('postIndex', Array)
+#11 C:\wamp\www\laravel\bootstrap\compiled.php(4752): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'postIndex', Array)
+#12 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#13 C:\wamp\www\laravel\bootstrap\compiled.php(7821): call_user_func_array(Object(Closure), Array)
+#14 C:\wamp\www\laravel\bootstrap\compiled.php(7808): Illuminate\Routing\Route->callCallable()
+#15 C:\wamp\www\laravel\bootstrap\compiled.php(4763): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#16 C:\wamp\www\laravel\bootstrap\compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#17 C:\wamp\www\laravel\bootstrap\compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#18 C:\wamp\www\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#19 {main} [] []
+[2013-08-06 12:42:26] log.ERROR: exception 'ErrorException' with message 'Undefined index: password' in C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Auth\EloquentUserProvider.php:75
+Stack trace:
+#0 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Auth\EloquentUserProvider.php(75): Illuminate\Exception\Handler->handleError(8, 'Undefined index...', 'C:\wamp\www\lar...', 75, Array)
+#1 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Auth\Guard.php(282): Illuminate\Auth\EloquentUserProvider->validateCredentials(Object(User), Array)
+#2 [internal function]: Illuminate\Auth\Guard->attempt(Array)
+#3 C:\wamp\www\laravel\bootstrap\compiled.php(6627): call_user_func_array(Array, Array)
+#4 C:\wamp\www\laravel\bootstrap\compiled.php(3320): Illuminate\Support\Manager->__call('attempt', Array)
+#5 C:\wamp\www\laravel\bootstrap\compiled.php(3320): Illuminate\Auth\AuthManager->attempt(Array)
+#6 C:\wamp\www\laravel\app\controllers\AuthController.php(18): Illuminate\Support\Facades\Facade::__callStatic('attempt', Array)
+#7 C:\wamp\www\laravel\app\controllers\AuthController.php(18): Illuminate\Support\Facades\Auth::attempt(Array)
+#8 [internal function]: AuthController->postIndex()
+#9 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#10 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('postIndex', Array)
+#11 C:\wamp\www\laravel\bootstrap\compiled.php(4752): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'postIndex', Array)
+#12 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#13 C:\wamp\www\laravel\bootstrap\compiled.php(7821): call_user_func_array(Object(Closure), Array)
+#14 C:\wamp\www\laravel\bootstrap\compiled.php(7808): Illuminate\Routing\Route->callCallable()
+#15 C:\wamp\www\laravel\bootstrap\compiled.php(4763): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#16 C:\wamp\www\laravel\bootstrap\compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#17 C:\wamp\www\laravel\bootstrap\compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#18 C:\wamp\www\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#19 {main} [] []
+[2013-08-06 12:46:22] log.ERROR: exception 'Exception' with message 'SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «» (SQL: select * from "USUARIOS" where "RUT" = ? limit 1) (Bindings: array (
+  0 => '',
+))' in C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:502
+Stack trace:
+#0 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(475): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'select * from "...', Array)
+#1 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(269): Illuminate\Database\Connection->run('select * from "...', Array, Object(Closure))
+#2 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(966): Illuminate\Database\Connection->select('select * from "...', Array)
+#3 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(956): Illuminate\Database\Query\Builder->runSelect()
+#4 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(943): Illuminate\Database\Query\Builder->getFresh(Array)
+#5 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(397): Illuminate\Database\Query\Builder->get(Array)
+#6 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(112): Illuminate\Database\Eloquent\Builder->getModels(Array)
+#7 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(88): Illuminate\Database\Eloquent\Builder->get(Array)
+#8 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Auth\EloquentUserProvider.php(63): Illuminate\Database\Eloquent\Builder->first()
+#9 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Auth\Guard.php(275): Illuminate\Auth\EloquentUserProvider->retrieveByCredentials(Array)
+#10 [internal function]: Illuminate\Auth\Guard->attempt(Array)
+#11 C:\wamp\www\laravel\bootstrap\compiled.php(6627): call_user_func_array(Array, Array)
+#12 C:\wamp\www\laravel\bootstrap\compiled.php(3320): Illuminate\Support\Manager->__call('attempt', Array)
+#13 C:\wamp\www\laravel\bootstrap\compiled.php(3320): Illuminate\Auth\AuthManager->attempt(Array)
+#14 C:\wamp\www\laravel\app\controllers\AuthController.php(18): Illuminate\Support\Facades\Facade::__callStatic('attempt', Array)
+#15 C:\wamp\www\laravel\app\controllers\AuthController.php(18): Illuminate\Support\Facades\Auth::attempt(Array)
+#16 [internal function]: AuthController->postIndex()
+#17 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#18 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('postIndex', Array)
+#19 C:\wamp\www\laravel\bootstrap\compiled.php(4752): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'postIndex', Array)
+#20 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#21 C:\wamp\www\laravel\bootstrap\compiled.php(7821): call_user_func_array(Object(Closure), Array)
+#22 C:\wamp\www\laravel\bootstrap\compiled.php(7808): Illuminate\Routing\Route->callCallable()
+#23 C:\wamp\www\laravel\bootstrap\compiled.php(4763): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#24 C:\wamp\www\laravel\bootstrap\compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#25 C:\wamp\www\laravel\bootstrap\compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#26 C:\wamp\www\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#27 {main} [] []
+[2013-08-06 12:46:37] log.ERROR: exception 'Exception' with message 'SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «» (SQL: select * from "USUARIOS" where "RUT" = ? limit 1) (Bindings: array (
+  0 => '',
+))' in C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:502
+Stack trace:
+#0 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(475): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'select * from "...', Array)
+#1 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(269): Illuminate\Database\Connection->run('select * from "...', Array, Object(Closure))
+#2 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(966): Illuminate\Database\Connection->select('select * from "...', Array)
+#3 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(956): Illuminate\Database\Query\Builder->runSelect()
+#4 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(943): Illuminate\Database\Query\Builder->getFresh(Array)
+#5 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(397): Illuminate\Database\Query\Builder->get(Array)
+#6 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(112): Illuminate\Database\Eloquent\Builder->getModels(Array)
+#7 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(88): Illuminate\Database\Eloquent\Builder->get(Array)
+#8 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Auth\EloquentUserProvider.php(63): Illuminate\Database\Eloquent\Builder->first()
+#9 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Auth\Guard.php(275): Illuminate\Auth\EloquentUserProvider->retrieveByCredentials(Array)
+#10 [internal function]: Illuminate\Auth\Guard->attempt(Array)
+#11 C:\wamp\www\laravel\bootstrap\compiled.php(6627): call_user_func_array(Array, Array)
+#12 C:\wamp\www\laravel\bootstrap\compiled.php(3320): Illuminate\Support\Manager->__call('attempt', Array)
+#13 C:\wamp\www\laravel\bootstrap\compiled.php(3320): Illuminate\Auth\AuthManager->attempt(Array)
+#14 C:\wamp\www\laravel\app\controllers\AuthController.php(18): Illuminate\Support\Facades\Facade::__callStatic('attempt', Array)
+#15 C:\wamp\www\laravel\app\controllers\AuthController.php(18): Illuminate\Support\Facades\Auth::attempt(Array)
+#16 [internal function]: AuthController->postIndex()
+#17 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#18 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('postIndex', Array)
+#19 C:\wamp\www\laravel\bootstrap\compiled.php(4752): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'postIndex', Array)
+#20 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#21 C:\wamp\www\laravel\bootstrap\compiled.php(7821): call_user_func_array(Object(Closure), Array)
+#22 C:\wamp\www\laravel\bootstrap\compiled.php(7808): Illuminate\Routing\Route->callCallable()
+#23 C:\wamp\www\laravel\bootstrap\compiled.php(4763): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#24 C:\wamp\www\laravel\bootstrap\compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#25 C:\wamp\www\laravel\bootstrap\compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#26 C:\wamp\www\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#27 {main} [] []
+[2013-08-06 12:47:17] log.ERROR: exception 'Exception' with message 'SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «» (SQL: select * from "USUARIOS" where "RUT" = ? limit 1) (Bindings: array (
+  0 => '',
+))' in C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:502
+Stack trace:
+#0 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(475): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'select * from "...', Array)
+#1 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(269): Illuminate\Database\Connection->run('select * from "...', Array, Object(Closure))
+#2 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(966): Illuminate\Database\Connection->select('select * from "...', Array)
+#3 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(956): Illuminate\Database\Query\Builder->runSelect()
+#4 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(943): Illuminate\Database\Query\Builder->getFresh(Array)
+#5 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(397): Illuminate\Database\Query\Builder->get(Array)
+#6 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(112): Illuminate\Database\Eloquent\Builder->getModels(Array)
+#7 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(88): Illuminate\Database\Eloquent\Builder->get(Array)
+#8 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Auth\EloquentUserProvider.php(63): Illuminate\Database\Eloquent\Builder->first()
+#9 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Auth\Guard.php(275): Illuminate\Auth\EloquentUserProvider->retrieveByCredentials(Array)
+#10 [internal function]: Illuminate\Auth\Guard->attempt(Array)
+#11 C:\wamp\www\laravel\bootstrap\compiled.php(6627): call_user_func_array(Array, Array)
+#12 C:\wamp\www\laravel\bootstrap\compiled.php(3320): Illuminate\Support\Manager->__call('attempt', Array)
+#13 C:\wamp\www\laravel\bootstrap\compiled.php(3320): Illuminate\Auth\AuthManager->attempt(Array)
+#14 C:\wamp\www\laravel\app\controllers\AuthController.php(18): Illuminate\Support\Facades\Facade::__callStatic('attempt', Array)
+#15 C:\wamp\www\laravel\app\controllers\AuthController.php(18): Illuminate\Support\Facades\Auth::attempt(Array)
+#16 [internal function]: AuthController->postIndex()
+#17 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#18 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('postIndex', Array)
+#19 C:\wamp\www\laravel\bootstrap\compiled.php(4752): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'postIndex', Array)
+#20 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#21 C:\wamp\www\laravel\bootstrap\compiled.php(7821): call_user_func_array(Object(Closure), Array)
+#22 C:\wamp\www\laravel\bootstrap\compiled.php(7808): Illuminate\Routing\Route->callCallable()
+#23 C:\wamp\www\laravel\bootstrap\compiled.php(4763): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#24 C:\wamp\www\laravel\bootstrap\compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#25 C:\wamp\www\laravel\bootstrap\compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#26 C:\wamp\www\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#27 {main} [] []
+[2013-08-06 12:47:20] log.ERROR: exception 'Exception' with message 'SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «» (SQL: select * from "USUARIOS" where "RUT" = ? limit 1) (Bindings: array (
+  0 => '',
+))' in C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:502
+Stack trace:
+#0 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(475): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'select * from "...', Array)
+#1 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(269): Illuminate\Database\Connection->run('select * from "...', Array, Object(Closure))
+#2 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(966): Illuminate\Database\Connection->select('select * from "...', Array)
+#3 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(956): Illuminate\Database\Query\Builder->runSelect()
+#4 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(943): Illuminate\Database\Query\Builder->getFresh(Array)
+#5 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(397): Illuminate\Database\Query\Builder->get(Array)
+#6 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(112): Illuminate\Database\Eloquent\Builder->getModels(Array)
+#7 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(88): Illuminate\Database\Eloquent\Builder->get(Array)
+#8 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Auth\EloquentUserProvider.php(63): Illuminate\Database\Eloquent\Builder->first()
+#9 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Auth\Guard.php(275): Illuminate\Auth\EloquentUserProvider->retrieveByCredentials(Array)
+#10 [internal function]: Illuminate\Auth\Guard->attempt(Array)
+#11 C:\wamp\www\laravel\bootstrap\compiled.php(6627): call_user_func_array(Array, Array)
+#12 C:\wamp\www\laravel\bootstrap\compiled.php(3320): Illuminate\Support\Manager->__call('attempt', Array)
+#13 C:\wamp\www\laravel\bootstrap\compiled.php(3320): Illuminate\Auth\AuthManager->attempt(Array)
+#14 C:\wamp\www\laravel\app\controllers\AuthController.php(18): Illuminate\Support\Facades\Facade::__callStatic('attempt', Array)
+#15 C:\wamp\www\laravel\app\controllers\AuthController.php(18): Illuminate\Support\Facades\Auth::attempt(Array)
+#16 [internal function]: AuthController->postIndex()
+#17 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#18 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('postIndex', Array)
+#19 C:\wamp\www\laravel\bootstrap\compiled.php(4752): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'postIndex', Array)
+#20 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#21 C:\wamp\www\laravel\bootstrap\compiled.php(7821): call_user_func_array(Object(Closure), Array)
+#22 C:\wamp\www\laravel\bootstrap\compiled.php(7808): Illuminate\Routing\Route->callCallable()
+#23 C:\wamp\www\laravel\bootstrap\compiled.php(4763): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#24 C:\wamp\www\laravel\bootstrap\compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#25 C:\wamp\www\laravel\bootstrap\compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#26 C:\wamp\www\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#27 {main} [] []
+[2013-08-06 12:49:29] log.ERROR: exception 'Exception' with message 'SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «asdasd» (SQL: select * from "USUARIOS" where "RUT" = ? limit 1) (Bindings: array (
+  0 => 'asdasd',
+))' in C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:502
+Stack trace:
+#0 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(475): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'select * from "...', Array)
+#1 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(269): Illuminate\Database\Connection->run('select * from "...', Array, Object(Closure))
+#2 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(966): Illuminate\Database\Connection->select('select * from "...', Array)
+#3 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(956): Illuminate\Database\Query\Builder->runSelect()
+#4 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(943): Illuminate\Database\Query\Builder->getFresh(Array)
+#5 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(397): Illuminate\Database\Query\Builder->get(Array)
+#6 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(112): Illuminate\Database\Eloquent\Builder->getModels(Array)
+#7 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(88): Illuminate\Database\Eloquent\Builder->get(Array)
+#8 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Auth\EloquentUserProvider.php(63): Illuminate\Database\Eloquent\Builder->first()
+#9 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Auth\Guard.php(275): Illuminate\Auth\EloquentUserProvider->retrieveByCredentials(Array)
+#10 [internal function]: Illuminate\Auth\Guard->attempt(Array)
+#11 C:\wamp\www\laravel\bootstrap\compiled.php(6627): call_user_func_array(Array, Array)
+#12 C:\wamp\www\laravel\bootstrap\compiled.php(3320): Illuminate\Support\Manager->__call('attempt', Array)
+#13 C:\wamp\www\laravel\bootstrap\compiled.php(3320): Illuminate\Auth\AuthManager->attempt(Array)
+#14 C:\wamp\www\laravel\app\controllers\AuthController.php(18): Illuminate\Support\Facades\Facade::__callStatic('attempt', Array)
+#15 C:\wamp\www\laravel\app\controllers\AuthController.php(18): Illuminate\Support\Facades\Auth::attempt(Array)
+#16 [internal function]: AuthController->postIndex()
+#17 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#18 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('postIndex', Array)
+#19 C:\wamp\www\laravel\bootstrap\compiled.php(4752): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'postIndex', Array)
+#20 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#21 C:\wamp\www\laravel\bootstrap\compiled.php(7821): call_user_func_array(Object(Closure), Array)
+#22 C:\wamp\www\laravel\bootstrap\compiled.php(7808): Illuminate\Routing\Route->callCallable()
+#23 C:\wamp\www\laravel\bootstrap\compiled.php(4763): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#24 C:\wamp\www\laravel\bootstrap\compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#25 C:\wamp\www\laravel\bootstrap\compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#26 C:\wamp\www\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#27 {main} [] []
+[2013-08-06 12:51:59] log.ERROR: exception 'Exception' with message 'SQLSTATE[42703]: Undefined column: 7 ERROR:  no existe la columna «PEO»
+LINE 1: select * from "USUARIOS" where "PEO" = $1 limit 1
+                                       ^ (SQL: select * from "USUARIOS" where "PEO" = ? limit 1) (Bindings: array (
+  0 => '1',
+))' in C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:502
+Stack trace:
+#0 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(475): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'select * from "...', Array)
+#1 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(269): Illuminate\Database\Connection->run('select * from "...', Array, Object(Closure))
+#2 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(966): Illuminate\Database\Connection->select('select * from "...', Array)
+#3 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(956): Illuminate\Database\Query\Builder->runSelect()
+#4 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(943): Illuminate\Database\Query\Builder->getFresh(Array)
+#5 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(397): Illuminate\Database\Query\Builder->get(Array)
+#6 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(112): Illuminate\Database\Eloquent\Builder->getModels(Array)
+#7 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(88): Illuminate\Database\Eloquent\Builder->get(Array)
+#8 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Auth\EloquentUserProvider.php(63): Illuminate\Database\Eloquent\Builder->first()
+#9 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Auth\Guard.php(275): Illuminate\Auth\EloquentUserProvider->retrieveByCredentials(Array)
+#10 [internal function]: Illuminate\Auth\Guard->attempt(Array)
+#11 C:\wamp\www\laravel\bootstrap\compiled.php(6627): call_user_func_array(Array, Array)
+#12 C:\wamp\www\laravel\bootstrap\compiled.php(3320): Illuminate\Support\Manager->__call('attempt', Array)
+#13 C:\wamp\www\laravel\bootstrap\compiled.php(3320): Illuminate\Auth\AuthManager->attempt(Array)
+#14 C:\wamp\www\laravel\app\controllers\AuthController.php(18): Illuminate\Support\Facades\Facade::__callStatic('attempt', Array)
+#15 C:\wamp\www\laravel\app\controllers\AuthController.php(18): Illuminate\Support\Facades\Auth::attempt(Array)
+#16 [internal function]: AuthController->postIndex()
+#17 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#18 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('postIndex', Array)
+#19 C:\wamp\www\laravel\bootstrap\compiled.php(4752): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'postIndex', Array)
+#20 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#21 C:\wamp\www\laravel\bootstrap\compiled.php(7821): call_user_func_array(Object(Closure), Array)
+#22 C:\wamp\www\laravel\bootstrap\compiled.php(7808): Illuminate\Routing\Route->callCallable()
+#23 C:\wamp\www\laravel\bootstrap\compiled.php(4763): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#24 C:\wamp\www\laravel\bootstrap\compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#25 C:\wamp\www\laravel\bootstrap\compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#26 C:\wamp\www\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#27 {main} [] []
+[2013-08-06 12:52:05] log.ERROR: exception 'Exception' with message 'SQLSTATE[42703]: Undefined column: 7 ERROR:  no existe la columna «PEO»
+LINE 1: select * from "USUARIOS" where "PEO" = $1 limit 1
+                                       ^ (SQL: select * from "USUARIOS" where "PEO" = ? limit 1) (Bindings: array (
+  0 => '1',
+))' in C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:502
+Stack trace:
+#0 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(475): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'select * from "...', Array)
+#1 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(269): Illuminate\Database\Connection->run('select * from "...', Array, Object(Closure))
+#2 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(966): Illuminate\Database\Connection->select('select * from "...', Array)
+#3 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(956): Illuminate\Database\Query\Builder->runSelect()
+#4 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(943): Illuminate\Database\Query\Builder->getFresh(Array)
+#5 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(397): Illuminate\Database\Query\Builder->get(Array)
+#6 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(112): Illuminate\Database\Eloquent\Builder->getModels(Array)
+#7 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(88): Illuminate\Database\Eloquent\Builder->get(Array)
+#8 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Auth\EloquentUserProvider.php(63): Illuminate\Database\Eloquent\Builder->first()
+#9 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Auth\Guard.php(275): Illuminate\Auth\EloquentUserProvider->retrieveByCredentials(Array)
+#10 [internal function]: Illuminate\Auth\Guard->attempt(Array)
+#11 C:\wamp\www\laravel\bootstrap\compiled.php(6627): call_user_func_array(Array, Array)
+#12 C:\wamp\www\laravel\bootstrap\compiled.php(3320): Illuminate\Support\Manager->__call('attempt', Array)
+#13 C:\wamp\www\laravel\bootstrap\compiled.php(3320): Illuminate\Auth\AuthManager->attempt(Array)
+#14 C:\wamp\www\laravel\app\controllers\AuthController.php(18): Illuminate\Support\Facades\Facade::__callStatic('attempt', Array)
+#15 C:\wamp\www\laravel\app\controllers\AuthController.php(18): Illuminate\Support\Facades\Auth::attempt(Array)
+#16 [internal function]: AuthController->postIndex()
+#17 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#18 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('postIndex', Array)
+#19 C:\wamp\www\laravel\bootstrap\compiled.php(4752): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'postIndex', Array)
+#20 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#21 C:\wamp\www\laravel\bootstrap\compiled.php(7821): call_user_func_array(Object(Closure), Array)
+#22 C:\wamp\www\laravel\bootstrap\compiled.php(7808): Illuminate\Routing\Route->callCallable()
+#23 C:\wamp\www\laravel\bootstrap\compiled.php(4763): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#24 C:\wamp\www\laravel\bootstrap\compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#25 C:\wamp\www\laravel\bootstrap\compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#26 C:\wamp\www\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#27 {main} [] []
+[2013-08-06 20:42:53] log.ERROR: exception 'Exception' with message 'SQLSTATE[42703]: Undefined column: 7 ERROR:  no existe la columna «email»
+LINE 1: select * from "USUARIOS" where "email" = $1 limit 1
+                                       ^ (SQL: select * from "USUARIOS" where "email" = ? limit 1) (Bindings: array (
+  0 => '1',
+))' in C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:502
+Stack trace:
+#0 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(475): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'select * from "...', Array)
+#1 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(269): Illuminate\Database\Connection->run('select * from "...', Array, Object(Closure))
+#2 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(966): Illuminate\Database\Connection->select('select * from "...', Array)
+#3 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(956): Illuminate\Database\Query\Builder->runSelect()
+#4 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(943): Illuminate\Database\Query\Builder->getFresh(Array)
+#5 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(397): Illuminate\Database\Query\Builder->get(Array)
+#6 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(112): Illuminate\Database\Eloquent\Builder->getModels(Array)
+#7 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(88): Illuminate\Database\Eloquent\Builder->get(Array)
+#8 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Auth\EloquentUserProvider.php(63): Illuminate\Database\Eloquent\Builder->first()
+#9 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Auth\Guard.php(275): Illuminate\Auth\EloquentUserProvider->retrieveByCredentials(Array)
+#10 [internal function]: Illuminate\Auth\Guard->attempt(Array)
+#11 C:\wamp\www\laravel\bootstrap\compiled.php(6627): call_user_func_array(Array, Array)
+#12 C:\wamp\www\laravel\bootstrap\compiled.php(3320): Illuminate\Support\Manager->__call('attempt', Array)
+#13 C:\wamp\www\laravel\bootstrap\compiled.php(3320): Illuminate\Auth\AuthManager->attempt(Array)
+#14 C:\wamp\www\laravel\app\controllers\AuthController.php(18): Illuminate\Support\Facades\Facade::__callStatic('attempt', Array)
+#15 C:\wamp\www\laravel\app\controllers\AuthController.php(18): Illuminate\Support\Facades\Auth::attempt(Array)
+#16 [internal function]: AuthController->postIndex()
+#17 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#18 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('postIndex', Array)
+#19 C:\wamp\www\laravel\bootstrap\compiled.php(4752): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'postIndex', Array)
+#20 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#21 C:\wamp\www\laravel\bootstrap\compiled.php(7821): call_user_func_array(Object(Closure), Array)
+#22 C:\wamp\www\laravel\bootstrap\compiled.php(7808): Illuminate\Routing\Route->callCallable()
+#23 C:\wamp\www\laravel\bootstrap\compiled.php(4763): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#24 C:\wamp\www\laravel\bootstrap\compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#25 C:\wamp\www\laravel\bootstrap\compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#26 C:\wamp\www\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#27 {main} [] []
+[2013-08-06 20:50:12] log.ERROR: exception 'Exception' with message 'SQLSTATE[42703]: Undefined column: 7 ERROR:  no existe la columna «email»
+LINE 1: select * from "USUARIOS" where "email" = $1 limit 1
+                                       ^ (SQL: select * from "USUARIOS" where "email" = ? limit 1) (Bindings: array (
+  0 => '1',
+))' in C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:502
+Stack trace:
+#0 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(475): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'select * from "...', Array)
+#1 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(269): Illuminate\Database\Connection->run('select * from "...', Array, Object(Closure))
+#2 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(966): Illuminate\Database\Connection->select('select * from "...', Array)
+#3 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(956): Illuminate\Database\Query\Builder->runSelect()
+#4 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(943): Illuminate\Database\Query\Builder->getFresh(Array)
+#5 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(397): Illuminate\Database\Query\Builder->get(Array)
+#6 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(112): Illuminate\Database\Eloquent\Builder->getModels(Array)
+#7 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(88): Illuminate\Database\Eloquent\Builder->get(Array)
+#8 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Auth\EloquentUserProvider.php(63): Illuminate\Database\Eloquent\Builder->first()
+#9 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Auth\Guard.php(275): Illuminate\Auth\EloquentUserProvider->retrieveByCredentials(Array)
+#10 [internal function]: Illuminate\Auth\Guard->attempt(Array)
+#11 C:\wamp\www\laravel\bootstrap\compiled.php(6627): call_user_func_array(Array, Array)
+#12 C:\wamp\www\laravel\bootstrap\compiled.php(3320): Illuminate\Support\Manager->__call('attempt', Array)
+#13 C:\wamp\www\laravel\bootstrap\compiled.php(3320): Illuminate\Auth\AuthManager->attempt(Array)
+#14 C:\wamp\www\laravel\app\controllers\AuthController.php(18): Illuminate\Support\Facades\Facade::__callStatic('attempt', Array)
+#15 C:\wamp\www\laravel\app\controllers\AuthController.php(18): Illuminate\Support\Facades\Auth::attempt(Array)
+#16 [internal function]: AuthController->postIndex()
+#17 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#18 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('postIndex', Array)
+#19 C:\wamp\www\laravel\bootstrap\compiled.php(4752): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'postIndex', Array)
+#20 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#21 C:\wamp\www\laravel\bootstrap\compiled.php(7821): call_user_func_array(Object(Closure), Array)
+#22 C:\wamp\www\laravel\bootstrap\compiled.php(7808): Illuminate\Routing\Route->callCallable()
+#23 C:\wamp\www\laravel\bootstrap\compiled.php(4763): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#24 C:\wamp\www\laravel\bootstrap\compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#25 C:\wamp\www\laravel\bootstrap\compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#26 C:\wamp\www\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#27 {main} [] []
+[2013-08-06 20:50:43] log.ERROR: exception 'ErrorException' with message 'Trying to get property of non-object' in C:\wamp\www\laravel\app\controllers\AuthController.php:22
+Stack trace:
+#0 C:\wamp\www\laravel\app\controllers\AuthController.php(22): Illuminate\Exception\Handler->handleError(8, 'Trying to get p...', 'C:\wamp\www\lar...', 22, Array)
+#1 [internal function]: AuthController->postIndex()
+#2 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#3 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('postIndex', Array)
+#4 C:\wamp\www\laravel\bootstrap\compiled.php(4752): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'postIndex', Array)
+#5 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#6 C:\wamp\www\laravel\bootstrap\compiled.php(7821): call_user_func_array(Object(Closure), Array)
+#7 C:\wamp\www\laravel\bootstrap\compiled.php(7808): Illuminate\Routing\Route->callCallable()
+#8 C:\wamp\www\laravel\bootstrap\compiled.php(4763): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#9 C:\wamp\www\laravel\bootstrap\compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#10 C:\wamp\www\laravel\bootstrap\compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#11 C:\wamp\www\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#12 {main} [] []
+[2013-08-06 20:53:17] log.ERROR: exception 'Exception' with message 'SQLSTATE[42703]: Undefined column: 7 ERROR:  no existe la columna «userdata»
+LINE 1: select * from "USUARIOS" where "userdata" = $1 limit 1
+                                       ^ (SQL: select * from "USUARIOS" where "userdata" = ? limit 1) (Bindings: array (
+  0 => '1',
+))' in C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:502
+Stack trace:
+#0 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(475): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'select * from "...', Array)
+#1 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(269): Illuminate\Database\Connection->run('select * from "...', Array, Object(Closure))
+#2 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(966): Illuminate\Database\Connection->select('select * from "...', Array)
+#3 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(956): Illuminate\Database\Query\Builder->runSelect()
+#4 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(943): Illuminate\Database\Query\Builder->getFresh(Array)
+#5 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(397): Illuminate\Database\Query\Builder->get(Array)
+#6 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(112): Illuminate\Database\Eloquent\Builder->getModels(Array)
+#7 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(88): Illuminate\Database\Eloquent\Builder->get(Array)
+#8 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Auth\EloquentUserProvider.php(63): Illuminate\Database\Eloquent\Builder->first()
+#9 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Auth\Guard.php(275): Illuminate\Auth\EloquentUserProvider->retrieveByCredentials(Array)
+#10 [internal function]: Illuminate\Auth\Guard->attempt(Array)
+#11 C:\wamp\www\laravel\bootstrap\compiled.php(6627): call_user_func_array(Array, Array)
+#12 C:\wamp\www\laravel\bootstrap\compiled.php(3320): Illuminate\Support\Manager->__call('attempt', Array)
+#13 C:\wamp\www\laravel\bootstrap\compiled.php(3320): Illuminate\Auth\AuthManager->attempt(Array)
+#14 C:\wamp\www\laravel\app\controllers\AuthController.php(18): Illuminate\Support\Facades\Facade::__callStatic('attempt', Array)
+#15 C:\wamp\www\laravel\app\controllers\AuthController.php(18): Illuminate\Support\Facades\Auth::attempt(Array)
+#16 [internal function]: AuthController->postIndex()
+#17 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#18 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('postIndex', Array)
+#19 C:\wamp\www\laravel\bootstrap\compiled.php(4752): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'postIndex', Array)
+#20 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#21 C:\wamp\www\laravel\bootstrap\compiled.php(7821): call_user_func_array(Object(Closure), Array)
+#22 C:\wamp\www\laravel\bootstrap\compiled.php(7808): Illuminate\Routing\Route->callCallable()
+#23 C:\wamp\www\laravel\bootstrap\compiled.php(4763): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#24 C:\wamp\www\laravel\bootstrap\compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#25 C:\wamp\www\laravel\bootstrap\compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#26 C:\wamp\www\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#27 {main} [] []
+[2013-08-06 20:54:22] log.ERROR: exception 'Exception' with message 'SQLSTATE[42703]: Undefined column: 7 ERROR:  no existe la columna «userdata»
+LINE 1: select * from "USUARIOS" where "userdata" = $1 limit 1
+                                       ^ (SQL: select * from "USUARIOS" where "userdata" = ? limit 1) (Bindings: array (
+  0 => '1',
+))' in C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:502
+Stack trace:
+#0 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(475): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'select * from "...', Array)
+#1 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(269): Illuminate\Database\Connection->run('select * from "...', Array, Object(Closure))
+#2 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(966): Illuminate\Database\Connection->select('select * from "...', Array)
+#3 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(956): Illuminate\Database\Query\Builder->runSelect()
+#4 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(943): Illuminate\Database\Query\Builder->getFresh(Array)
+#5 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(397): Illuminate\Database\Query\Builder->get(Array)
+#6 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(112): Illuminate\Database\Eloquent\Builder->getModels(Array)
+#7 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(88): Illuminate\Database\Eloquent\Builder->get(Array)
+#8 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Auth\EloquentUserProvider.php(63): Illuminate\Database\Eloquent\Builder->first()
+#9 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Auth\Guard.php(275): Illuminate\Auth\EloquentUserProvider->retrieveByCredentials(Array)
+#10 [internal function]: Illuminate\Auth\Guard->attempt(Array)
+#11 C:\wamp\www\laravel\bootstrap\compiled.php(6627): call_user_func_array(Array, Array)
+#12 C:\wamp\www\laravel\bootstrap\compiled.php(3320): Illuminate\Support\Manager->__call('attempt', Array)
+#13 C:\wamp\www\laravel\bootstrap\compiled.php(3320): Illuminate\Auth\AuthManager->attempt(Array)
+#14 C:\wamp\www\laravel\app\controllers\AuthController.php(18): Illuminate\Support\Facades\Facade::__callStatic('attempt', Array)
+#15 C:\wamp\www\laravel\app\controllers\AuthController.php(18): Illuminate\Support\Facades\Auth::attempt(Array)
+#16 [internal function]: AuthController->postIndex()
+#17 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#18 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('postIndex', Array)
+#19 C:\wamp\www\laravel\bootstrap\compiled.php(4752): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'postIndex', Array)
+#20 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#21 C:\wamp\www\laravel\bootstrap\compiled.php(7821): call_user_func_array(Object(Closure), Array)
+#22 C:\wamp\www\laravel\bootstrap\compiled.php(7808): Illuminate\Routing\Route->callCallable()
+#23 C:\wamp\www\laravel\bootstrap\compiled.php(4763): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#24 C:\wamp\www\laravel\bootstrap\compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#25 C:\wamp\www\laravel\bootstrap\compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#26 C:\wamp\www\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#27 {main} [] []
+[2013-08-06 20:54:51] log.ERROR: exception 'Exception' with message 'SQLSTATE[42703]: Undefined column: 7 ERROR:  no existe la columna «userdata»
+LINE 1: select * from "USUARIOS" where "userdata" = $1 limit 1
+                                       ^ (SQL: select * from "USUARIOS" where "userdata" = ? limit 1) (Bindings: array (
+  0 => '1',
+))' in C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:502
+Stack trace:
+#0 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(475): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'select * from "...', Array)
+#1 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(269): Illuminate\Database\Connection->run('select * from "...', Array, Object(Closure))
+#2 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(966): Illuminate\Database\Connection->select('select * from "...', Array)
+#3 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(956): Illuminate\Database\Query\Builder->runSelect()
+#4 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(943): Illuminate\Database\Query\Builder->getFresh(Array)
+#5 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(397): Illuminate\Database\Query\Builder->get(Array)
+#6 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(112): Illuminate\Database\Eloquent\Builder->getModels(Array)
+#7 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(88): Illuminate\Database\Eloquent\Builder->get(Array)
+#8 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Auth\EloquentUserProvider.php(63): Illuminate\Database\Eloquent\Builder->first()
+#9 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Auth\Guard.php(275): Illuminate\Auth\EloquentUserProvider->retrieveByCredentials(Array)
+#10 [internal function]: Illuminate\Auth\Guard->attempt(Array)
+#11 C:\wamp\www\laravel\bootstrap\compiled.php(6627): call_user_func_array(Array, Array)
+#12 C:\wamp\www\laravel\bootstrap\compiled.php(3320): Illuminate\Support\Manager->__call('attempt', Array)
+#13 C:\wamp\www\laravel\bootstrap\compiled.php(3320): Illuminate\Auth\AuthManager->attempt(Array)
+#14 C:\wamp\www\laravel\app\controllers\AuthController.php(18): Illuminate\Support\Facades\Facade::__callStatic('attempt', Array)
+#15 C:\wamp\www\laravel\app\controllers\AuthController.php(18): Illuminate\Support\Facades\Auth::attempt(Array)
+#16 [internal function]: AuthController->postIndex()
+#17 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#18 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('postIndex', Array)
+#19 C:\wamp\www\laravel\bootstrap\compiled.php(4752): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'postIndex', Array)
+#20 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#21 C:\wamp\www\laravel\bootstrap\compiled.php(7821): call_user_func_array(Object(Closure), Array)
+#22 C:\wamp\www\laravel\bootstrap\compiled.php(7808): Illuminate\Routing\Route->callCallable()
+#23 C:\wamp\www\laravel\bootstrap\compiled.php(4763): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#24 C:\wamp\www\laravel\bootstrap\compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#25 C:\wamp\www\laravel\bootstrap\compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#26 C:\wamp\www\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#27 {main} [] []
+[2013-08-06 21:00:54] log.ERROR: exception 'InvalidArgumentException' with message 'View [admin._layouts.default] not found.' in C:\wamp\www\laravel\bootstrap\compiled.php:8060
+Stack trace:
+#0 C:\wamp\www\laravel\bootstrap\compiled.php(8033): Illuminate\View\FileViewFinder->findInPaths('admin._layouts....', Array)
+#1 C:\wamp\www\laravel\bootstrap\compiled.php(8133): Illuminate\View\FileViewFinder->find('admin._layouts....')
+#2 C:\wamp\www\laravel\app\storage\views\2bd6e2df5766f84e53fb2d4a76c7f068(32): Illuminate\View\Environment->make('admin._layouts....', Array)
+#3 C:\wamp\www\laravel\bootstrap\compiled.php(9033): include('C:\wamp\www\lar...')
+#4 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\View\Engines\CompilerEngine.php(45): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\wamp\www\lar...', Array)
+#5 C:\wamp\www\laravel\bootstrap\compiled.php(8926): Illuminate\View\Engines\CompilerEngine->get('C:\wamp\www\lar...', Array)
+#6 C:\wamp\www\laravel\bootstrap\compiled.php(8917): Illuminate\View\View->getContents()
+#7 C:\wamp\www\laravel\bootstrap\compiled.php(9511): Illuminate\View\View->render()
+#8 C:\wamp\www\laravel\bootstrap\compiled.php(9059): Illuminate\Http\Response->setContent(Object(Illuminate\View\View))
+#9 C:\wamp\www\laravel\bootstrap\compiled.php(4922): Symfony\Component\HttpFoundation\Response->__construct(Object(Illuminate\View\View))
+#10 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(156): Illuminate\Routing\Router->prepare(Object(Illuminate\View\View), Object(Illuminate\Http\Request))
+#11 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(126): Illuminate\Routing\Controllers\Controller->processResponse(Object(Illuminate\Routing\Router), 'getIndex', Object(Illuminate\View\View))
+#12 C:\wamp\www\laravel\bootstrap\compiled.php(4752): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'getIndex', Array)
+#13 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#14 C:\wamp\www\laravel\bootstrap\compiled.php(7821): call_user_func_array(Object(Closure), Array)
+#15 C:\wamp\www\laravel\bootstrap\compiled.php(7808): Illuminate\Routing\Route->callCallable()
+#16 C:\wamp\www\laravel\bootstrap\compiled.php(4763): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#17 C:\wamp\www\laravel\bootstrap\compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#18 C:\wamp\www\laravel\bootstrap\compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#19 C:\wamp\www\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#20 {main} [] []
+[2013-08-06 21:14:03] log.ERROR: exception 'Exception' with message 'SQLSTATE[42703]: Undefined column: 7 ERROR:  no existe la columna «updated_at» en la relación «USUARIOS»
+LINE 1: ...ert into "USUARIOS" ("RUT", "Nombre", "password", "updated_a...
+                                                             ^ (SQL: insert into "USUARIOS" ("RUT", "Nombre", "password", "updated_at", "created_at") values (?, ?, ?, ?, ?) returning "id") (Bindings: array (
+  0 => '5',
+  1 => '5',
+  2 => '$2y$08$H71pOqgbR5SvnoG/r4bEZ.sIrTRZsRaEG9N2tPct.cixwvnzIn/S.',
+  3 => '2013-08-06 21:14:03',
+  4 => '2013-08-06 21:14:03',
+))' in C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:502
+Stack trace:
+#0 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(475): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'insert into "US...', Array)
+#1 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(269): Illuminate\Database\Connection->run('insert into "US...', Array, Object(Closure))
+#2 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Processors\PostgresProcessor.php(18): Illuminate\Database\Connection->select('insert into "US...', Array)
+#3 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1347): Illuminate\Database\Query\Processors\PostgresProcessor->processInsertGetId(Object(Illuminate\Database\Query\Builder), 'insert into "US...', Array, 'id')
+#4 [internal function]: Illuminate\Database\Query\Builder->insertGetId(Array, 'id')
+#5 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(729): call_user_func_array(Array, Array)
+#6 C:\wamp\www\laravel\bootstrap\compiled.php(5702): Illuminate\Database\Eloquent\Builder->__call('insertGetId', Array)
+#7 C:\wamp\www\laravel\bootstrap\compiled.php(5702): Illuminate\Database\Eloquent\Builder->insertGetId(Array, 'id')
+#8 C:\wamp\www\laravel\bootstrap\compiled.php(5692): Illuminate\Database\Eloquent\Model->insertAndSetId(Object(Illuminate\Database\Eloquent\Builder), Array)
+#9 C:\wamp\www\laravel\bootstrap\compiled.php(5651): Illuminate\Database\Eloquent\Model->performInsert(Object(Illuminate\Database\Eloquent\Builder))
+#10 C:\wamp\www\laravel\app\routes.php(37): Illuminate\Database\Eloquent\Model->save()
+#11 [internal function]: {closure}()
+#12 C:\wamp\www\laravel\bootstrap\compiled.php(7821): call_user_func_array(Object(Closure), Array)
+#13 C:\wamp\www\laravel\bootstrap\compiled.php(7808): Illuminate\Routing\Route->callCallable()
+#14 C:\wamp\www\laravel\bootstrap\compiled.php(4763): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#15 C:\wamp\www\laravel\bootstrap\compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#16 C:\wamp\www\laravel\bootstrap\compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#17 C:\wamp\www\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#18 {main} [] []
+[2013-08-06 22:34:27] log.ERROR: exception 'Exception' with message 'SQLSTATE[42703]: Undefined column: 7 ERROR:  no existe la columna «updated_at» en la relación «USUARIOS»
+LINE 1: insert into "USUARIOS" ("RUT", "Nombre", "updated_at", "crea...
+                                                 ^ (SQL: insert into "USUARIOS" ("RUT", "Nombre", "updated_at", "created_at") values (?, ?, ?, ?) returning "id") (Bindings: array (
+  0 => '5',
+  1 => 'roberto',
+  2 => '2013-08-06 22:34:26',
+  3 => '2013-08-06 22:34:26',
+))' in C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:502
+Stack trace:
+#0 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(475): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'insert into "US...', Array)
+#1 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(269): Illuminate\Database\Connection->run('insert into "US...', Array, Object(Closure))
+#2 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Processors\PostgresProcessor.php(18): Illuminate\Database\Connection->select('insert into "US...', Array)
+#3 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1347): Illuminate\Database\Query\Processors\PostgresProcessor->processInsertGetId(Object(Illuminate\Database\Query\Builder), 'insert into "US...', Array, 'id')
+#4 [internal function]: Illuminate\Database\Query\Builder->insertGetId(Array, 'id')
+#5 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(729): call_user_func_array(Array, Array)
+#6 C:\wamp\www\laravel\bootstrap\compiled.php(5702): Illuminate\Database\Eloquent\Builder->__call('insertGetId', Array)
+#7 C:\wamp\www\laravel\bootstrap\compiled.php(5702): Illuminate\Database\Eloquent\Builder->insertGetId(Array, 'id')
+#8 C:\wamp\www\laravel\bootstrap\compiled.php(5692): Illuminate\Database\Eloquent\Model->insertAndSetId(Object(Illuminate\Database\Eloquent\Builder), Array)
+#9 C:\wamp\www\laravel\bootstrap\compiled.php(5651): Illuminate\Database\Eloquent\Model->performInsert(Object(Illuminate\Database\Eloquent\Builder))
+#10 C:\wamp\www\laravel\app\routes.php(37): Illuminate\Database\Eloquent\Model->save()
+#11 [internal function]: {closure}()
+#12 C:\wamp\www\laravel\bootstrap\compiled.php(7821): call_user_func_array(Object(Closure), Array)
+#13 C:\wamp\www\laravel\bootstrap\compiled.php(7808): Illuminate\Routing\Route->callCallable()
+#14 C:\wamp\www\laravel\bootstrap\compiled.php(4763): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#15 C:\wamp\www\laravel\bootstrap\compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#16 C:\wamp\www\laravel\bootstrap\compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#17 C:\wamp\www\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#18 {main} [] []
+[2013-08-06 22:43:39] log.ERROR: exception 'Exception' with message 'SQLSTATE[42P01]: Undefined table: 7 ERROR:  no existe la relación «USUARIOS»
+LINE 1: insert into "USUARIOS" ("email", "password", "updated_at", "...
+                    ^ (SQL: insert into "USUARIOS" ("email", "password", "updated_at", "created_at") values (?, ?, ?, ?) returning "id") (Bindings: array (
+  0 => 'asdf',
+  1 => '$2y$08$CnCFuFGzcLhX9OZus4WR5OsIuUDKb9H8EA8d006efVWGkpNrtxMIO',
+  2 => '2013-08-06 22:43:39',
+  3 => '2013-08-06 22:43:39',
+))' in C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:502
+Stack trace:
+#0 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(475): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'insert into "US...', Array)
+#1 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(269): Illuminate\Database\Connection->run('insert into "US...', Array, Object(Closure))
+#2 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Processors\PostgresProcessor.php(18): Illuminate\Database\Connection->select('insert into "US...', Array)
+#3 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1347): Illuminate\Database\Query\Processors\PostgresProcessor->processInsertGetId(Object(Illuminate\Database\Query\Builder), 'insert into "US...', Array, 'id')
+#4 [internal function]: Illuminate\Database\Query\Builder->insertGetId(Array, 'id')
+#5 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(729): call_user_func_array(Array, Array)
+#6 C:\wamp\www\laravel\bootstrap\compiled.php(5702): Illuminate\Database\Eloquent\Builder->__call('insertGetId', Array)
+#7 C:\wamp\www\laravel\bootstrap\compiled.php(5702): Illuminate\Database\Eloquent\Builder->insertGetId(Array, 'id')
+#8 C:\wamp\www\laravel\bootstrap\compiled.php(5692): Illuminate\Database\Eloquent\Model->insertAndSetId(Object(Illuminate\Database\Eloquent\Builder), Array)
+#9 C:\wamp\www\laravel\bootstrap\compiled.php(5651): Illuminate\Database\Eloquent\Model->performInsert(Object(Illuminate\Database\Eloquent\Builder))
+#10 C:\wamp\www\laravel\app\routes.php(37): Illuminate\Database\Eloquent\Model->save()
+#11 [internal function]: {closure}()
+#12 C:\wamp\www\laravel\bootstrap\compiled.php(7821): call_user_func_array(Object(Closure), Array)
+#13 C:\wamp\www\laravel\bootstrap\compiled.php(7808): Illuminate\Routing\Route->callCallable()
+#14 C:\wamp\www\laravel\bootstrap\compiled.php(4763): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#15 C:\wamp\www\laravel\bootstrap\compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#16 C:\wamp\www\laravel\bootstrap\compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#17 C:\wamp\www\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#18 {main} [] []
+[2013-08-06 22:44:18] log.ERROR: exception 'Exception' with message 'SQLSTATE[42703]: Undefined column: 7 ERROR:  no existe la columna «updated_at» en la relación «usuarios»
+LINE 1: insert into "usuarios" ("email", "password", "updated_at", "...
+                                                     ^ (SQL: insert into "usuarios" ("email", "password", "updated_at", "created_at") values (?, ?, ?, ?) returning "id") (Bindings: array (
+  0 => 'asdf',
+  1 => '$2y$08$EO45rsoVjfBTaKkzncRorOxp1t7ANYAc8EQ/BYiKhDzkTHj/UrjrO',
+  2 => '2013-08-06 22:44:18',
+  3 => '2013-08-06 22:44:18',
+))' in C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:502
+Stack trace:
+#0 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(475): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'insert into "us...', Array)
+#1 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(269): Illuminate\Database\Connection->run('insert into "us...', Array, Object(Closure))
+#2 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Processors\PostgresProcessor.php(18): Illuminate\Database\Connection->select('insert into "us...', Array)
+#3 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1347): Illuminate\Database\Query\Processors\PostgresProcessor->processInsertGetId(Object(Illuminate\Database\Query\Builder), 'insert into "us...', Array, 'id')
+#4 [internal function]: Illuminate\Database\Query\Builder->insertGetId(Array, 'id')
+#5 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(729): call_user_func_array(Array, Array)
+#6 C:\wamp\www\laravel\bootstrap\compiled.php(5702): Illuminate\Database\Eloquent\Builder->__call('insertGetId', Array)
+#7 C:\wamp\www\laravel\bootstrap\compiled.php(5702): Illuminate\Database\Eloquent\Builder->insertGetId(Array, 'id')
+#8 C:\wamp\www\laravel\bootstrap\compiled.php(5692): Illuminate\Database\Eloquent\Model->insertAndSetId(Object(Illuminate\Database\Eloquent\Builder), Array)
+#9 C:\wamp\www\laravel\bootstrap\compiled.php(5651): Illuminate\Database\Eloquent\Model->performInsert(Object(Illuminate\Database\Eloquent\Builder))
+#10 C:\wamp\www\laravel\app\routes.php(37): Illuminate\Database\Eloquent\Model->save()
+#11 [internal function]: {closure}()
+#12 C:\wamp\www\laravel\bootstrap\compiled.php(7821): call_user_func_array(Object(Closure), Array)
+#13 C:\wamp\www\laravel\bootstrap\compiled.php(7808): Illuminate\Routing\Route->callCallable()
+#14 C:\wamp\www\laravel\bootstrap\compiled.php(4763): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#15 C:\wamp\www\laravel\bootstrap\compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#16 C:\wamp\www\laravel\bootstrap\compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#17 C:\wamp\www\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#18 {main} [] []
+[2013-08-06 22:46:51] log.ERROR: exception 'Exception' with message 'SQLSTATE[42703]: Undefined column: 7 ERROR:  no existe la columna «updated_at» en la relación «usuarios»
+LINE 1: insert into "usuarios" ("email", "password", "updated_at", "...
+                                                     ^ (SQL: insert into "usuarios" ("email", "password", "updated_at", "created_at") values (?, ?, ?, ?) returning "id") (Bindings: array (
+  0 => 'asdf',
+  1 => '$2y$08$.EBg8ZwRsAYiIJXMlHuOeeWay5T/YNNyfA3PANrrKeGPnJFpqaaDK',
+  2 => '2013-08-06 22:46:51',
+  3 => '2013-08-06 22:46:51',
+))' in C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:502
+Stack trace:
+#0 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(475): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'insert into "us...', Array)
+#1 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(269): Illuminate\Database\Connection->run('insert into "us...', Array, Object(Closure))
+#2 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Processors\PostgresProcessor.php(18): Illuminate\Database\Connection->select('insert into "us...', Array)
+#3 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1347): Illuminate\Database\Query\Processors\PostgresProcessor->processInsertGetId(Object(Illuminate\Database\Query\Builder), 'insert into "us...', Array, 'id')
+#4 [internal function]: Illuminate\Database\Query\Builder->insertGetId(Array, 'id')
+#5 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(729): call_user_func_array(Array, Array)
+#6 C:\wamp\www\laravel\bootstrap\compiled.php(5702): Illuminate\Database\Eloquent\Builder->__call('insertGetId', Array)
+#7 C:\wamp\www\laravel\bootstrap\compiled.php(5702): Illuminate\Database\Eloquent\Builder->insertGetId(Array, 'id')
+#8 C:\wamp\www\laravel\bootstrap\compiled.php(5692): Illuminate\Database\Eloquent\Model->insertAndSetId(Object(Illuminate\Database\Eloquent\Builder), Array)
+#9 C:\wamp\www\laravel\bootstrap\compiled.php(5651): Illuminate\Database\Eloquent\Model->performInsert(Object(Illuminate\Database\Eloquent\Builder))
+#10 C:\wamp\www\laravel\app\routes.php(37): Illuminate\Database\Eloquent\Model->save()
+#11 [internal function]: {closure}()
+#12 C:\wamp\www\laravel\bootstrap\compiled.php(7821): call_user_func_array(Object(Closure), Array)
+#13 C:\wamp\www\laravel\bootstrap\compiled.php(7808): Illuminate\Routing\Route->callCallable()
+#14 C:\wamp\www\laravel\bootstrap\compiled.php(4763): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#15 C:\wamp\www\laravel\bootstrap\compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#16 C:\wamp\www\laravel\bootstrap\compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#17 C:\wamp\www\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#18 {main} [] []
+[2013-08-06 22:47:35] log.ERROR: exception 'Exception' with message 'SQLSTATE[42703]: Undefined column: 7 ERROR:  no existe la columna «updated_at» en la relación «usuarios»
+LINE 1: insert into "usuarios" ("email", "password", "updated_at", "...
+                                                     ^ (SQL: insert into "usuarios" ("email", "password", "updated_at", "created_at") values (?, ?, ?, ?) returning "id") (Bindings: array (
+  0 => 'asdf',
+  1 => '$2y$08$QD48goZ6uoQl8OTfiOdTDeIN/HjUwJD5X0eiaHqTgUosHWXV17tvy',
+  2 => '2013-08-06 22:47:35',
+  3 => '2013-08-06 22:47:35',
+))' in C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:502
+Stack trace:
+#0 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(475): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'insert into "us...', Array)
+#1 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(269): Illuminate\Database\Connection->run('insert into "us...', Array, Object(Closure))
+#2 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Processors\PostgresProcessor.php(18): Illuminate\Database\Connection->select('insert into "us...', Array)
+#3 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1347): Illuminate\Database\Query\Processors\PostgresProcessor->processInsertGetId(Object(Illuminate\Database\Query\Builder), 'insert into "us...', Array, 'id')
+#4 [internal function]: Illuminate\Database\Query\Builder->insertGetId(Array, 'id')
+#5 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(729): call_user_func_array(Array, Array)
+#6 C:\wamp\www\laravel\bootstrap\compiled.php(5702): Illuminate\Database\Eloquent\Builder->__call('insertGetId', Array)
+#7 C:\wamp\www\laravel\bootstrap\compiled.php(5702): Illuminate\Database\Eloquent\Builder->insertGetId(Array, 'id')
+#8 C:\wamp\www\laravel\bootstrap\compiled.php(5692): Illuminate\Database\Eloquent\Model->insertAndSetId(Object(Illuminate\Database\Eloquent\Builder), Array)
+#9 C:\wamp\www\laravel\bootstrap\compiled.php(5651): Illuminate\Database\Eloquent\Model->performInsert(Object(Illuminate\Database\Eloquent\Builder))
+#10 C:\wamp\www\laravel\app\routes.php(37): Illuminate\Database\Eloquent\Model->save()
+#11 [internal function]: {closure}()
+#12 C:\wamp\www\laravel\bootstrap\compiled.php(7821): call_user_func_array(Object(Closure), Array)
+#13 C:\wamp\www\laravel\bootstrap\compiled.php(7808): Illuminate\Routing\Route->callCallable()
+#14 C:\wamp\www\laravel\bootstrap\compiled.php(4763): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#15 C:\wamp\www\laravel\bootstrap\compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#16 C:\wamp\www\laravel\bootstrap\compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#17 C:\wamp\www\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#18 {main} [] []
+[2013-08-06 22:48:42] log.ERROR: exception 'Exception' with message 'SQLSTATE[42703]: Undefined column: 7 ERROR:  no existe la columna «updated_at» en la relación «usuarios»
+LINE 1: insert into "usuarios" ("email", "password", "updated_at", "...
+                                                     ^ (SQL: insert into "usuarios" ("email", "password", "updated_at", "created_at") values (?, ?, ?, ?) returning "id") (Bindings: array (
+  0 => 'asdf',
+  1 => '$2y$08$R11pWaRhc9TbVPkINBG0aeoG.H98/xH9x6jH10L9lvU7VCXYNy9h6',
+  2 => '2013-08-06 22:48:42',
+  3 => '2013-08-06 22:48:42',
+))' in C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:502
+Stack trace:
+#0 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(475): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'insert into "us...', Array)
+#1 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(269): Illuminate\Database\Connection->run('insert into "us...', Array, Object(Closure))
+#2 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Processors\PostgresProcessor.php(18): Illuminate\Database\Connection->select('insert into "us...', Array)
+#3 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1347): Illuminate\Database\Query\Processors\PostgresProcessor->processInsertGetId(Object(Illuminate\Database\Query\Builder), 'insert into "us...', Array, 'id')
+#4 [internal function]: Illuminate\Database\Query\Builder->insertGetId(Array, 'id')
+#5 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(729): call_user_func_array(Array, Array)
+#6 C:\wamp\www\laravel\bootstrap\compiled.php(5702): Illuminate\Database\Eloquent\Builder->__call('insertGetId', Array)
+#7 C:\wamp\www\laravel\bootstrap\compiled.php(5702): Illuminate\Database\Eloquent\Builder->insertGetId(Array, 'id')
+#8 C:\wamp\www\laravel\bootstrap\compiled.php(5692): Illuminate\Database\Eloquent\Model->insertAndSetId(Object(Illuminate\Database\Eloquent\Builder), Array)
+#9 C:\wamp\www\laravel\bootstrap\compiled.php(5651): Illuminate\Database\Eloquent\Model->performInsert(Object(Illuminate\Database\Eloquent\Builder))
+#10 C:\wamp\www\laravel\app\routes.php(37): Illuminate\Database\Eloquent\Model->save()
+#11 [internal function]: {closure}()
+#12 C:\wamp\www\laravel\bootstrap\compiled.php(7821): call_user_func_array(Object(Closure), Array)
+#13 C:\wamp\www\laravel\bootstrap\compiled.php(7808): Illuminate\Routing\Route->callCallable()
+#14 C:\wamp\www\laravel\bootstrap\compiled.php(4763): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#15 C:\wamp\www\laravel\bootstrap\compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#16 C:\wamp\www\laravel\bootstrap\compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#17 C:\wamp\www\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#18 {main} [] []
+[2013-08-06 22:48:42] log.ERROR: exception 'Exception' with message 'SQLSTATE[42703]: Undefined column: 7 ERROR:  no existe la columna «updated_at» en la relación «usuarios»
+LINE 1: insert into "usuarios" ("email", "password", "updated_at", "...
+                                                     ^ (SQL: insert into "usuarios" ("email", "password", "updated_at", "created_at") values (?, ?, ?, ?) returning "id") (Bindings: array (
+  0 => 'asdf',
+  1 => '$2y$08$/sd0p3wnVk5wh6TbO4ahTOPIR85X99pnMe.MzTaqSZAGAnS0BZxZm',
+  2 => '2013-08-06 22:48:42',
+  3 => '2013-08-06 22:48:42',
+))' in C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:502
+Stack trace:
+#0 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(475): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'insert into "us...', Array)
+#1 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(269): Illuminate\Database\Connection->run('insert into "us...', Array, Object(Closure))
+#2 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Processors\PostgresProcessor.php(18): Illuminate\Database\Connection->select('insert into "us...', Array)
+#3 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1347): Illuminate\Database\Query\Processors\PostgresProcessor->processInsertGetId(Object(Illuminate\Database\Query\Builder), 'insert into "us...', Array, 'id')
+#4 [internal function]: Illuminate\Database\Query\Builder->insertGetId(Array, 'id')
+#5 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(729): call_user_func_array(Array, Array)
+#6 C:\wamp\www\laravel\bootstrap\compiled.php(5702): Illuminate\Database\Eloquent\Builder->__call('insertGetId', Array)
+#7 C:\wamp\www\laravel\bootstrap\compiled.php(5702): Illuminate\Database\Eloquent\Builder->insertGetId(Array, 'id')
+#8 C:\wamp\www\laravel\bootstrap\compiled.php(5692): Illuminate\Database\Eloquent\Model->insertAndSetId(Object(Illuminate\Database\Eloquent\Builder), Array)
+#9 C:\wamp\www\laravel\bootstrap\compiled.php(5651): Illuminate\Database\Eloquent\Model->performInsert(Object(Illuminate\Database\Eloquent\Builder))
+#10 C:\wamp\www\laravel\app\routes.php(37): Illuminate\Database\Eloquent\Model->save()
+#11 [internal function]: {closure}()
+#12 C:\wamp\www\laravel\bootstrap\compiled.php(7821): call_user_func_array(Object(Closure), Array)
+#13 C:\wamp\www\laravel\bootstrap\compiled.php(7808): Illuminate\Routing\Route->callCallable()
+#14 C:\wamp\www\laravel\bootstrap\compiled.php(4763): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#15 C:\wamp\www\laravel\bootstrap\compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#16 C:\wamp\www\laravel\bootstrap\compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#17 C:\wamp\www\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#18 {main} [] []
+[2013-08-06 22:48:42] log.ERROR: exception 'Exception' with message 'SQLSTATE[42703]: Undefined column: 7 ERROR:  no existe la columna «updated_at» en la relación «usuarios»
+LINE 1: insert into "usuarios" ("email", "password", "updated_at", "...
+                                                     ^ (SQL: insert into "usuarios" ("email", "password", "updated_at", "created_at") values (?, ?, ?, ?) returning "id") (Bindings: array (
+  0 => 'asdf',
+  1 => '$2y$08$swui.dklZBE8b1X33yLlLOgf4y61wHsmtgHseWcm.d.IT/k.lY072',
+  2 => '2013-08-06 22:48:42',
+  3 => '2013-08-06 22:48:42',
+))' in C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:502
+Stack trace:
+#0 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(475): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'insert into "us...', Array)
+#1 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(269): Illuminate\Database\Connection->run('insert into "us...', Array, Object(Closure))
+#2 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Processors\PostgresProcessor.php(18): Illuminate\Database\Connection->select('insert into "us...', Array)
+#3 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1347): Illuminate\Database\Query\Processors\PostgresProcessor->processInsertGetId(Object(Illuminate\Database\Query\Builder), 'insert into "us...', Array, 'id')
+#4 [internal function]: Illuminate\Database\Query\Builder->insertGetId(Array, 'id')
+#5 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(729): call_user_func_array(Array, Array)
+#6 C:\wamp\www\laravel\bootstrap\compiled.php(5702): Illuminate\Database\Eloquent\Builder->__call('insertGetId', Array)
+#7 C:\wamp\www\laravel\bootstrap\compiled.php(5702): Illuminate\Database\Eloquent\Builder->insertGetId(Array, 'id')
+#8 C:\wamp\www\laravel\bootstrap\compiled.php(5692): Illuminate\Database\Eloquent\Model->insertAndSetId(Object(Illuminate\Database\Eloquent\Builder), Array)
+#9 C:\wamp\www\laravel\bootstrap\compiled.php(5651): Illuminate\Database\Eloquent\Model->performInsert(Object(Illuminate\Database\Eloquent\Builder))
+#10 C:\wamp\www\laravel\app\routes.php(37): Illuminate\Database\Eloquent\Model->save()
+#11 [internal function]: {closure}()
+#12 C:\wamp\www\laravel\bootstrap\compiled.php(7821): call_user_func_array(Object(Closure), Array)
+#13 C:\wamp\www\laravel\bootstrap\compiled.php(7808): Illuminate\Routing\Route->callCallable()
+#14 C:\wamp\www\laravel\bootstrap\compiled.php(4763): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#15 C:\wamp\www\laravel\bootstrap\compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#16 C:\wamp\www\laravel\bootstrap\compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#17 C:\wamp\www\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#18 {main} [] []
+[2013-08-06 22:48:42] log.ERROR: exception 'Exception' with message 'SQLSTATE[42703]: Undefined column: 7 ERROR:  no existe la columna «updated_at» en la relación «usuarios»
+LINE 1: insert into "usuarios" ("email", "password", "updated_at", "...
+                                                     ^ (SQL: insert into "usuarios" ("email", "password", "updated_at", "created_at") values (?, ?, ?, ?) returning "id") (Bindings: array (
+  0 => 'asdf',
+  1 => '$2y$08$wH49vkIpiGUWLdcFbspGaOOIyUNWbrn5T/DgnoE7cVn2pgB0G/L0G',
+  2 => '2013-08-06 22:48:42',
+  3 => '2013-08-06 22:48:42',
+))' in C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:502
+Stack trace:
+#0 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(475): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'insert into "us...', Array)
+#1 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(269): Illuminate\Database\Connection->run('insert into "us...', Array, Object(Closure))
+#2 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Processors\PostgresProcessor.php(18): Illuminate\Database\Connection->select('insert into "us...', Array)
+#3 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1347): Illuminate\Database\Query\Processors\PostgresProcessor->processInsertGetId(Object(Illuminate\Database\Query\Builder), 'insert into "us...', Array, 'id')
+#4 [internal function]: Illuminate\Database\Query\Builder->insertGetId(Array, 'id')
+#5 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(729): call_user_func_array(Array, Array)
+#6 C:\wamp\www\laravel\bootstrap\compiled.php(5702): Illuminate\Database\Eloquent\Builder->__call('insertGetId', Array)
+#7 C:\wamp\www\laravel\bootstrap\compiled.php(5702): Illuminate\Database\Eloquent\Builder->insertGetId(Array, 'id')
+#8 C:\wamp\www\laravel\bootstrap\compiled.php(5692): Illuminate\Database\Eloquent\Model->insertAndSetId(Object(Illuminate\Database\Eloquent\Builder), Array)
+#9 C:\wamp\www\laravel\bootstrap\compiled.php(5651): Illuminate\Database\Eloquent\Model->performInsert(Object(Illuminate\Database\Eloquent\Builder))
+#10 C:\wamp\www\laravel\app\routes.php(37): Illuminate\Database\Eloquent\Model->save()
+#11 [internal function]: {closure}()
+#12 C:\wamp\www\laravel\bootstrap\compiled.php(7821): call_user_func_array(Object(Closure), Array)
+#13 C:\wamp\www\laravel\bootstrap\compiled.php(7808): Illuminate\Routing\Route->callCallable()
+#14 C:\wamp\www\laravel\bootstrap\compiled.php(4763): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#15 C:\wamp\www\laravel\bootstrap\compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#16 C:\wamp\www\laravel\bootstrap\compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#17 C:\wamp\www\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#18 {main} [] []
+[2013-08-06 22:48:43] log.ERROR: exception 'Exception' with message 'SQLSTATE[42703]: Undefined column: 7 ERROR:  no existe la columna «updated_at» en la relación «usuarios»
+LINE 1: insert into "usuarios" ("email", "password", "updated_at", "...
+                                                     ^ (SQL: insert into "usuarios" ("email", "password", "updated_at", "created_at") values (?, ?, ?, ?) returning "id") (Bindings: array (
+  0 => 'asdf',
+  1 => '$2y$08$1fMGI3Toue/cimkekNMKsuW.s5vqGpwuAQcMhuBtwgQF2lTBlULhC',
+  2 => '2013-08-06 22:48:43',
+  3 => '2013-08-06 22:48:43',
+))' in C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:502
+Stack trace:
+#0 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(475): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'insert into "us...', Array)
+#1 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(269): Illuminate\Database\Connection->run('insert into "us...', Array, Object(Closure))
+#2 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Processors\PostgresProcessor.php(18): Illuminate\Database\Connection->select('insert into "us...', Array)
+#3 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1347): Illuminate\Database\Query\Processors\PostgresProcessor->processInsertGetId(Object(Illuminate\Database\Query\Builder), 'insert into "us...', Array, 'id')
+#4 [internal function]: Illuminate\Database\Query\Builder->insertGetId(Array, 'id')
+#5 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(729): call_user_func_array(Array, Array)
+#6 C:\wamp\www\laravel\bootstrap\compiled.php(5702): Illuminate\Database\Eloquent\Builder->__call('insertGetId', Array)
+#7 C:\wamp\www\laravel\bootstrap\compiled.php(5702): Illuminate\Database\Eloquent\Builder->insertGetId(Array, 'id')
+#8 C:\wamp\www\laravel\bootstrap\compiled.php(5692): Illuminate\Database\Eloquent\Model->insertAndSetId(Object(Illuminate\Database\Eloquent\Builder), Array)
+#9 C:\wamp\www\laravel\bootstrap\compiled.php(5651): Illuminate\Database\Eloquent\Model->performInsert(Object(Illuminate\Database\Eloquent\Builder))
+#10 C:\wamp\www\laravel\app\routes.php(37): Illuminate\Database\Eloquent\Model->save()
+#11 [internal function]: {closure}()
+#12 C:\wamp\www\laravel\bootstrap\compiled.php(7821): call_user_func_array(Object(Closure), Array)
+#13 C:\wamp\www\laravel\bootstrap\compiled.php(7808): Illuminate\Routing\Route->callCallable()
+#14 C:\wamp\www\laravel\bootstrap\compiled.php(4763): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#15 C:\wamp\www\laravel\bootstrap\compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#16 C:\wamp\www\laravel\bootstrap\compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#17 C:\wamp\www\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#18 {main} [] []
+[2013-08-06 22:48:44] log.ERROR: exception 'Exception' with message 'SQLSTATE[42703]: Undefined column: 7 ERROR:  no existe la columna «updated_at» en la relación «usuarios»
+LINE 1: insert into "usuarios" ("email", "password", "updated_at", "...
+                                                     ^ (SQL: insert into "usuarios" ("email", "password", "updated_at", "created_at") values (?, ?, ?, ?) returning "id") (Bindings: array (
+  0 => 'asdf',
+  1 => '$2y$08$I.sWVhY.mrPvecUJWr8V0uhGklsL//fEL7u0racbrQ/AYAvVjR0vW',
+  2 => '2013-08-06 22:48:44',
+  3 => '2013-08-06 22:48:44',
+))' in C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:502
+Stack trace:
+#0 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(475): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'insert into "us...', Array)
+#1 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(269): Illuminate\Database\Connection->run('insert into "us...', Array, Object(Closure))
+#2 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Processors\PostgresProcessor.php(18): Illuminate\Database\Connection->select('insert into "us...', Array)
+#3 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1347): Illuminate\Database\Query\Processors\PostgresProcessor->processInsertGetId(Object(Illuminate\Database\Query\Builder), 'insert into "us...', Array, 'id')
+#4 [internal function]: Illuminate\Database\Query\Builder->insertGetId(Array, 'id')
+#5 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(729): call_user_func_array(Array, Array)
+#6 C:\wamp\www\laravel\bootstrap\compiled.php(5702): Illuminate\Database\Eloquent\Builder->__call('insertGetId', Array)
+#7 C:\wamp\www\laravel\bootstrap\compiled.php(5702): Illuminate\Database\Eloquent\Builder->insertGetId(Array, 'id')
+#8 C:\wamp\www\laravel\bootstrap\compiled.php(5692): Illuminate\Database\Eloquent\Model->insertAndSetId(Object(Illuminate\Database\Eloquent\Builder), Array)
+#9 C:\wamp\www\laravel\bootstrap\compiled.php(5651): Illuminate\Database\Eloquent\Model->performInsert(Object(Illuminate\Database\Eloquent\Builder))
+#10 C:\wamp\www\laravel\app\routes.php(37): Illuminate\Database\Eloquent\Model->save()
+#11 [internal function]: {closure}()
+#12 C:\wamp\www\laravel\bootstrap\compiled.php(7821): call_user_func_array(Object(Closure), Array)
+#13 C:\wamp\www\laravel\bootstrap\compiled.php(7808): Illuminate\Routing\Route->callCallable()
+#14 C:\wamp\www\laravel\bootstrap\compiled.php(4763): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#15 C:\wamp\www\laravel\bootstrap\compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#16 C:\wamp\www\laravel\bootstrap\compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#17 C:\wamp\www\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#18 {main} [] []
+[2013-08-06 22:49:29] log.ERROR: exception 'Exception' with message 'SQLSTATE[42703]: Undefined column: 7 ERROR:  no existe la columna «updated_at» en la relación «usuarios»
+LINE 1: insert into "usuarios" ("email", "password", "updated_at", "...
+                                                     ^ (SQL: insert into "usuarios" ("email", "password", "updated_at", "created_at") values (?, ?, ?, ?) returning "email") (Bindings: array (
+  0 => 'asdf',
+  1 => '$2y$08$LYQ6CTjB/UIidwYEYuF3hOq4ga9LZIbqObV270SmNwU.4HwCShMrm',
+  2 => '2013-08-06 22:49:29',
+  3 => '2013-08-06 22:49:29',
+))' in C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:502
+Stack trace:
+#0 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(475): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'insert into "us...', Array)
+#1 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(269): Illuminate\Database\Connection->run('insert into "us...', Array, Object(Closure))
+#2 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Processors\PostgresProcessor.php(18): Illuminate\Database\Connection->select('insert into "us...', Array)
+#3 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1347): Illuminate\Database\Query\Processors\PostgresProcessor->processInsertGetId(Object(Illuminate\Database\Query\Builder), 'insert into "us...', Array, 'email')
+#4 [internal function]: Illuminate\Database\Query\Builder->insertGetId(Array, 'email')
+#5 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(729): call_user_func_array(Array, Array)
+#6 C:\wamp\www\laravel\bootstrap\compiled.php(5702): Illuminate\Database\Eloquent\Builder->__call('insertGetId', Array)
+#7 C:\wamp\www\laravel\bootstrap\compiled.php(5702): Illuminate\Database\Eloquent\Builder->insertGetId(Array, 'email')
+#8 C:\wamp\www\laravel\bootstrap\compiled.php(5692): Illuminate\Database\Eloquent\Model->insertAndSetId(Object(Illuminate\Database\Eloquent\Builder), Array)
+#9 C:\wamp\www\laravel\bootstrap\compiled.php(5651): Illuminate\Database\Eloquent\Model->performInsert(Object(Illuminate\Database\Eloquent\Builder))
+#10 C:\wamp\www\laravel\app\routes.php(37): Illuminate\Database\Eloquent\Model->save()
+#11 [internal function]: {closure}()
+#12 C:\wamp\www\laravel\bootstrap\compiled.php(7821): call_user_func_array(Object(Closure), Array)
+#13 C:\wamp\www\laravel\bootstrap\compiled.php(7808): Illuminate\Routing\Route->callCallable()
+#14 C:\wamp\www\laravel\bootstrap\compiled.php(4763): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#15 C:\wamp\www\laravel\bootstrap\compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#16 C:\wamp\www\laravel\bootstrap\compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#17 C:\wamp\www\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#18 {main} [] []
+[2013-08-06 22:51:14] log.ERROR: exception 'Exception' with message 'SQLSTATE[42703]: Undefined column: 7 ERROR:  no existe la columna «updated_at» en la relación «usuarios»
+LINE 1: insert into "usuarios" ("email", "password", "updated_at", "...
+                                                     ^ (SQL: insert into "usuarios" ("email", "password", "updated_at", "created_at") values (?, ?, ?, ?) returning "email") (Bindings: array (
+  0 => 'asdf',
+  1 => '$2y$08$ddzSkNYEls9eEpfteZtr3OA88x9dcQU8Vxr/drgSj85aqUAQmbRsC',
+  2 => '2013-08-06 22:51:14',
+  3 => '2013-08-06 22:51:14',
+))' in C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:502
+Stack trace:
+#0 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(475): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'insert into "us...', Array)
+#1 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(269): Illuminate\Database\Connection->run('insert into "us...', Array, Object(Closure))
+#2 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Processors\PostgresProcessor.php(18): Illuminate\Database\Connection->select('insert into "us...', Array)
+#3 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1347): Illuminate\Database\Query\Processors\PostgresProcessor->processInsertGetId(Object(Illuminate\Database\Query\Builder), 'insert into "us...', Array, 'email')
+#4 [internal function]: Illuminate\Database\Query\Builder->insertGetId(Array, 'email')
+#5 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(729): call_user_func_array(Array, Array)
+#6 C:\wamp\www\laravel\bootstrap\compiled.php(5702): Illuminate\Database\Eloquent\Builder->__call('insertGetId', Array)
+#7 C:\wamp\www\laravel\bootstrap\compiled.php(5702): Illuminate\Database\Eloquent\Builder->insertGetId(Array, 'email')
+#8 C:\wamp\www\laravel\bootstrap\compiled.php(5692): Illuminate\Database\Eloquent\Model->insertAndSetId(Object(Illuminate\Database\Eloquent\Builder), Array)
+#9 C:\wamp\www\laravel\bootstrap\compiled.php(5651): Illuminate\Database\Eloquent\Model->performInsert(Object(Illuminate\Database\Eloquent\Builder))
+#10 C:\wamp\www\laravel\app\routes.php(37): Illuminate\Database\Eloquent\Model->save()
+#11 [internal function]: {closure}()
+#12 C:\wamp\www\laravel\bootstrap\compiled.php(7821): call_user_func_array(Object(Closure), Array)
+#13 C:\wamp\www\laravel\bootstrap\compiled.php(7808): Illuminate\Routing\Route->callCallable()
+#14 C:\wamp\www\laravel\bootstrap\compiled.php(4763): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#15 C:\wamp\www\laravel\bootstrap\compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#16 C:\wamp\www\laravel\bootstrap\compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#17 C:\wamp\www\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#18 {main} [] []
+[2013-08-06 22:56:06] log.ERROR: exception 'Exception' with message 'SQLSTATE[42703]: Undefined column: 7 ERROR:  no existe la columna «updated_at» en la relación «usuarios»
+LINE 1: insert into "usuarios" ("email", "password", "updated_at", "...
+                                                     ^ (SQL: insert into "usuarios" ("email", "password", "updated_at", "created_at") values (?, ?, ?, ?) returning "email") (Bindings: array (
+  0 => 'asdf',
+  1 => '$2y$08$9vWHtHcEgeo/WaEdmR9o.eRkwWvrm1QwYrXnUuFW1DgJs.QzF.xAu',
+  2 => '2013-08-06 22:56:06',
+  3 => '2013-08-06 22:56:06',
+))' in C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:502
+Stack trace:
+#0 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(475): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'insert into "us...', Array)
+#1 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(269): Illuminate\Database\Connection->run('insert into "us...', Array, Object(Closure))
+#2 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Processors\PostgresProcessor.php(18): Illuminate\Database\Connection->select('insert into "us...', Array)
+#3 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1347): Illuminate\Database\Query\Processors\PostgresProcessor->processInsertGetId(Object(Illuminate\Database\Query\Builder), 'insert into "us...', Array, 'email')
+#4 [internal function]: Illuminate\Database\Query\Builder->insertGetId(Array, 'email')
+#5 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(729): call_user_func_array(Array, Array)
+#6 C:\wamp\www\laravel\bootstrap\compiled.php(5702): Illuminate\Database\Eloquent\Builder->__call('insertGetId', Array)
+#7 C:\wamp\www\laravel\bootstrap\compiled.php(5702): Illuminate\Database\Eloquent\Builder->insertGetId(Array, 'email')
+#8 C:\wamp\www\laravel\bootstrap\compiled.php(5692): Illuminate\Database\Eloquent\Model->insertAndSetId(Object(Illuminate\Database\Eloquent\Builder), Array)
+#9 C:\wamp\www\laravel\bootstrap\compiled.php(5651): Illuminate\Database\Eloquent\Model->performInsert(Object(Illuminate\Database\Eloquent\Builder))
+#10 C:\wamp\www\laravel\app\routes.php(37): Illuminate\Database\Eloquent\Model->save()
+#11 [internal function]: {closure}()
+#12 C:\wamp\www\laravel\bootstrap\compiled.php(7821): call_user_func_array(Object(Closure), Array)
+#13 C:\wamp\www\laravel\bootstrap\compiled.php(7808): Illuminate\Routing\Route->callCallable()
+#14 C:\wamp\www\laravel\bootstrap\compiled.php(4763): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#15 C:\wamp\www\laravel\bootstrap\compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#16 C:\wamp\www\laravel\bootstrap\compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#17 C:\wamp\www\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#18 {main} [] []
+[2013-08-06 22:57:10] log.ERROR: exception 'Exception' with message 'SQLSTATE[42703]: Undefined column: 7 ERROR:  no existe la columna «updated_at» en la relación «usuarios»
+LINE 1: insert into "usuarios" ("email", "password", "updated_at", "...
+                                                     ^ (SQL: insert into "usuarios" ("email", "password", "updated_at", "created_at") values (?, ?, ?, ?) returning "email") (Bindings: array (
+  0 => 'asdf',
+  1 => 'roberto',
+  2 => '2013-08-06 22:57:10',
+  3 => '2013-08-06 22:57:10',
+))' in C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:502
+Stack trace:
+#0 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(475): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'insert into "us...', Array)
+#1 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(269): Illuminate\Database\Connection->run('insert into "us...', Array, Object(Closure))
+#2 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Processors\PostgresProcessor.php(18): Illuminate\Database\Connection->select('insert into "us...', Array)
+#3 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1347): Illuminate\Database\Query\Processors\PostgresProcessor->processInsertGetId(Object(Illuminate\Database\Query\Builder), 'insert into "us...', Array, 'email')
+#4 [internal function]: Illuminate\Database\Query\Builder->insertGetId(Array, 'email')
+#5 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(729): call_user_func_array(Array, Array)
+#6 C:\wamp\www\laravel\bootstrap\compiled.php(5702): Illuminate\Database\Eloquent\Builder->__call('insertGetId', Array)
+#7 C:\wamp\www\laravel\bootstrap\compiled.php(5702): Illuminate\Database\Eloquent\Builder->insertGetId(Array, 'email')
+#8 C:\wamp\www\laravel\bootstrap\compiled.php(5692): Illuminate\Database\Eloquent\Model->insertAndSetId(Object(Illuminate\Database\Eloquent\Builder), Array)
+#9 C:\wamp\www\laravel\bootstrap\compiled.php(5651): Illuminate\Database\Eloquent\Model->performInsert(Object(Illuminate\Database\Eloquent\Builder))
+#10 C:\wamp\www\laravel\app\routes.php(37): Illuminate\Database\Eloquent\Model->save()
+#11 [internal function]: {closure}()
+#12 C:\wamp\www\laravel\bootstrap\compiled.php(7821): call_user_func_array(Object(Closure), Array)
+#13 C:\wamp\www\laravel\bootstrap\compiled.php(7808): Illuminate\Routing\Route->callCallable()
+#14 C:\wamp\www\laravel\bootstrap\compiled.php(4763): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#15 C:\wamp\www\laravel\bootstrap\compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#16 C:\wamp\www\laravel\bootstrap\compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#17 C:\wamp\www\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#18 {main} [] []
+[2013-08-06 22:57:11] log.ERROR: exception 'Exception' with message 'SQLSTATE[42703]: Undefined column: 7 ERROR:  no existe la columna «updated_at» en la relación «usuarios»
+LINE 1: insert into "usuarios" ("email", "password", "updated_at", "...
+                                                     ^ (SQL: insert into "usuarios" ("email", "password", "updated_at", "created_at") values (?, ?, ?, ?) returning "email") (Bindings: array (
+  0 => 'asdf',
+  1 => 'roberto',
+  2 => '2013-08-06 22:57:11',
+  3 => '2013-08-06 22:57:11',
+))' in C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:502
+Stack trace:
+#0 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(475): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'insert into "us...', Array)
+#1 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(269): Illuminate\Database\Connection->run('insert into "us...', Array, Object(Closure))
+#2 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Processors\PostgresProcessor.php(18): Illuminate\Database\Connection->select('insert into "us...', Array)
+#3 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1347): Illuminate\Database\Query\Processors\PostgresProcessor->processInsertGetId(Object(Illuminate\Database\Query\Builder), 'insert into "us...', Array, 'email')
+#4 [internal function]: Illuminate\Database\Query\Builder->insertGetId(Array, 'email')
+#5 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(729): call_user_func_array(Array, Array)
+#6 C:\wamp\www\laravel\bootstrap\compiled.php(5702): Illuminate\Database\Eloquent\Builder->__call('insertGetId', Array)
+#7 C:\wamp\www\laravel\bootstrap\compiled.php(5702): Illuminate\Database\Eloquent\Builder->insertGetId(Array, 'email')
+#8 C:\wamp\www\laravel\bootstrap\compiled.php(5692): Illuminate\Database\Eloquent\Model->insertAndSetId(Object(Illuminate\Database\Eloquent\Builder), Array)
+#9 C:\wamp\www\laravel\bootstrap\compiled.php(5651): Illuminate\Database\Eloquent\Model->performInsert(Object(Illuminate\Database\Eloquent\Builder))
+#10 C:\wamp\www\laravel\app\routes.php(37): Illuminate\Database\Eloquent\Model->save()
+#11 [internal function]: {closure}()
+#12 C:\wamp\www\laravel\bootstrap\compiled.php(7821): call_user_func_array(Object(Closure), Array)
+#13 C:\wamp\www\laravel\bootstrap\compiled.php(7808): Illuminate\Routing\Route->callCallable()
+#14 C:\wamp\www\laravel\bootstrap\compiled.php(4763): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#15 C:\wamp\www\laravel\bootstrap\compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#16 C:\wamp\www\laravel\bootstrap\compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#17 C:\wamp\www\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#18 {main} [] []
+[2013-08-06 23:56:33] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\wamp\www\laravel\bootstrap\compiled.php:4929
+Stack trace:
+#0 C:\wamp\www\laravel\bootstrap\compiled.php(4774): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\wamp\www\laravel\bootstrap\compiled.php(4762): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\wamp\www\laravel\bootstrap\compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\wamp\www\laravel\bootstrap\compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\wamp\www\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-08-06 23:56:34] log.ERROR: exception 'Exception' with message 'SQLSTATE[42703]: Undefined column: 7 ERROR:  no existe la columna «updated_at» en la relación «usuarios»
+LINE 1: insert into "usuarios" ("email", "password", "updated_at", "...
+                                                     ^ (SQL: insert into "usuarios" ("email", "password", "updated_at", "created_at") values (?, ?, ?, ?) returning "email") (Bindings: array (
+  0 => 'asdf',
+  1 => 'roberto',
+  2 => '2013-08-06 23:56:34',
+  3 => '2013-08-06 23:56:34',
+))' in C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:502
+Stack trace:
+#0 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(475): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'insert into "us...', Array)
+#1 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(269): Illuminate\Database\Connection->run('insert into "us...', Array, Object(Closure))
+#2 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Processors\PostgresProcessor.php(18): Illuminate\Database\Connection->select('insert into "us...', Array)
+#3 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1347): Illuminate\Database\Query\Processors\PostgresProcessor->processInsertGetId(Object(Illuminate\Database\Query\Builder), 'insert into "us...', Array, 'email')
+#4 [internal function]: Illuminate\Database\Query\Builder->insertGetId(Array, 'email')
+#5 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(729): call_user_func_array(Array, Array)
+#6 C:\wamp\www\laravel\bootstrap\compiled.php(5702): Illuminate\Database\Eloquent\Builder->__call('insertGetId', Array)
+#7 C:\wamp\www\laravel\bootstrap\compiled.php(5702): Illuminate\Database\Eloquent\Builder->insertGetId(Array, 'email')
+#8 C:\wamp\www\laravel\bootstrap\compiled.php(5692): Illuminate\Database\Eloquent\Model->insertAndSetId(Object(Illuminate\Database\Eloquent\Builder), Array)
+#9 C:\wamp\www\laravel\bootstrap\compiled.php(5651): Illuminate\Database\Eloquent\Model->performInsert(Object(Illuminate\Database\Eloquent\Builder))
+#10 C:\wamp\www\laravel\app\routes.php(37): Illuminate\Database\Eloquent\Model->save()
+#11 [internal function]: {closure}()
+#12 C:\wamp\www\laravel\bootstrap\compiled.php(7821): call_user_func_array(Object(Closure), Array)
+#13 C:\wamp\www\laravel\bootstrap\compiled.php(7808): Illuminate\Routing\Route->callCallable()
+#14 C:\wamp\www\laravel\bootstrap\compiled.php(4763): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#15 C:\wamp\www\laravel\bootstrap\compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#16 C:\wamp\www\laravel\bootstrap\compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#17 C:\wamp\www\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#18 {main} [] []

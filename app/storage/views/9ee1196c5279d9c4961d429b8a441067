@@ -1,0 +1,17 @@
+
+<h1>Crear reserva </h1>
+
+<?php echo Form::open(); ?>
+
+Usuario <?php echo Form::text('persona','agregarlo solo no se como xd'); ?> <br />
+
+Recurso:  <?php echo Form::text('recurso',$recurso->ID_Recurso); ?> <br />
+
+Hora Inicio:  <?php echo Form::text('hora_inicio','no se'); ?> <br />
+
+Hora Fin: <?php echo Form::text('hora_fin','tampoco se'); ?> <br />
+
+<?php echo Form::submit('Crear Reserva'); ?>
+
+<?php echo Form::close(); ?>
+

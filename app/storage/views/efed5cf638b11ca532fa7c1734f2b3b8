@@ -1,0 +1,37 @@
+<h1> Recursos</h1>
+
+ELIMINADOS
+
+<?php if($eliminados): ?>
+	<ul>
+		<?php foreach($eliminados as $eliminado): ?>
+		<li> 
+			ID: <?php echo $eliminado->id_elimina; ?> - 
+			ID Recurso: <?php echo $eliminado->id_recurso; ?> -
+			Nombre Recurso: <?php echo $eliminado->nombre_recurso; ?> -
+			Fecha eliminación: <?php echo $eliminado->fecha_elim; ?>  		
+		</li>
+		<?php endforeach; ?>
+	</ul>
+<?php else: ?>
+ Todavia no hay ningun recurso
+<?php endif; ?>
+
+AGREGADOS
+
+<?php if($ingresados): ?>
+	<ul>
+		<?php foreach($ingresados as $ingresa): ?>
+		<li> 
+			ID: <?php echo $ingresa->id_recurso; ?> - 
+			ID Recurso: <?php echo $ingresa->id_recurso; ?> -
+			Nombre Recurso: <?php echo $ingresa->nombre_recurso; ?> -
+			Fecha Ingreso: <?php echo $ingresa->fecha_ini; ?>  		
+		</li>
+		<?php endforeach; ?>
+	</ul>
+<?php else: ?>
+ Todavia no hay ningun recurso
+<?php endif; ?>
+
+<?php echo HTML::link('PDF4','Crear PDF'); ?>

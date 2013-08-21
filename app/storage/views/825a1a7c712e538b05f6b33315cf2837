@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8"/> 
+<title>  Página de los Recursos </title>  
+</head>
+
+<body>
+<?php $__env->startSection('content'); ?>
+<?php echo HTML::style('css/style.css'); ?>
+
+<h1> Recursos </h1>
+
+<table align="center" class="links">
+<tr> 
+    <td> <?php echo HTML::link('PDF2','Crear PDF'); ?>                       </td>
+    <td> <?php echo HTML::link('historial','Historial'); ?>                  </td> 
+    <td> <?php echo HTML::link('recursos/formulario','Crear un Recurso'); ?> </td> 
+
+</tr> 
+</table>
+
+            <?php if(Session::has('mensaje')): ?>
+ 
+            <?php echo Session::get('mensaje'); ?>
+                     
+            <?php endif; ?>
+
+
+<?php if($recursos): ?>
+<table class="datos" border="1">
+
+		<tr>
+			 <td> ID </td> 
+			 <td> Nombre</td>
+			 <td> Descrpción </td> 
+			 <td> Tipo </td>
+			 <td> Estado</td> 
+			 <td> Encargado </td> 
+		</tr>
+
+		<?php foreach($recursos as $recurso): ?>
+		<tr>
+			<td> <?php echo $recurso->id_recursos; ?>    </td>
+			<td> <?php echo $recurso->nombre_recurso; ?> </td>
+			<td> <?php echo $recurso->descripcion; ?>    </td>
+			<td> <?php echo $recurso->tipo; ?>			  </td>
+			<td> <?php if($recurso->estado): ?> 
+				 Activo 
+				<?php else: ?>  					
+				 No Activo  
+		    	<?php endif; ?>	 </td>
+			<td> <?php echo $recurso->id_encargado; ?> </td> 
+			<td> <?php echo HTML::link('recursos/delete/'.$recurso->id_recursos,'Borrar'); ?>   </td>
+			<td><?php echo HTML::link('recursos/update/'.$recurso->id_recursos,'Actualizar'); ?> </td> 
+		</tr>
+					<?php endforeach; ?> 
+</table>
+	
+<?php else: ?>
+ Todavia no hay ningun recurso
+<?php endif; ?>
+<?php $__env->stopSection(); ?>
+<?php $__env->stopSection(); ?>
+
+</body>
+</html>
+<?php echo $__env->make('admin.layout', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

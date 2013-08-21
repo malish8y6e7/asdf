@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="UTF-8"/> 
+<title>  Crear Usuarios </title>  
+</head>
+
+<body>
+<?php $__env->startSection('content'); ?>
+<?php echo HTML::style('css/style.css'); ?>
+
+<h1>Crear Usuario<h1>
+
+    <?php echo Form::open(); ?>
+
+<table>
+    <tr class="login">
+	   <td class="login"> <?php echo Form::label('nombre','Nombre:'); ?>                          </td>
+       <td class="login"> <?php echo Form::text('nombre'); ?>                                      </td>
+    </tr>
+    <tr class="login">  
+       <td class="login"> <?php echo Form::label('rut_label','RUT:'); ?>                          </td>
+       <td class="login"> <?php echo Form::text('rut'); ?> -  <?php echo Form::text('digito_verificador'); ?> </td>
+    </tr>
+    <tr class="login">
+        <td class="login"> <?php echo Form::label('password','Password:'); ?>                      </td> 
+        <td class="login"> <?php echo Form::password('password'); ?>                                </td>
+    </tr>
+    <tr class="login">
+        <td class="login">  <?php echo Form::label('conf_password','Confirmar Password:'); ?>      </td>
+        <td class="login">  <?php echo Form::password('password_confirmation'); ?>                  </td>
+    </tr>
+
+    <tr class="login"> 
+        <td class="login">  <?php echo Form::label('perfil_usuario','Perfil de Usuario:'); ?>      </td> 
+        <td class="login">  <?php echo Form::select('perfil', array(
+                                             2 => 'Usuario',
+                                              1 => 'Admnistrador'));; ?>                </td>
+    </tr>
+    <tr class="login">
+        <td class="login"> <?php echo Form::label('email','Email:'); ?>                             </td>
+        <td class="login"> <?php echo Form::text('email'); ?>                                       </td>
+    </tr>   
+    <tr class="login">
+        <td class="login"> <?php echo Form::label('telefono','Telefono:'); ?>                       </td>
+        <td class="login"> <?php echo Form::text('telefono'); ?>                                     </td>
+
+    <tr class="login">
+        <td class="login">	<?php echo Form::submit('Crear usuario'); ?>                             </td>
+    </tr>
+
+</table>
+    <?php echo Form::close(); ?>
+            <?php if(Session::has('mensaje')): ?>
+ 
+            <?php echo Session::get('mensaje'); ?>
+                     
+            <?php endif; ?>
+
+    <?php if($errors->has()): ?>  
+    <ul>
+            <?php echo $errors->first('nombre','<li> :message </li>'); ?>
+            <?php echo $errors->first('rut','<li> :message </li>'); ?>
+            <?php echo $errors->first('digito_verificador','<li> :message </li>'); ?>
+            <?php echo $errors->first('password','<li> :message </li>'); ?>
+            <?php echo $errors->first('password_confirmation','<li> :message </li>'); ?>
+            <?php echo $errors->first('perfil','<li> :message </li>'); ?>
+            <?php echo $errors->first('email','<li> :message </li>'); ?>
+            <?php echo $errors->first('telefono','<li> :message </li>'); ?>
+    </ul>	
+
+
+    <?php endif; ?>
+    <?php $__env->stopSection(); ?>
+    <?php $__env->stopSection(); ?>
+</body>
+</html>
+
+<?php echo $__env->make('admin.layout', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

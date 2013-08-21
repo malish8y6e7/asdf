@@ -1,0 +1,42 @@
+[2013-07-08 16:17:06] log.ERROR: exception 'ErrorException' with message 'Undefined index: collation' in C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connectors\MySqlConnector.php:22
+Stack trace:
+#0 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connectors\MySqlConnector.php(22): Illuminate\Exception\Handler->handleError(8, 'Undefined index...', 'C:\wamp\www\lar...', 22, Array)
+#1 C:\wamp\www\laravel\bootstrap\compiled.php(6352): Illuminate\Database\Connectors\MySqlConnector->connect(Array)
+#2 C:\wamp\www\laravel\bootstrap\compiled.php(6283): Illuminate\Database\Connectors\ConnectionFactory->make(Array, 'mysql')
+#3 C:\wamp\www\laravel\bootstrap\compiled.php(6267): Illuminate\Database\DatabaseManager->makeConnection('mysql')
+#4 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Migrations\DatabaseMigrationRepository.php(170): Illuminate\Database\DatabaseManager->connection(NULL)
+#5 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Migrations\DatabaseMigrationRepository.php(116): Illuminate\Database\Migrations\DatabaseMigrationRepository->getConnection()
+#6 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Console\Migrations\InstallCommand.php(52): Illuminate\Database\Migrations\DatabaseMigrationRepository->createRepository()
+#7 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Console\Command.php(108): Illuminate\Database\Console\Migrations\InstallCommand->fire()
+#8 C:\wamp\www\laravel\vendor\symfony\console\Symfony\Component\Console\Command\Command.php(244): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#9 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Console\Command.php(96): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#10 C:\wamp\www\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(899): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 C:\wamp\www\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(191): Symfony\Component\Console\Application->doRunCommand(Object(Illuminate\Database\Console\Migrations\InstallCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 C:\wamp\www\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(121): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 C:\wamp\www\laravel\artisan(59): Symfony\Component\Console\Application->run()
+#14 {main} [] []
+[2013-07-08 16:21:20] log.ERROR: exception 'ErrorException' with message 'Undefined index: collation' in C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connectors\MySqlConnector.php:22
+Stack trace:
+#0 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connectors\MySqlConnector.php(22): Illuminate\Exception\Handler->handleError(8, 'Undefined index...', 'C:\wamp\www\lar...', 22, Array)
+#1 C:\wamp\www\laravel\bootstrap\compiled.php(6352): Illuminate\Database\Connectors\MySqlConnector->connect(Array)
+#2 C:\wamp\www\laravel\bootstrap\compiled.php(6283): Illuminate\Database\Connectors\ConnectionFactory->make(Array, 'mysql')
+#3 C:\wamp\www\laravel\bootstrap\compiled.php(6267): Illuminate\Database\DatabaseManager->makeConnection('mysql')
+#4 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Migrations\DatabaseMigrationRepository.php(170): Illuminate\Database\DatabaseManager->connection(NULL)
+#5 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Migrations\DatabaseMigrationRepository.php(116): Illuminate\Database\Migrations\DatabaseMigrationRepository->getConnection()
+#6 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Console\Migrations\InstallCommand.php(52): Illuminate\Database\Migrations\DatabaseMigrationRepository->createRepository()
+#7 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Console\Command.php(108): Illuminate\Database\Console\Migrations\InstallCommand->fire()
+#8 C:\wamp\www\laravel\vendor\symfony\console\Symfony\Component\Console\Command\Command.php(244): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#9 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Console\Command.php(96): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#10 C:\wamp\www\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(899): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 C:\wamp\www\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(191): Symfony\Component\Console\Application->doRunCommand(Object(Illuminate\Database\Console\Migrations\InstallCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 C:\wamp\www\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(121): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 C:\wamp\www\laravel\artisan(59): Symfony\Component\Console\Application->run()
+#14 {main} [] []
+[2013-07-08 16:38:27] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'schema' not found' in C:\wamp\www\laravel\app\database\migrations\2013_07_08_162417_create_users_table.php:14
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-07-08 16:40:53] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'schema' not found' in C:\wamp\www\laravel\app\database\migrations\2013_07_08_162417_create_users_table.php:14
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []

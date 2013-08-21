@@ -1,0 +1,555 @@
+[2013-07-08 17:30:06] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected '}'' in C:\wamp\www\laravel\app\models\User.php:64
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-07-08 17:31:44] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected '}'' in C:\wamp\www\laravel\app\models\User.php:64
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-07-08 17:33:44] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected '}'' in C:\wamp\www\laravel\app\models\User.php:65
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-07-08 17:34:45] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected '}'' in C:\wamp\www\laravel\app\models\User.php:65
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-07-08 17:35:59] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected '}'' in C:\wamp\www\laravel\app\models\User.php:61
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-07-08 17:36:01] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected '}'' in C:\wamp\www\laravel\app\models\User.php:61
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-07-08 17:38:54] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected '}'' in C:\wamp\www\laravel\app\models\User.php:58
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-07-08 17:44:43] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected '}'' in C:\wamp\www\laravel\app\models\User.php:64
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-07-08 17:46:42] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected '}'' in C:\wamp\www\laravel\app\models\User.php:64
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-07-08 17:46:44] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected '}'' in C:\wamp\www\laravel\app\models\User.php:64
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-07-08 17:49:04] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected '}'' in C:\wamp\www\laravel\app\models\User.php:64
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-07-08 17:49:44] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected '}'' in C:\wamp\www\laravel\app\models\User.php:64
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-07-08 17:49:46] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected '}'' in C:\wamp\www\laravel\app\models\User.php:64
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-07-08 17:51:33] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected '}'' in C:\wamp\www\laravel\app\models\User.php:62
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-07-08 17:51:56] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected '}'' in C:\wamp\www\laravel\app\models\User.php:62
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-07-08 17:51:57] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected '}'' in C:\wamp\www\laravel\app\models\User.php:62
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-07-08 17:58:21] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected '{'' in C:\wamp\www\laravel\app\routes.php:40
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-07-08 17:58:36] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected '}'' in C:\wamp\www\laravel\app\routes.php:43
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-07-08 18:11:17] log.ERROR: exception 'ErrorException' with message 'Missing argument 2 for Illuminate\Routing\Router::controller(), called in C:\wamp\www\laravel\bootstrap\compiled.php on line 3320 and defined' in C:\wamp\www\laravel\bootstrap\compiled.php:4466
+Stack trace:
+#0 C:\wamp\www\laravel\bootstrap\compiled.php(4466): Illuminate\Exception\Handler->handleError(2, 'Missing argumen...', 'C:\wamp\www\lar...', 4466, Array)
+#1 C:\wamp\www\laravel\bootstrap\compiled.php(3320): Illuminate\Routing\Router->controller('UserController')
+#2 C:\wamp\www\laravel\app\routes.php(46): Illuminate\Support\Facades\Facade::__callStatic('controller', Array)
+#3 C:\wamp\www\laravel\app\routes.php(46): Illuminate\Support\Facades\Route::controller('UserController')
+#4 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Foundation\start.php(251): require('C:\wamp\www\lar...')
+#5 C:\wamp\www\laravel\bootstrap\start.php(61): require('C:\wamp\www\lar...')
+#6 C:\wamp\www\laravel\public\index.php(35): require_once('C:\wamp\www\lar...')
+#7 {main} [] []
+[2013-07-08 18:11:23] log.ERROR: exception 'ErrorException' with message 'Missing argument 2 for Illuminate\Routing\Router::controller(), called in C:\wamp\www\laravel\bootstrap\compiled.php on line 3320 and defined' in C:\wamp\www\laravel\bootstrap\compiled.php:4466
+Stack trace:
+#0 C:\wamp\www\laravel\bootstrap\compiled.php(4466): Illuminate\Exception\Handler->handleError(2, 'Missing argumen...', 'C:\wamp\www\lar...', 4466, Array)
+#1 C:\wamp\www\laravel\bootstrap\compiled.php(3320): Illuminate\Routing\Router->controller('UserController')
+#2 C:\wamp\www\laravel\app\routes.php(46): Illuminate\Support\Facades\Facade::__callStatic('controller', Array)
+#3 C:\wamp\www\laravel\app\routes.php(46): Illuminate\Support\Facades\Route::controller('UserController')
+#4 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Foundation\start.php(251): require('C:\wamp\www\lar...')
+#5 C:\wamp\www\laravel\bootstrap\start.php(61): require('C:\wamp\www\lar...')
+#6 C:\wamp\www\laravel\public\index.php(35): require_once('C:\wamp\www\lar...')
+#7 {main} [] []
+[2013-07-08 18:11:40] log.ERROR: exception 'ErrorException' with message 'Missing argument 2 for Illuminate\Routing\Router::controller(), called in C:\wamp\www\laravel\bootstrap\compiled.php on line 3320 and defined' in C:\wamp\www\laravel\bootstrap\compiled.php:4466
+Stack trace:
+#0 C:\wamp\www\laravel\bootstrap\compiled.php(4466): Illuminate\Exception\Handler->handleError(2, 'Missing argumen...', 'C:\wamp\www\lar...', 4466, Array)
+#1 C:\wamp\www\laravel\bootstrap\compiled.php(3320): Illuminate\Routing\Router->controller('UsersController')
+#2 C:\wamp\www\laravel\app\routes.php(46): Illuminate\Support\Facades\Facade::__callStatic('controller', Array)
+#3 C:\wamp\www\laravel\app\routes.php(46): Illuminate\Support\Facades\Route::controller('UsersController')
+#4 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Foundation\start.php(251): require('C:\wamp\www\lar...')
+#5 C:\wamp\www\laravel\bootstrap\start.php(61): require('C:\wamp\www\lar...')
+#6 C:\wamp\www\laravel\public\index.php(35): require_once('C:\wamp\www\lar...')
+#7 {main} [] []
+[2013-07-08 18:14:29] log.ERROR: exception 'ErrorException' with message 'Missing argument 2 for Illuminate\Routing\Router::controller(), called in C:\wamp\www\laravel\bootstrap\compiled.php on line 3320 and defined' in C:\wamp\www\laravel\bootstrap\compiled.php:4466
+Stack trace:
+#0 C:\wamp\www\laravel\bootstrap\compiled.php(4466): Illuminate\Exception\Handler->handleError(2, 'Missing argumen...', 'C:\wamp\www\lar...', 4466, Array)
+#1 C:\wamp\www\laravel\bootstrap\compiled.php(3320): Illuminate\Routing\Router->controller('UsersController')
+#2 C:\wamp\www\laravel\app\routes.php(46): Illuminate\Support\Facades\Facade::__callStatic('controller', Array)
+#3 C:\wamp\www\laravel\app\routes.php(46): Illuminate\Support\Facades\Route::controller('UsersController')
+#4 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Foundation\start.php(251): require('C:\wamp\www\lar...')
+#5 C:\wamp\www\laravel\bootstrap\start.php(61): require('C:\wamp\www\lar...')
+#6 C:\wamp\www\laravel\public\index.php(35): require_once('C:\wamp\www\lar...')
+#7 {main} [] []
+[2013-07-08 18:14:41] log.ERROR: exception 'ErrorException' with message 'Missing argument 2 for Illuminate\Routing\Router::controller(), called in C:\wamp\www\laravel\bootstrap\compiled.php on line 3320 and defined' in C:\wamp\www\laravel\bootstrap\compiled.php:4466
+Stack trace:
+#0 C:\wamp\www\laravel\bootstrap\compiled.php(4466): Illuminate\Exception\Handler->handleError(2, 'Missing argumen...', 'C:\wamp\www\lar...', 4466, Array)
+#1 C:\wamp\www\laravel\bootstrap\compiled.php(3320): Illuminate\Routing\Router->controller('UsersController')
+#2 C:\wamp\www\laravel\app\routes.php(46): Illuminate\Support\Facades\Facade::__callStatic('controller', Array)
+#3 C:\wamp\www\laravel\app\routes.php(46): Illuminate\Support\Facades\Route::controller('UsersController')
+#4 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Foundation\start.php(251): require('C:\wamp\www\lar...')
+#5 C:\wamp\www\laravel\bootstrap\start.php(61): require('C:\wamp\www\lar...')
+#6 C:\wamp\www\laravel\public\index.php(35): require_once('C:\wamp\www\lar...')
+#7 {main} [] []
+[2013-07-08 18:14:46] log.ERROR: exception 'ErrorException' with message 'Missing argument 2 for Illuminate\Routing\Router::controller(), called in C:\wamp\www\laravel\bootstrap\compiled.php on line 3320 and defined' in C:\wamp\www\laravel\bootstrap\compiled.php:4466
+Stack trace:
+#0 C:\wamp\www\laravel\bootstrap\compiled.php(4466): Illuminate\Exception\Handler->handleError(2, 'Missing argumen...', 'C:\wamp\www\lar...', 4466, Array)
+#1 C:\wamp\www\laravel\bootstrap\compiled.php(3320): Illuminate\Routing\Router->controller('UsersController')
+#2 C:\wamp\www\laravel\app\routes.php(46): Illuminate\Support\Facades\Facade::__callStatic('controller', Array)
+#3 C:\wamp\www\laravel\app\routes.php(46): Illuminate\Support\Facades\Route::controller('UsersController')
+#4 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Foundation\start.php(251): require('C:\wamp\www\lar...')
+#5 C:\wamp\www\laravel\bootstrap\start.php(61): require('C:\wamp\www\lar...')
+#6 C:\wamp\www\laravel\public\index.php(35): require_once('C:\wamp\www\lar...')
+#7 {main} [] []
+[2013-07-08 18:14:50] log.ERROR: exception 'ErrorException' with message 'Missing argument 2 for Illuminate\Routing\Router::controller(), called in C:\wamp\www\laravel\bootstrap\compiled.php on line 3320 and defined' in C:\wamp\www\laravel\bootstrap\compiled.php:4466
+Stack trace:
+#0 C:\wamp\www\laravel\bootstrap\compiled.php(4466): Illuminate\Exception\Handler->handleError(2, 'Missing argumen...', 'C:\wamp\www\lar...', 4466, Array)
+#1 C:\wamp\www\laravel\bootstrap\compiled.php(3320): Illuminate\Routing\Router->controller('UsersController')
+#2 C:\wamp\www\laravel\app\routes.php(46): Illuminate\Support\Facades\Facade::__callStatic('controller', Array)
+#3 C:\wamp\www\laravel\app\routes.php(46): Illuminate\Support\Facades\Route::controller('UsersController')
+#4 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Foundation\start.php(251): require('C:\wamp\www\lar...')
+#5 C:\wamp\www\laravel\bootstrap\start.php(61): require('C:\wamp\www\lar...')
+#6 C:\wamp\www\laravel\public\index.php(35): require_once('C:\wamp\www\lar...')
+#7 {main} [] []
+[2013-07-08 18:15:28] log.ERROR: exception 'ErrorException' with message 'Missing argument 2 for Illuminate\Routing\Router::controller(), called in C:\wamp\www\laravel\bootstrap\compiled.php on line 3320 and defined' in C:\wamp\www\laravel\bootstrap\compiled.php:4466
+Stack trace:
+#0 C:\wamp\www\laravel\bootstrap\compiled.php(4466): Illuminate\Exception\Handler->handleError(2, 'Missing argumen...', 'C:\wamp\www\lar...', 4466, Array)
+#1 C:\wamp\www\laravel\bootstrap\compiled.php(3320): Illuminate\Routing\Router->controller('UsersController')
+#2 C:\wamp\www\laravel\app\routes.php(46): Illuminate\Support\Facades\Facade::__callStatic('controller', Array)
+#3 C:\wamp\www\laravel\app\routes.php(46): Illuminate\Support\Facades\Route::controller('UsersController')
+#4 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Foundation\start.php(251): require('C:\wamp\www\lar...')
+#5 C:\wamp\www\laravel\bootstrap\start.php(61): require('C:\wamp\www\lar...')
+#6 C:\wamp\www\laravel\public\index.php(35): require_once('C:\wamp\www\lar...')
+#7 {main} [] []
+[2013-07-08 18:17:33] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\wamp\www\laravel\bootstrap\compiled.php:4929
+Stack trace:
+#0 C:\wamp\www\laravel\bootstrap\compiled.php(4774): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\wamp\www\laravel\bootstrap\compiled.php(4762): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\wamp\www\laravel\bootstrap\compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\wamp\www\laravel\bootstrap\compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\wamp\www\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-07-08 18:48:39] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected '::' (T_PAAMAYIM_NEKUDOTAYIM), expecting '('' in C:\wamp\www\laravel\app\controllers\UserController.php:12
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-07-08 18:48:42] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected '::' (T_PAAMAYIM_NEKUDOTAYIM), expecting '('' in C:\wamp\www\laravel\app\controllers\UserController.php:12
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-07-08 19:02:38] log.ERROR: exception 'ErrorException' with message 'Use of undefined constant email - assumed 'email'' in C:\wamp\www\laravel\app\storage\views\c848758241c7cff5525d8f2d6db35c1f:7
+Stack trace:
+#0 C:\wamp\www\laravel\app\storage\views\c848758241c7cff5525d8f2d6db35c1f(7): Illuminate\Exception\Handler->handleError(8, 'Use of undefine...', 'C:\wamp\www\lar...', 7, Array)
+#1 C:\wamp\www\laravel\bootstrap\compiled.php(9033): include('C:\wamp\www\lar...')
+#2 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\View\Engines\CompilerEngine.php(45): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\wamp\www\lar...', Array)
+#3 C:\wamp\www\laravel\bootstrap\compiled.php(8926): Illuminate\View\Engines\CompilerEngine->get('C:\wamp\www\lar...', Array)
+#4 C:\wamp\www\laravel\bootstrap\compiled.php(8917): Illuminate\View\View->getContents()
+#5 C:\wamp\www\laravel\bootstrap\compiled.php(9511): Illuminate\View\View->render()
+#6 C:\wamp\www\laravel\bootstrap\compiled.php(9059): Illuminate\Http\Response->setContent(Object(Illuminate\View\View))
+#7 C:\wamp\www\laravel\bootstrap\compiled.php(4922): Symfony\Component\HttpFoundation\Response->__construct(Object(Illuminate\View\View))
+#8 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(156): Illuminate\Routing\Router->prepare(Object(Illuminate\View\View), Object(Illuminate\Http\Request))
+#9 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(126): Illuminate\Routing\Controllers\Controller->processResponse(Object(Illuminate\Routing\Router), 'getIndex', Object(Illuminate\View\View))
+#10 C:\wamp\www\laravel\bootstrap\compiled.php(4752): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'getIndex', Array)
+#11 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#12 C:\wamp\www\laravel\bootstrap\compiled.php(7821): call_user_func_array(Object(Closure), Array)
+#13 C:\wamp\www\laravel\bootstrap\compiled.php(7808): Illuminate\Routing\Route->callCallable()
+#14 C:\wamp\www\laravel\bootstrap\compiled.php(4763): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#15 C:\wamp\www\laravel\bootstrap\compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#16 C:\wamp\www\laravel\bootstrap\compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#17 C:\wamp\www\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#18 {main} [] []
+[2013-07-08 19:11:42] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\wamp\www\laravel\bootstrap\compiled.php:4929
+Stack trace:
+#0 C:\wamp\www\laravel\bootstrap\compiled.php(4774): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\wamp\www\laravel\bootstrap\compiled.php(4762): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\wamp\www\laravel\bootstrap\compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\wamp\www\laravel\bootstrap\compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\wamp\www\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-07-08 19:11:57] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\wamp\www\laravel\bootstrap\compiled.php:4929
+Stack trace:
+#0 C:\wamp\www\laravel\bootstrap\compiled.php(4774): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\wamp\www\laravel\bootstrap\compiled.php(4762): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\wamp\www\laravel\bootstrap\compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\wamp\www\laravel\bootstrap\compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\wamp\www\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-07-08 19:24:06] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\wamp\www\laravel\bootstrap\compiled.php:4929
+Stack trace:
+#0 C:\wamp\www\laravel\bootstrap\compiled.php(4774): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\wamp\www\laravel\bootstrap\compiled.php(4762): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\wamp\www\laravel\bootstrap\compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\wamp\www\laravel\bootstrap\compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\wamp\www\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-07-08 19:24:29] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\wamp\www\laravel\bootstrap\compiled.php:4929
+Stack trace:
+#0 C:\wamp\www\laravel\bootstrap\compiled.php(4774): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\wamp\www\laravel\bootstrap\compiled.php(4762): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\wamp\www\laravel\bootstrap\compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\wamp\www\laravel\bootstrap\compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\wamp\www\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-07-08 19:26:03] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Controller method not found.' in C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php:290
+Stack trace:
+#0 [internal function]: Illuminate\Routing\Controllers\Controller->missingMethod(Array)
+#1 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#2 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('missingMethod', Array)
+#3 C:\wamp\www\laravel\bootstrap\compiled.php(4752): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'missingMethod', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}(Array)
+#5 C:\wamp\www\laravel\bootstrap\compiled.php(7821): call_user_func_array(Object(Closure), Array)
+#6 C:\wamp\www\laravel\bootstrap\compiled.php(7808): Illuminate\Routing\Route->callCallable()
+#7 C:\wamp\www\laravel\bootstrap\compiled.php(4763): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 C:\wamp\www\laravel\bootstrap\compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 C:\wamp\www\laravel\bootstrap\compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 C:\wamp\www\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-07-08 19:26:21] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Controller method not found.' in C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php:290
+Stack trace:
+#0 [internal function]: Illuminate\Routing\Controllers\Controller->missingMethod(Array)
+#1 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#2 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('missingMethod', Array)
+#3 C:\wamp\www\laravel\bootstrap\compiled.php(4752): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'missingMethod', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}(Array)
+#5 C:\wamp\www\laravel\bootstrap\compiled.php(7821): call_user_func_array(Object(Closure), Array)
+#6 C:\wamp\www\laravel\bootstrap\compiled.php(7808): Illuminate\Routing\Route->callCallable()
+#7 C:\wamp\www\laravel\bootstrap\compiled.php(4763): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 C:\wamp\www\laravel\bootstrap\compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 C:\wamp\www\laravel\bootstrap\compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 C:\wamp\www\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-07-08 19:26:22] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Controller method not found.' in C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php:290
+Stack trace:
+#0 [internal function]: Illuminate\Routing\Controllers\Controller->missingMethod(Array)
+#1 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#2 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('missingMethod', Array)
+#3 C:\wamp\www\laravel\bootstrap\compiled.php(4752): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'missingMethod', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}(Array)
+#5 C:\wamp\www\laravel\bootstrap\compiled.php(7821): call_user_func_array(Object(Closure), Array)
+#6 C:\wamp\www\laravel\bootstrap\compiled.php(7808): Illuminate\Routing\Route->callCallable()
+#7 C:\wamp\www\laravel\bootstrap\compiled.php(4763): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 C:\wamp\www\laravel\bootstrap\compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 C:\wamp\www\laravel\bootstrap\compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 C:\wamp\www\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-07-08 19:26:22] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Controller method not found.' in C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php:290
+Stack trace:
+#0 [internal function]: Illuminate\Routing\Controllers\Controller->missingMethod(Array)
+#1 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#2 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('missingMethod', Array)
+#3 C:\wamp\www\laravel\bootstrap\compiled.php(4752): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'missingMethod', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}(Array)
+#5 C:\wamp\www\laravel\bootstrap\compiled.php(7821): call_user_func_array(Object(Closure), Array)
+#6 C:\wamp\www\laravel\bootstrap\compiled.php(7808): Illuminate\Routing\Route->callCallable()
+#7 C:\wamp\www\laravel\bootstrap\compiled.php(4763): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 C:\wamp\www\laravel\bootstrap\compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 C:\wamp\www\laravel\bootstrap\compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 C:\wamp\www\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-07-08 19:26:22] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Controller method not found.' in C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php:290
+Stack trace:
+#0 [internal function]: Illuminate\Routing\Controllers\Controller->missingMethod(Array)
+#1 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#2 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('missingMethod', Array)
+#3 C:\wamp\www\laravel\bootstrap\compiled.php(4752): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'missingMethod', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}(Array)
+#5 C:\wamp\www\laravel\bootstrap\compiled.php(7821): call_user_func_array(Object(Closure), Array)
+#6 C:\wamp\www\laravel\bootstrap\compiled.php(7808): Illuminate\Routing\Route->callCallable()
+#7 C:\wamp\www\laravel\bootstrap\compiled.php(4763): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 C:\wamp\www\laravel\bootstrap\compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 C:\wamp\www\laravel\bootstrap\compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 C:\wamp\www\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-07-08 19:26:22] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Controller method not found.' in C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php:290
+Stack trace:
+#0 [internal function]: Illuminate\Routing\Controllers\Controller->missingMethod(Array)
+#1 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#2 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('missingMethod', Array)
+#3 C:\wamp\www\laravel\bootstrap\compiled.php(4752): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'missingMethod', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}(Array)
+#5 C:\wamp\www\laravel\bootstrap\compiled.php(7821): call_user_func_array(Object(Closure), Array)
+#6 C:\wamp\www\laravel\bootstrap\compiled.php(7808): Illuminate\Routing\Route->callCallable()
+#7 C:\wamp\www\laravel\bootstrap\compiled.php(4763): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 C:\wamp\www\laravel\bootstrap\compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 C:\wamp\www\laravel\bootstrap\compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 C:\wamp\www\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-07-08 19:26:22] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Controller method not found.' in C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php:290
+Stack trace:
+#0 [internal function]: Illuminate\Routing\Controllers\Controller->missingMethod(Array)
+#1 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#2 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('missingMethod', Array)
+#3 C:\wamp\www\laravel\bootstrap\compiled.php(4752): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'missingMethod', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}(Array)
+#5 C:\wamp\www\laravel\bootstrap\compiled.php(7821): call_user_func_array(Object(Closure), Array)
+#6 C:\wamp\www\laravel\bootstrap\compiled.php(7808): Illuminate\Routing\Route->callCallable()
+#7 C:\wamp\www\laravel\bootstrap\compiled.php(4763): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 C:\wamp\www\laravel\bootstrap\compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 C:\wamp\www\laravel\bootstrap\compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 C:\wamp\www\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-07-08 19:26:22] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Controller method not found.' in C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php:290
+Stack trace:
+#0 [internal function]: Illuminate\Routing\Controllers\Controller->missingMethod(Array)
+#1 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#2 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('missingMethod', Array)
+#3 C:\wamp\www\laravel\bootstrap\compiled.php(4752): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'missingMethod', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}(Array)
+#5 C:\wamp\www\laravel\bootstrap\compiled.php(7821): call_user_func_array(Object(Closure), Array)
+#6 C:\wamp\www\laravel\bootstrap\compiled.php(7808): Illuminate\Routing\Route->callCallable()
+#7 C:\wamp\www\laravel\bootstrap\compiled.php(4763): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 C:\wamp\www\laravel\bootstrap\compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 C:\wamp\www\laravel\bootstrap\compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 C:\wamp\www\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-07-08 19:26:23] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Controller method not found.' in C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php:290
+Stack trace:
+#0 [internal function]: Illuminate\Routing\Controllers\Controller->missingMethod(Array)
+#1 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#2 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('missingMethod', Array)
+#3 C:\wamp\www\laravel\bootstrap\compiled.php(4752): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'missingMethod', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}(Array)
+#5 C:\wamp\www\laravel\bootstrap\compiled.php(7821): call_user_func_array(Object(Closure), Array)
+#6 C:\wamp\www\laravel\bootstrap\compiled.php(7808): Illuminate\Routing\Route->callCallable()
+#7 C:\wamp\www\laravel\bootstrap\compiled.php(4763): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 C:\wamp\www\laravel\bootstrap\compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 C:\wamp\www\laravel\bootstrap\compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 C:\wamp\www\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-07-08 19:26:23] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Controller method not found.' in C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php:290
+Stack trace:
+#0 [internal function]: Illuminate\Routing\Controllers\Controller->missingMethod(Array)
+#1 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#2 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('missingMethod', Array)
+#3 C:\wamp\www\laravel\bootstrap\compiled.php(4752): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'missingMethod', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}(Array)
+#5 C:\wamp\www\laravel\bootstrap\compiled.php(7821): call_user_func_array(Object(Closure), Array)
+#6 C:\wamp\www\laravel\bootstrap\compiled.php(7808): Illuminate\Routing\Route->callCallable()
+#7 C:\wamp\www\laravel\bootstrap\compiled.php(4763): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 C:\wamp\www\laravel\bootstrap\compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 C:\wamp\www\laravel\bootstrap\compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 C:\wamp\www\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-07-08 19:27:36] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Controller method not found.' in C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php:290
+Stack trace:
+#0 [internal function]: Illuminate\Routing\Controllers\Controller->missingMethod(Array)
+#1 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#2 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('missingMethod', Array)
+#3 C:\wamp\www\laravel\bootstrap\compiled.php(4752): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'missingMethod', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}(Array)
+#5 C:\wamp\www\laravel\bootstrap\compiled.php(7821): call_user_func_array(Object(Closure), Array)
+#6 C:\wamp\www\laravel\bootstrap\compiled.php(7808): Illuminate\Routing\Route->callCallable()
+#7 C:\wamp\www\laravel\bootstrap\compiled.php(4763): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 C:\wamp\www\laravel\bootstrap\compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 C:\wamp\www\laravel\bootstrap\compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 C:\wamp\www\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-07-08 19:27:47] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Controller method not found.' in C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php:290
+Stack trace:
+#0 [internal function]: Illuminate\Routing\Controllers\Controller->missingMethod(Array)
+#1 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#2 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('missingMethod', Array)
+#3 C:\wamp\www\laravel\bootstrap\compiled.php(4752): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'missingMethod', Array)
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}(Array)
+#5 C:\wamp\www\laravel\bootstrap\compiled.php(7821): call_user_func_array(Object(Closure), Array)
+#6 C:\wamp\www\laravel\bootstrap\compiled.php(7808): Illuminate\Routing\Route->callCallable()
+#7 C:\wamp\www\laravel\bootstrap\compiled.php(4763): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 C:\wamp\www\laravel\bootstrap\compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 C:\wamp\www\laravel\bootstrap\compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 C:\wamp\www\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-07-08 19:35:34] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\wamp\www\laravel\bootstrap\compiled.php:4929
+Stack trace:
+#0 C:\wamp\www\laravel\bootstrap\compiled.php(4774): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\wamp\www\laravel\bootstrap\compiled.php(4762): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\wamp\www\laravel\bootstrap\compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\wamp\www\laravel\bootstrap\compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\wamp\www\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-07-08 19:53:55] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\wamp\www\laravel\bootstrap\compiled.php:4929
+Stack trace:
+#0 C:\wamp\www\laravel\bootstrap\compiled.php(4774): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\wamp\www\laravel\bootstrap\compiled.php(4762): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\wamp\www\laravel\bootstrap\compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\wamp\www\laravel\bootstrap\compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\wamp\www\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-07-08 19:54:00] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\wamp\www\laravel\bootstrap\compiled.php:4929
+Stack trace:
+#0 C:\wamp\www\laravel\bootstrap\compiled.php(4774): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\wamp\www\laravel\bootstrap\compiled.php(4762): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\wamp\www\laravel\bootstrap\compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\wamp\www\laravel\bootstrap\compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\wamp\www\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-07-08 19:55:05] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\wamp\www\laravel\bootstrap\compiled.php:4929
+Stack trace:
+#0 C:\wamp\www\laravel\bootstrap\compiled.php(4774): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\wamp\www\laravel\bootstrap\compiled.php(4762): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\wamp\www\laravel\bootstrap\compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\wamp\www\laravel\bootstrap\compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\wamp\www\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-07-08 19:55:20] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\wamp\www\laravel\bootstrap\compiled.php:4929
+Stack trace:
+#0 C:\wamp\www\laravel\bootstrap\compiled.php(4774): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\wamp\www\laravel\bootstrap\compiled.php(4762): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\wamp\www\laravel\bootstrap\compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\wamp\www\laravel\bootstrap\compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\wamp\www\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-07-08 19:55:26] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\wamp\www\laravel\bootstrap\compiled.php:4929
+Stack trace:
+#0 C:\wamp\www\laravel\bootstrap\compiled.php(4774): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\wamp\www\laravel\bootstrap\compiled.php(4762): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\wamp\www\laravel\bootstrap\compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\wamp\www\laravel\bootstrap\compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\wamp\www\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-07-08 20:00:16] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected '/'' in C:\wamp\www\laravel\app\storage\views\c848758241c7cff5525d8f2d6db35c1f:8
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-07-08 20:00:32] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected '/'' in C:\wamp\www\laravel\app\storage\views\c848758241c7cff5525d8f2d6db35c1f:8
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-07-08 20:00:34] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected '/'' in C:\wamp\www\laravel\app\storage\views\c848758241c7cff5525d8f2d6db35c1f:8
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-07-08 20:00:39] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected '/'' in C:\wamp\www\laravel\app\storage\views\c848758241c7cff5525d8f2d6db35c1f:8
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-07-08 20:00:55] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected '/'' in C:\wamp\www\laravel\app\storage\views\c848758241c7cff5525d8f2d6db35c1f:8
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-07-08 20:00:57] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected '/'' in C:\wamp\www\laravel\app\storage\views\c848758241c7cff5525d8f2d6db35c1f:8
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-07-08 20:13:29] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'public' (T_PUBLIC)' in C:\wamp\www\laravel\app\controllers\UserController.php:76
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-07-08 20:15:04] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'public' (T_PUBLIC)' in C:\wamp\www\laravel\app\controllers\UserController.php:76
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-07-08 20:17:00] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'public' (T_PUBLIC)' in C:\wamp\www\laravel\app\controllers\UserController.php:76
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-07-08 20:18:28] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'view' not found' in C:\wamp\www\laravel\app\controllers\UserController.php:71
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-07-08 20:18:50] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'view' not found' in C:\wamp\www\laravel\app\controllers\UserController.php:71
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-07-08 20:20:05] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'view' not found' in C:\wamp\www\laravel\app\controllers\UserController.php:71
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-07-08 20:20:07] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'view' not found' in C:\wamp\www\laravel\app\controllers\UserController.php:71
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-07-08 20:20:50] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'form' not found' in C:\wamp\www\laravel\app\storage\views\48992ff06e419e835bc147e2bb07b1ab:3
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-07-08 20:21:09] log.ERROR: exception 'BadMethodCallException' with message 'Method submir does not exist.' in C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Html\FormBuilder.php:830
+Stack trace:
+#0 C:\wamp\www\laravel\bootstrap\compiled.php(3320): Illuminate\Html\FormBuilder->__call('submir', Array)
+#1 C:\wamp\www\laravel\bootstrap\compiled.php(3320): Illuminate\Html\FormBuilder->submir('Actualizar usua...')
+#2 C:\wamp\www\laravel\app\storage\views\48992ff06e419e835bc147e2bb07b1ab(8): Illuminate\Support\Facades\Facade::__callStatic('submir', Array)
+#3 C:\wamp\www\laravel\app\storage\views\48992ff06e419e835bc147e2bb07b1ab(8): Illuminate\Support\Facades\Form::submir('Actualizar usua...')
+#4 C:\wamp\www\laravel\bootstrap\compiled.php(9033): include('C:\wamp\www\lar...')
+#5 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\View\Engines\CompilerEngine.php(45): Illuminate\View\Engines\PhpEngine->evaluatePath('C:\wamp\www\lar...', Array)
+#6 C:\wamp\www\laravel\bootstrap\compiled.php(8926): Illuminate\View\Engines\CompilerEngine->get('C:\wamp\www\lar...', Array)
+#7 C:\wamp\www\laravel\bootstrap\compiled.php(8917): Illuminate\View\View->getContents()
+#8 C:\wamp\www\laravel\bootstrap\compiled.php(9511): Illuminate\View\View->render()
+#9 C:\wamp\www\laravel\bootstrap\compiled.php(9059): Illuminate\Http\Response->setContent(Object(Illuminate\View\View))
+#10 C:\wamp\www\laravel\bootstrap\compiled.php(4922): Symfony\Component\HttpFoundation\Response->__construct(Object(Illuminate\View\View))
+#11 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(156): Illuminate\Routing\Router->prepare(Object(Illuminate\View\View), Object(Illuminate\Http\Request))
+#12 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(126): Illuminate\Routing\Controllers\Controller->processResponse(Object(Illuminate\Routing\Router), 'getUpdate', Object(Illuminate\View\View))
+#13 C:\wamp\www\laravel\bootstrap\compiled.php(4752): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'getUpdate', Array)
+#14 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('1')
+#15 C:\wamp\www\laravel\bootstrap\compiled.php(7821): call_user_func_array(Object(Closure), Array)
+#16 C:\wamp\www\laravel\bootstrap\compiled.php(7808): Illuminate\Routing\Route->callCallable()
+#17 C:\wamp\www\laravel\bootstrap\compiled.php(4763): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#18 C:\wamp\www\laravel\bootstrap\compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#19 C:\wamp\www\laravel\bootstrap\compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#20 C:\wamp\www\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#21 {main} [] []
+[2013-07-08 21:00:32] log.ERROR: exception 'InvalidArgumentException' with message 'View [users.formulario] not found.' in C:\wamp\www\laravel\bootstrap\compiled.php:8060
+Stack trace:
+#0 C:\wamp\www\laravel\bootstrap\compiled.php(8033): Illuminate\View\FileViewFinder->findInPaths('users.formulari...', Array)
+#1 C:\wamp\www\laravel\bootstrap\compiled.php(8133): Illuminate\View\FileViewFinder->find('users.formulari...')
+#2 C:\wamp\www\laravel\bootstrap\compiled.php(3320): Illuminate\View\Environment->make('users.formulari...')
+#3 C:\wamp\www\laravel\app\controllers\UserController.php(25): Illuminate\Support\Facades\Facade::__callStatic('make', Array)
+#4 C:\wamp\www\laravel\app\controllers\UserController.php(25): Illuminate\Support\Facades\View::make('users.formulari...')
+#5 [internal function]: UserController->getFormulario()
+#6 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#7 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('getFormulario', Array)
+#8 C:\wamp\www\laravel\bootstrap\compiled.php(4752): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'getFormulario', Array)
+#9 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#10 C:\wamp\www\laravel\bootstrap\compiled.php(7821): call_user_func_array(Object(Closure), Array)
+#11 C:\wamp\www\laravel\bootstrap\compiled.php(7808): Illuminate\Routing\Route->callCallable()
+#12 C:\wamp\www\laravel\bootstrap\compiled.php(4763): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#13 C:\wamp\www\laravel\bootstrap\compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#14 C:\wamp\www\laravel\bootstrap\compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#15 C:\wamp\www\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#16 {main} [] []
+[2013-07-08 21:00:47] log.ERROR: exception 'InvalidArgumentException' with message 'View [users.formulario] not found.' in C:\wamp\www\laravel\bootstrap\compiled.php:8060
+Stack trace:
+#0 C:\wamp\www\laravel\bootstrap\compiled.php(8033): Illuminate\View\FileViewFinder->findInPaths('users.formulari...', Array)
+#1 C:\wamp\www\laravel\bootstrap\compiled.php(8133): Illuminate\View\FileViewFinder->find('users.formulari...')
+#2 C:\wamp\www\laravel\bootstrap\compiled.php(3320): Illuminate\View\Environment->make('users.formulari...')
+#3 C:\wamp\www\laravel\app\controllers\UserController.php(25): Illuminate\Support\Facades\Facade::__callStatic('make', Array)
+#4 C:\wamp\www\laravel\app\controllers\UserController.php(25): Illuminate\Support\Facades\View::make('users.formulari...')
+#5 [internal function]: UserController->getFormulario()
+#6 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#7 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('getFormulario', Array)
+#8 C:\wamp\www\laravel\bootstrap\compiled.php(4752): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'getFormulario', Array)
+#9 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#10 C:\wamp\www\laravel\bootstrap\compiled.php(7821): call_user_func_array(Object(Closure), Array)
+#11 C:\wamp\www\laravel\bootstrap\compiled.php(7808): Illuminate\Routing\Route->callCallable()
+#12 C:\wamp\www\laravel\bootstrap\compiled.php(4763): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#13 C:\wamp\www\laravel\bootstrap\compiled.php(481): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#14 C:\wamp\www\laravel\bootstrap\compiled.php(470): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#15 C:\wamp\www\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#16 {main} [] []

@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8"/> 
+<title>  <?php echo Form::label('usuarios','Usuarios'); ?>  </title>  
+</head>
+
+<body>
+<?php $__env->startSection('content'); ?>
+<?php echo HTML::style('css/style.css'); ?>
+
+<h1> Usuarios </h1>
+
+<table align="center" class="links">
+<tr> 
+	<td>  <?php echo HTML::link('PDF','Crear PDF'); ?>                       </td>
+	<td>  <?php echo HTML::link('usuarios/formulario','Crear un Usuario'); ?></td>
+</tr>
+</table>
+
+            <?php if(Session::has('mensaje')): ?>
+ 
+            <?php echo Session::get('mensaje'); ?>
+                     
+            <?php endif; ?>
+
+<br>
+<br>
+<table class="datos" border="1">
+<?php if($users): ?>
+
+	<tr>
+		<td align="center"> <?php echo Form::label('rut','RUT'); ?>  </td>   
+		<td align="center"> <?php echo Form::label('nombre','Nombre'); ?>  </td>  
+		<td align="center"> <?php echo Form::label('perfil_usuario','Perfil de Usuario'); ?>  </td>
+		<td align="center"> <?php echo Form::label('email','Email'); ?>  </td>
+		<td align="center"> <?php echo Form::label('telefono','Teléfono'); ?> </td>
+	</tr> 
+
+		<?php foreach($users as $user): ?>
+
+		<tr><td><?php echo $user->id_usuario; ?> </td>
+			<td> <?php echo $user->nombre_user; ?> </td>
+			<td> <?php if($user->perfil == 1): ?>
+			Administrador
+			 <?php else: ?>
+			Usuario
+			 <?php endif; ?></td>
+			 <td><?php echo $user->email; ?></td>
+			 <td><?php echo $user->fono; ?></td>
+			 <td><?php echo HTML::link('usuarios/delete/'.$user->id_usuario,'Borrar'); ?> </td>
+			 <td> <?php echo HTML::link('usuarios/update/'.$user->id_usuario,'Actualizar'); ?></td>
+		</tr>
+		
+		<?php endforeach; ?>
+
+</table>
+	
+<?php else: ?>
+ Todavia no hay ningun usuario
+<?php endif; ?>
+<?php $__env->stopSection(); ?>
+<?php $__env->stopSection(); ?>
+
+</body>
+</html>
+<?php echo $__env->make('admin.layout', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

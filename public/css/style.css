@@ -1,0 +1,68 @@
+
+body{			background:white ;
+				}
+
+.contenedor{	width:270px;
+				margin-left: auto;
+				margin-right: auto;
+				}
+
+.formulario{	width: :100%;
+				background-color: white;	
+				border: 1px solid;	
+				}
+
+.label{			color:DarkGreen;
+				}
+
+
+h2{		   		color:DarkGreen;				
+				text-align:center;
+				font: 200% bold;
+				}
+
+.errores{		color:red;
+				}
+
+.linea{			text-align: center;
+				}
+
+h1{				text-align: center;
+				}				
+
+.boton{			text-align: center;
+				}
+
+
+.tabla{			text-align: center;
+				}
+
+ul{				list-style-type:circle;}
+
+li{				list-style-position:inside;}
+
+.datos{			border:1px solid;
+				border-collapse: collapse; 
+				border-spacing: 5px;
+				white-space: 10px;
+				}
+
+td,tr{			width:25%,
+				text-align:left;
+				vertical-align: top;
+				border: 1px solid #000;
+				border-spacing: 10;
+				padding: 0.5em;
+				border-radius: 10px;
+
+				}	
+
+.login {		width:25%,
+				text-align:left;
+				vertical-align: top;
+				border: 1px #000;
+				}
+
+.links{			padding: 0.5em;
+				text-align: center;
+				}

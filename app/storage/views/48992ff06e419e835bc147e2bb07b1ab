@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="UTF-8"/> 
+<title>  Actualizar Usuario </title>  
+</head>
+
+<body>
+
+<?php $__env->startSection('content'); ?>
+<?php echo HTML::style('css/style.css'); ?>
+ 
+<h1>Actualizar Usuario: <?php echo $user->id_usuario; ?><h1>
+
+    <?php echo Form::open(); ?> 
+<table>
+  <tr class="login">
+  	<td class="login">  Nombre:                   </td>
+  	<td class="login"> <?php echo Form::text('nombre'); ?>  </td>
+  </tr>
+  <tr class="login">	
+  	<td class="login">   Email:   				  </td>
+  	<td class="login">	 <?php echo Form::text('email'); ?> </td>
+  </tr>
+  <tr class="login">	
+	<td class="login">   Perfil de usuario:       </td>
+    <td class="login"><?php echo Form::select('perfil', array(
+                  2 => 'Usuario',
+                  1 => 'Admnistrador'),$user->perfil);; ?>  </td>
+  </tr>
+  <tr class="login">                  
+    <td class="login"> Password:  					         </td>
+    <td class="login"><?php echo Form::password('password'); ?>        </td>
+   </tr>
+   <tr class="login"> 
+    <td class="login"> Telefóno:                             </td>
+    <td class="login"> <?php echo Form::text('fono'); ?>               </td>
+   </tr> 
+
+<tr class="login"> <td class="login"> <?php echo Form::submit('Actualizar Usuario'); ?> </td> </tr>
+</table>
+<?php echo Form::close(); ?>
+
+
+<?php if($errors->has()): ?> 	
+<ul>
+            <?php echo $errors->first('nombre','<li> :message </li>'); ?>
+            <?php echo $errors->first('password','<li> :message </li>'); ?>
+            <?php echo $errors->first('perfil','<li> :message </li>'); ?>
+            <?php echo $errors->first('email','<li> :message </li>'); ?>
+</ul>
+<?php endif; ?>	
+<?php $__env->stopSection(); ?>
+<?php $__env->stopSection(); ?>
+
+</body>
+</html>
+
+
+<?php echo $__env->make('admin.layout', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

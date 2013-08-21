@@ -1,0 +1,37 @@
+[2013-08-09 13:35:51] log.ERROR: exception 'InvalidArgumentException' with message 'There are no commands defined in the "model" namespace.' in C:\wamp\www\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php:523
+Stack trace:
+#0 C:\wamp\www\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(561): Symfony\Component\Console\Application->findNamespace('model')
+#1 C:\wamp\www\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(188): Symfony\Component\Console\Application->find('model:make')
+#2 C:\wamp\www\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(121): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 C:\wamp\www\laravel\artisan(59): Symfony\Component\Console\Application->run()
+#4 {main} [] []
+[2013-08-09 13:36:03] log.ERROR: exception 'InvalidArgumentException' with message 'There are no commands defined in the "models" namespace.' in C:\wamp\www\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php:523
+Stack trace:
+#0 C:\wamp\www\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(561): Symfony\Component\Console\Application->findNamespace('models')
+#1 C:\wamp\www\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(188): Symfony\Component\Console\Application->find('models:make')
+#2 C:\wamp\www\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(121): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 C:\wamp\www\laravel\artisan(59): Symfony\Component\Console\Application->run()
+#4 {main} [] []
+[2013-08-09 13:36:13] log.ERROR: exception 'InvalidArgumentException' with message 'Command "create" is not defined.' in C:\wamp\www\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php:617
+Stack trace:
+#0 C:\wamp\www\laravel\vendor\symfony\console\Symfony\Component\Console\Command\HelpCommand.php(76): Symfony\Component\Console\Application->find('create')
+#1 C:\wamp\www\laravel\vendor\symfony\console\Symfony\Component\Console\Command\Command.php(244): Symfony\Component\Console\Command\HelpCommand->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#2 C:\wamp\www\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(899): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 C:\wamp\www\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(191): Symfony\Component\Console\Application->doRunCommand(Object(Symfony\Component\Console\Command\HelpCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 C:\wamp\www\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(121): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 C:\wamp\www\laravel\artisan(59): Symfony\Component\Console\Application->run()
+#6 {main} [] []
+[2013-08-09 13:36:41] log.ERROR: exception 'InvalidArgumentException' with message 'There are no commands defined in the "generate" namespace.' in C:\wamp\www\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php:523
+Stack trace:
+#0 C:\wamp\www\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(561): Symfony\Component\Console\Application->findNamespace('generate')
+#1 C:\wamp\www\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(188): Symfony\Component\Console\Application->find('generate:model')
+#2 C:\wamp\www\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(121): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 C:\wamp\www\laravel\artisan(59): Symfony\Component\Console\Application->run()
+#4 {main} [] []
+[2013-08-09 13:37:24] log.ERROR: exception 'InvalidArgumentException' with message 'There are no commands defined in the "model" namespace.' in C:\wamp\www\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php:523
+Stack trace:
+#0 C:\wamp\www\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(561): Symfony\Component\Console\Application->findNamespace('model')
+#1 C:\wamp\www\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(188): Symfony\Component\Console\Application->find('model:make')
+#2 C:\wamp\www\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(121): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 C:\wamp\www\laravel\artisan(59): Symfony\Component\Console\Application->run()
+#4 {main} [] []

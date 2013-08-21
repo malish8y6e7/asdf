@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html lang="es">
+<head>
+	<meta charset="UTF-8"/> 
+<title>  Página Login </title>  
+</head>
+<body>
+  		<?php echo HTML::style('css/style.css'); ?>
+
+                           
+	<div class="contenedor">
+						<h2>Reserva de Recursos </h2>
+    <div class="formulario">
+
+
+			  		    <h1> Login </h1>	
+						 
+						 <?php echo Form::open(); ?>   <table align="center">
+
+					<tr class="login"><td class="login">RUT:     </td>  <td class="login"><?php echo Form::text('rut'); ?>         </td></tr>
+					<tr class="login"><td class="login">Password:</td>  <td class="login"><?php echo Form::password('password'); ?></td></tr>	 </table> 
+
+						<div class="boton"><?php echo Form::submit('Ingresar'); ?>  </div>
+						 <?php echo Form::close(); ?> 
+
+					 	<div class="errores">
+							<?php if (Session::has('login_errors')): ?>
+							Usuario o contraseña incorrectas.
+							<?php endif; ?>
+
+							<?php if($errors->has()): ?>  
+							    <ul>  
+							            <?php echo $errors->first('rut','<li> :message </li>'); ?>
+							            <?php echo $errors->first('password','<li> :message </li>'); ?>
+							   </ul>	
+							 <?php endif; ?>
+						</div>	 
+									 
+
+    </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8"/> 
+<title>  Página de los Periodos </title>  
+</head>
+
+<body>
+<?php $__env->startSection('content'); ?>
+<?php echo HTML::style('css/style.css'); ?>
+
+<h1> Horarios </h1>
+
+<br>
+<br>
+<table class="datos" border="1">
+<?php if($horarios): ?>
+
+	<tr>
+		<td align="center">Periodo  </td>   
+		<td align="center">Hora Inicio </td>  
+		<td align="center">Hora Fin    </td>
+	</tr> 
+
+		<?php foreach($horarios as $horario): ?>
+
+		<tr>
+			<td><?php echo $horario->id_horario; ?> </td>
+			<td><?php echo $horario->hora_inicio; ?> </td>
+			<td><?php echo $horario->hora_fin; ?> </td>	
+		</tr>
+		
+		<?php endforeach; ?>
+
+</table>
+	
+<?php else: ?>
+ Todavia no hay ningun horario
+<?php endif; ?>
+<?php $__env->stopSection(); ?>
+<?php $__env->stopSection(); ?>
+
+</body>
+</html>
+<?php echo $__env->make('admin.layout', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

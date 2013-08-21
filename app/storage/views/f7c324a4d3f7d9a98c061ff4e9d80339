@@ -1,0 +1,61 @@
+
+
+<?php echo HTML::style('css/style.css'); ?>	
+
+<?php $__env->startSection('content'); ?>
+<h1> Historial Recursos</h1>
+
+<table align="center" class="links">
+<tr><td><?php echo HTML::link('PDF4','Crear PDF'); ?> </td></tr>
+</table>
+
+<h3> Agregados</h3>
+
+<table class="datos">
+<?php if($ingresados): ?>
+	<tr>
+		<td>ID             </td>
+		<td>ID Recurso     </td>
+		<td>Nombre Recurso </td>
+		<td>Fecha Ingreso  </td>
+	</tr>	
+		<?php foreach($ingresados as $ingresa): ?>
+	<tr>  
+		    <td> <?php echo $ingresa->id_ingreso; ?>         </td>
+			<td> <?php echo $ingresa->id_recurso; ?>         </td>
+			<td> <?php echo $ingresa->nombre_recurso; ?>     </td>
+			<td> <?php echo $ingresa->fecha_ini; ?>  		  </td>
+	</tr>
+		<?php endforeach; ?>
+	</table>	
+
+<?php else: ?>
+ Todavia no hay ningun recurso Agregado
+<?php endif; ?>
+
+<h3>Eliminados </h3>
+
+<table class="datos">
+<?php if($eliminados): ?>
+	<tr>
+		<td>ID:                </td>
+		<td>ID Recurso:        </td>
+		<td>Nombre Recurso:    </td>
+		<td>Fecha Eliminación: </td>
+	</tr>
+		<?php foreach($eliminados as $eliminado): ?>
+	<tr>
+		<td> <?php echo $eliminado->id_elimina; ?>     </td>
+		<td> <?php echo $eliminado->id_recurso; ?>     </td>
+		<td> <?php echo $eliminado->nombre_recurso; ?> </td>
+		<td> <?php echo $eliminado->fecha_elim; ?>     </td>
+	</tr>				   	
+		<?php endforeach; ?>
+</table>
+<?php else: ?>
+ Todavia no hay ningun recurso eliminado
+<?php endif; ?>
+
+<?php $__env->stopSection(); ?>
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('admin.layout', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

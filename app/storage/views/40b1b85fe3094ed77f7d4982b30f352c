@@ -1,0 +1,14 @@
+<?php echo HTML::style('css/style.css'); ?>
+
+<h1>Administrador</h1>
+
+	<table align="center" class="links">
+	<tr> 
+	<td><?php echo HTML::link('usuarios','Usuarios'); ?> </td> 
+	<td><?php echo HTML::link('recursos','Recursos'); ?> </td> 
+	<td><?php echo HTML::link('reservas','Reservas'); ?> </td> 
+	<td><?php echo HTML::link('logout','Logout'); ?> </td> 
+	</tr> 
+	</table>
+<?php if(Auth::check()): ?>
+<?php endif; ?>

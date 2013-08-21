@@ -1,0 +1,222 @@
+[2013-08-20 19:14:45] log.ERROR: exception 'InvalidArgumentException' with message 'There are no commands defined in the "db:" namespace.
+
+Did you mean this?
+    db' in C:\wamp\www\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php:523
+Stack trace:
+#0 C:\wamp\www\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(561): Symfony\Component\Console\Application->findNamespace('db:')
+#1 C:\wamp\www\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(188): Symfony\Component\Console\Application->find('db::seed')
+#2 C:\wamp\www\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(121): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 C:\wamp\www\laravel\artisan(59): Symfony\Component\Console\Application->run()
+#4 {main} [] []
+[2013-08-20 19:15:01] log.ERROR: exception 'PDOException' with message 'SQLSTATE[23503]: Foreign key violation: 7 ERROR:  update o delete en «tbl_usuarios» viola la llave foránea «tbl_reservas_id_usuario_fkey» en la tabla «tbl_reservas»
+DETAIL:  La llave (id_usuario)=(17311619) todavía es referida desde la tabla «tbl_reservas».' in C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:352
+Stack trace:
+#0 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(352): PDOStatement->execute(Array)
+#1 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(520): Illuminate\Database\Connection->Illuminate\Database\{closure}(Object(Illuminate\Database\PostgresConnection), 'delete from "tb...', Array)
+#2 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(355): Illuminate\Database\Connection->run('delete from "tb...', Array, Object(Closure))
+#3 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(312): Illuminate\Database\Connection->affectingStatement('delete from "tb...', Array)
+#4 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1447): Illuminate\Database\Connection->delete('delete from "tb...', Array)
+#5 C:\wamp\www\laravel\app\database\seeds\DatabaseSeeder.php(23): Illuminate\Database\Query\Builder->delete()
+#6 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Seeder.php(38): UserTableSeeder->run()
+#7 C:\wamp\www\laravel\app\database\seeds\DatabaseSeeder.php(14): Illuminate\Database\Seeder->call('UserTableSeeder')
+#8 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Console\SeedCommand.php(53): DatabaseSeeder->run()
+#9 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Console\Command.php(108): Illuminate\Database\Console\SeedCommand->fire()
+#10 C:\wamp\www\laravel\vendor\symfony\console\Symfony\Component\Console\Command\Command.php(244): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Console\Command.php(96): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 C:\wamp\www\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(897): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 C:\wamp\www\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(191): Symfony\Component\Console\Application->doRunCommand(Object(Illuminate\Database\Console\SeedCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 C:\wamp\www\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(121): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 C:\wamp\www\laravel\artisan(59): Symfony\Component\Console\Application->run()
+#16 {main}
+
+Next exception 'Exception' with message 'SQLSTATE[23503]: Foreign key violation: 7 ERROR:  update o delete en «tbl_usuarios» viola la llave foránea «tbl_reservas_id_usuario_fkey» en la tabla «tbl_reservas»
+DETAIL:  La llave (id_usuario)=(17311619) todavía es referida desde la tabla «tbl_reservas». (SQL: delete from "tbl_usuarios") (Bindings: array (
+))' in C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:555
+Stack trace:
+#0 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(528): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'delete from "tb...', Array)
+#1 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(355): Illuminate\Database\Connection->run('delete from "tb...', Array, Object(Closure))
+#2 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(312): Illuminate\Database\Connection->affectingStatement('delete from "tb...', Array)
+#3 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1447): Illuminate\Database\Connection->delete('delete from "tb...', Array)
+#4 C:\wamp\www\laravel\app\database\seeds\DatabaseSeeder.php(23): Illuminate\Database\Query\Builder->delete()
+#5 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Seeder.php(38): UserTableSeeder->run()
+#6 C:\wamp\www\laravel\app\database\seeds\DatabaseSeeder.php(14): Illuminate\Database\Seeder->call('UserTableSeeder')
+#7 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Console\SeedCommand.php(53): DatabaseSeeder->run()
+#8 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Console\Command.php(108): Illuminate\Database\Console\SeedCommand->fire()
+#9 C:\wamp\www\laravel\vendor\symfony\console\Symfony\Component\Console\Command\Command.php(244): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#10 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Console\Command.php(96): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 C:\wamp\www\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(897): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 C:\wamp\www\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(191): Symfony\Component\Console\Application->doRunCommand(Object(Illuminate\Database\Console\SeedCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 C:\wamp\www\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(121): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 C:\wamp\www\laravel\artisan(59): Symfony\Component\Console\Application->run()
+#15 {main} [] []
+[2013-08-20 19:18:32] log.ERROR: exception 'PDOException' with message 'SQLSTATE[23503]: Foreign key violation: 7 ERROR:  update o delete en «tbl_usuarios» viola la llave foránea «tbl_reservas_id_usuario_fkey» en la tabla «tbl_reservas»
+DETAIL:  La llave (id_usuario)=(17311619) todavía es referida desde la tabla «tbl_reservas».' in C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:352
+Stack trace:
+#0 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(352): PDOStatement->execute(Array)
+#1 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(520): Illuminate\Database\Connection->Illuminate\Database\{closure}(Object(Illuminate\Database\PostgresConnection), 'delete from "tb...', Array)
+#2 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(355): Illuminate\Database\Connection->run('delete from "tb...', Array, Object(Closure))
+#3 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(312): Illuminate\Database\Connection->affectingStatement('delete from "tb...', Array)
+#4 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1447): Illuminate\Database\Connection->delete('delete from "tb...', Array)
+#5 C:\wamp\www\laravel\app\database\seeds\DatabaseSeeder.php(23): Illuminate\Database\Query\Builder->delete()
+#6 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Seeder.php(38): UserTableSeeder->run()
+#7 C:\wamp\www\laravel\app\database\seeds\DatabaseSeeder.php(14): Illuminate\Database\Seeder->call('UserTableSeeder')
+#8 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Console\SeedCommand.php(53): DatabaseSeeder->run()
+#9 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Console\Command.php(108): Illuminate\Database\Console\SeedCommand->fire()
+#10 C:\wamp\www\laravel\vendor\symfony\console\Symfony\Component\Console\Command\Command.php(244): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Console\Command.php(96): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 C:\wamp\www\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(897): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 C:\wamp\www\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(191): Symfony\Component\Console\Application->doRunCommand(Object(Illuminate\Database\Console\SeedCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 C:\wamp\www\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(121): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 C:\wamp\www\laravel\artisan(59): Symfony\Component\Console\Application->run()
+#16 {main}
+
+Next exception 'Exception' with message 'SQLSTATE[23503]: Foreign key violation: 7 ERROR:  update o delete en «tbl_usuarios» viola la llave foránea «tbl_reservas_id_usuario_fkey» en la tabla «tbl_reservas»
+DETAIL:  La llave (id_usuario)=(17311619) todavía es referida desde la tabla «tbl_reservas». (SQL: delete from "tbl_usuarios") (Bindings: array (
+))' in C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:555
+Stack trace:
+#0 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(528): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'delete from "tb...', Array)
+#1 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(355): Illuminate\Database\Connection->run('delete from "tb...', Array, Object(Closure))
+#2 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(312): Illuminate\Database\Connection->affectingStatement('delete from "tb...', Array)
+#3 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1447): Illuminate\Database\Connection->delete('delete from "tb...', Array)
+#4 C:\wamp\www\laravel\app\database\seeds\DatabaseSeeder.php(23): Illuminate\Database\Query\Builder->delete()
+#5 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Seeder.php(38): UserTableSeeder->run()
+#6 C:\wamp\www\laravel\app\database\seeds\DatabaseSeeder.php(14): Illuminate\Database\Seeder->call('UserTableSeeder')
+#7 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Console\SeedCommand.php(53): DatabaseSeeder->run()
+#8 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Console\Command.php(108): Illuminate\Database\Console\SeedCommand->fire()
+#9 C:\wamp\www\laravel\vendor\symfony\console\Symfony\Component\Console\Command\Command.php(244): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#10 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Console\Command.php(96): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 C:\wamp\www\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(897): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 C:\wamp\www\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(191): Symfony\Component\Console\Application->doRunCommand(Object(Illuminate\Database\Console\SeedCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 C:\wamp\www\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(121): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 C:\wamp\www\laravel\artisan(59): Symfony\Component\Console\Application->run()
+#15 {main} [] []
+[2013-08-20 19:22:59] log.ERROR: exception 'ErrorException' with message 'Use of undefined constant admin - assumed 'admin'' in C:\wamp\www\laravel\app\database\seeds\DatabaseSeeder.php:30
+Stack trace:
+#0 C:\wamp\www\laravel\app\database\seeds\DatabaseSeeder.php(30): Illuminate\Exception\Handler->handleError(8, 'Use of undefine...', 'C:\wamp\www\lar...', 30, Array)
+#1 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Seeder.php(38): UserTableSeeder->run()
+#2 C:\wamp\www\laravel\app\database\seeds\DatabaseSeeder.php(14): Illuminate\Database\Seeder->call('UserTableSeeder')
+#3 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Console\SeedCommand.php(53): DatabaseSeeder->run()
+#4 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Console\Command.php(108): Illuminate\Database\Console\SeedCommand->fire()
+#5 C:\wamp\www\laravel\vendor\symfony\console\Symfony\Component\Console\Command\Command.php(244): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#6 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Console\Command.php(96): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#7 C:\wamp\www\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(897): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 C:\wamp\www\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(191): Symfony\Component\Console\Application->doRunCommand(Object(Illuminate\Database\Console\SeedCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#9 C:\wamp\www\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(121): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#10 C:\wamp\www\laravel\artisan(59): Symfony\Component\Console\Application->run()
+#11 {main} [] []
+[2013-08-20 19:41:37] log.ERROR: exception 'PDOException' with message 'SQLSTATE[42703]: Undefined column: 7 ERROR:  no existe la columna «id_horario» en la relación «tbl_usuarios»
+LINE 1: insert into "tbl_usuarios" ("id_horario", "hora_inicio", "ho...
+                                    ^' in C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:273
+Stack trace:
+#0 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(273): PDOStatement->execute(Array)
+#1 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(520): Illuminate\Database\Connection->Illuminate\Database\{closure}(Object(Illuminate\Database\PostgresConnection), 'insert into "tb...', Array)
+#2 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(276): Illuminate\Database\Connection->run('insert into "tb...', Array, Object(Closure))
+#3 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Processors\PostgresProcessor.php(18): Illuminate\Database\Connection->select('insert into "tb...', Array)
+#4 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1380): Illuminate\Database\Query\Processors\PostgresProcessor->processInsertGetId(Object(Illuminate\Database\Query\Builder), 'insert into "tb...', Array, 'id_usuario')
+#5 [internal function]: Illuminate\Database\Query\Builder->insertGetId(Array, 'id_usuario')
+#6 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(729): call_user_func_array(Array, Array)
+#7 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1178): Illuminate\Database\Eloquent\Builder->__call('insertGetId', Array)
+#8 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1178): Illuminate\Database\Eloquent\Builder->insertGetId(Array, 'id_usuario')
+#9 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1148): Illuminate\Database\Eloquent\Model->insertAndSetId(Object(Illuminate\Database\Eloquent\Builder), Array)
+#10 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1060): Illuminate\Database\Eloquent\Model->performInsert(Object(Illuminate\Database\Eloquent\Builder))
+#11 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(344): Illuminate\Database\Eloquent\Model->save()
+#12 C:\wamp\www\laravel\app\database\seeds\DatabaseSeeder.php(42): Illuminate\Database\Eloquent\Model::create(Array)
+#13 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Seeder.php(38): UserTableSeeder->run()
+#14 C:\wamp\www\laravel\app\database\seeds\DatabaseSeeder.php(14): Illuminate\Database\Seeder->call('UserTableSeeder')
+#15 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Console\SeedCommand.php(53): DatabaseSeeder->run()
+#16 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Console\Command.php(108): Illuminate\Database\Console\SeedCommand->fire()
+#17 C:\wamp\www\laravel\vendor\symfony\console\Symfony\Component\Console\Command\Command.php(244): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#18 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Console\Command.php(96): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#19 C:\wamp\www\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(897): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#20 C:\wamp\www\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(191): Symfony\Component\Console\Application->doRunCommand(Object(Illuminate\Database\Console\SeedCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#21 C:\wamp\www\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(121): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#22 C:\wamp\www\laravel\artisan(59): Symfony\Component\Console\Application->run()
+#23 {main}
+
+Next exception 'Exception' with message 'SQLSTATE[42703]: Undefined column: 7 ERROR:  no existe la columna «id_horario» en la relación «tbl_usuarios»
+LINE 1: insert into "tbl_usuarios" ("id_horario", "hora_inicio", "ho...
+                                    ^ (SQL: insert into "tbl_usuarios" ("id_horario", "hora_inicio", "hora_fin") values (?, ?, ?) returning "id_usuario") (Bindings: array (
+  0 => '1',
+  1 => '08:15',
+  2 => '09:45',
+))' in C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:555
+Stack trace:
+#0 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(528): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'insert into "tb...', Array)
+#1 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(276): Illuminate\Database\Connection->run('insert into "tb...', Array, Object(Closure))
+#2 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Processors\PostgresProcessor.php(18): Illuminate\Database\Connection->select('insert into "tb...', Array)
+#3 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1380): Illuminate\Database\Query\Processors\PostgresProcessor->processInsertGetId(Object(Illuminate\Database\Query\Builder), 'insert into "tb...', Array, 'id_usuario')
+#4 [internal function]: Illuminate\Database\Query\Builder->insertGetId(Array, 'id_usuario')
+#5 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(729): call_user_func_array(Array, Array)
+#6 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1178): Illuminate\Database\Eloquent\Builder->__call('insertGetId', Array)
+#7 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1178): Illuminate\Database\Eloquent\Builder->insertGetId(Array, 'id_usuario')
+#8 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1148): Illuminate\Database\Eloquent\Model->insertAndSetId(Object(Illuminate\Database\Eloquent\Builder), Array)
+#9 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1060): Illuminate\Database\Eloquent\Model->performInsert(Object(Illuminate\Database\Eloquent\Builder))
+#10 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(344): Illuminate\Database\Eloquent\Model->save()
+#11 C:\wamp\www\laravel\app\database\seeds\DatabaseSeeder.php(42): Illuminate\Database\Eloquent\Model::create(Array)
+#12 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Seeder.php(38): UserTableSeeder->run()
+#13 C:\wamp\www\laravel\app\database\seeds\DatabaseSeeder.php(14): Illuminate\Database\Seeder->call('UserTableSeeder')
+#14 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Console\SeedCommand.php(53): DatabaseSeeder->run()
+#15 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Console\Command.php(108): Illuminate\Database\Console\SeedCommand->fire()
+#16 C:\wamp\www\laravel\vendor\symfony\console\Symfony\Component\Console\Command\Command.php(244): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Console\Command.php(96): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#18 C:\wamp\www\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(897): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#19 C:\wamp\www\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(191): Symfony\Component\Console\Application->doRunCommand(Object(Illuminate\Database\Console\SeedCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#20 C:\wamp\www\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(121): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#21 C:\wamp\www\laravel\artisan(59): Symfony\Component\Console\Application->run()
+#22 {main} [] []
+[2013-08-20 19:50:32] log.ERROR: exception 'PDOException' with message 'SQLSTATE[22007]: Invalid datetime format: 7 ERROR:  la sintaxis de entrada no es válida para tipo time with time zone: «22.15»' in C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:273
+Stack trace:
+#0 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(273): PDOStatement->execute(Array)
+#1 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(520): Illuminate\Database\Connection->Illuminate\Database\{closure}(Object(Illuminate\Database\PostgresConnection), 'insert into "tb...', Array)
+#2 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(276): Illuminate\Database\Connection->run('insert into "tb...', Array, Object(Closure))
+#3 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Processors\PostgresProcessor.php(18): Illuminate\Database\Connection->select('insert into "tb...', Array)
+#4 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1380): Illuminate\Database\Query\Processors\PostgresProcessor->processInsertGetId(Object(Illuminate\Database\Query\Builder), 'insert into "tb...', Array, 'id_horario')
+#5 [internal function]: Illuminate\Database\Query\Builder->insertGetId(Array, 'id_horario')
+#6 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(729): call_user_func_array(Array, Array)
+#7 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1178): Illuminate\Database\Eloquent\Builder->__call('insertGetId', Array)
+#8 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1178): Illuminate\Database\Eloquent\Builder->insertGetId(Array, 'id_horario')
+#9 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1148): Illuminate\Database\Eloquent\Model->insertAndSetId(Object(Illuminate\Database\Eloquent\Builder), Array)
+#10 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1060): Illuminate\Database\Eloquent\Model->performInsert(Object(Illuminate\Database\Eloquent\Builder))
+#11 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(344): Illuminate\Database\Eloquent\Model->save()
+#12 C:\wamp\www\laravel\app\database\seeds\DatabaseSeeder.php(95): Illuminate\Database\Eloquent\Model::create(Array)
+#13 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Seeder.php(38): UserTableSeeder->run()
+#14 C:\wamp\www\laravel\app\database\seeds\DatabaseSeeder.php(14): Illuminate\Database\Seeder->call('UserTableSeeder')
+#15 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Console\SeedCommand.php(53): DatabaseSeeder->run()
+#16 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Console\Command.php(108): Illuminate\Database\Console\SeedCommand->fire()
+#17 C:\wamp\www\laravel\vendor\symfony\console\Symfony\Component\Console\Command\Command.php(244): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#18 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Console\Command.php(96): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#19 C:\wamp\www\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(897): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#20 C:\wamp\www\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(191): Symfony\Component\Console\Application->doRunCommand(Object(Illuminate\Database\Console\SeedCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#21 C:\wamp\www\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(121): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#22 C:\wamp\www\laravel\artisan(59): Symfony\Component\Console\Application->run()
+#23 {main}
+
+Next exception 'Exception' with message 'SQLSTATE[22007]: Invalid datetime format: 7 ERROR:  la sintaxis de entrada no es válida para tipo time with time zone: «22.15» (SQL: insert into "tbl_horario" ("id_horario", "hora_inicio", "hora_fin") values (?, ?, ?) returning "id_horario") (Bindings: array (
+  0 => '9',
+  1 => '20:45',
+  2 => '22.15',
+))' in C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:555
+Stack trace:
+#0 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(528): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'insert into "tb...', Array)
+#1 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(276): Illuminate\Database\Connection->run('insert into "tb...', Array, Object(Closure))
+#2 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Processors\PostgresProcessor.php(18): Illuminate\Database\Connection->select('insert into "tb...', Array)
+#3 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1380): Illuminate\Database\Query\Processors\PostgresProcessor->processInsertGetId(Object(Illuminate\Database\Query\Builder), 'insert into "tb...', Array, 'id_horario')
+#4 [internal function]: Illuminate\Database\Query\Builder->insertGetId(Array, 'id_horario')
+#5 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(729): call_user_func_array(Array, Array)
+#6 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1178): Illuminate\Database\Eloquent\Builder->__call('insertGetId', Array)
+#7 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1178): Illuminate\Database\Eloquent\Builder->insertGetId(Array, 'id_horario')
+#8 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1148): Illuminate\Database\Eloquent\Model->insertAndSetId(Object(Illuminate\Database\Eloquent\Builder), Array)
+#9 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1060): Illuminate\Database\Eloquent\Model->performInsert(Object(Illuminate\Database\Eloquent\Builder))
+#10 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(344): Illuminate\Database\Eloquent\Model->save()
+#11 C:\wamp\www\laravel\app\database\seeds\DatabaseSeeder.php(95): Illuminate\Database\Eloquent\Model::create(Array)
+#12 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Seeder.php(38): UserTableSeeder->run()
+#13 C:\wamp\www\laravel\app\database\seeds\DatabaseSeeder.php(14): Illuminate\Database\Seeder->call('UserTableSeeder')
+#14 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Console\SeedCommand.php(53): DatabaseSeeder->run()
+#15 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Console\Command.php(108): Illuminate\Database\Console\SeedCommand->fire()
+#16 C:\wamp\www\laravel\vendor\symfony\console\Symfony\Component\Console\Command\Command.php(244): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Console\Command.php(96): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#18 C:\wamp\www\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(897): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#19 C:\wamp\www\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(191): Symfony\Component\Console\Application->doRunCommand(Object(Illuminate\Database\Console\SeedCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#20 C:\wamp\www\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(121): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#21 C:\wamp\www\laravel\artisan(59): Symfony\Component\Console\Application->run()
+#22 {main} [] []

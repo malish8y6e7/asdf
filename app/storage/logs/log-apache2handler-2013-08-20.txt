@@ -1,0 +1,168 @@
+[2013-08-20 20:02:53] log.ERROR: exception 'PDOException' with message 'SQLSTATE[42703]: Undefined column: 7 ERROR:  no existe la columna «id_recurso»
+LINE 1: select * from "tbl_recurso" where "id_recurso" = $1 limit 1
+                                          ^' in C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:273
+Stack trace:
+#0 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(273): PDOStatement->execute(Array)
+#1 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(520): Illuminate\Database\Connection->Illuminate\Database\{closure}(Object(Illuminate\Database\PostgresConnection), 'select * from "...', Array)
+#2 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(276): Illuminate\Database\Connection->run('select * from "...', Array, Object(Closure))
+#3 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(988): Illuminate\Database\Connection->select('select * from "...', Array)
+#4 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(978): Illuminate\Database\Query\Builder->runSelect()
+#5 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(965): Illuminate\Database\Query\Builder->getFresh(Array)
+#6 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(950): Illuminate\Database\Query\Builder->get(Array)
+#7 C:\wamp\www\laravel\app\controllers\UserController.php(108): Illuminate\Database\Query\Builder->first()
+#8 [internal function]: UserController->getDelete('123')
+#9 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#10 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('getDelete', Array)
+#11 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'getDelete', Array)
+#12 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('123')
+#13 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#14 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#15 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#16 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(530): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#17 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(506): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#18 C:\wamp\www\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#19 {main}
+
+Next exception 'Exception' with message 'SQLSTATE[42703]: Undefined column: 7 ERROR:  no existe la columna «id_recurso»
+LINE 1: select * from "tbl_recurso" where "id_recurso" = $1 limit 1
+                                          ^ (SQL: select * from "tbl_recurso" where "id_recurso" = ? limit 1) (Bindings: array (
+  0 => '123',
+))' in C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:555
+Stack trace:
+#0 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(528): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'select * from "...', Array)
+#1 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(276): Illuminate\Database\Connection->run('select * from "...', Array, Object(Closure))
+#2 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(988): Illuminate\Database\Connection->select('select * from "...', Array)
+#3 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(978): Illuminate\Database\Query\Builder->runSelect()
+#4 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(965): Illuminate\Database\Query\Builder->getFresh(Array)
+#5 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(950): Illuminate\Database\Query\Builder->get(Array)
+#6 C:\wamp\www\laravel\app\controllers\UserController.php(108): Illuminate\Database\Query\Builder->first()
+#7 [internal function]: UserController->getDelete('123')
+#8 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#9 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('getDelete', Array)
+#10 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'getDelete', Array)
+#11 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('123')
+#12 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#13 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#14 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#15 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(530): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#16 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(506): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#17 C:\wamp\www\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#18 {main} [] []
+[2013-08-20 22:38:30] log.ERROR: exception 'InvalidArgumentException' with message 'View [login] not found.' in C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\View\FileViewFinder.php:123
+Stack trace:
+#0 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\View\FileViewFinder.php(64): Illuminate\View\FileViewFinder->findInPaths('login', Array)
+#1 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\View\Environment.php(115): Illuminate\View\FileViewFinder->find('login')
+#2 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Support\Facades\Facade.php(177): Illuminate\View\Environment->make('login')
+#3 C:\wamp\www\laravel\app\routes.php(16): Illuminate\Support\Facades\Facade::__callStatic('make', Array)
+#4 C:\wamp\www\laravel\app\routes.php(16): Illuminate\Support\Facades\View::make('login')
+#5 [internal function]: {closure}()
+#6 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#7 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#8 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#9 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(530): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#10 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(506): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#11 C:\wamp\www\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#12 {main} [] []
+[2013-08-20 22:39:20] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\MethodNotAllowedHttpException' in C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1439
+Stack trace:
+#0 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\MethodNotAllowedException))
+#1 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(530): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(506): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\wamp\www\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-08-20 22:40:38] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\MethodNotAllowedHttpException' in C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1439
+Stack trace:
+#0 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\MethodNotAllowedException))
+#1 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(530): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(506): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\wamp\www\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-08-20 22:41:04] log.ERROR: exception 'PDOException' with message 'SQLSTATE[08006] [7] FATAL:  no pg_hba.conf entry for host "146.83.181.77", user "reserva", database "reservadb", SSL off' in C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:47
+Stack trace:
+#0 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php(47): PDO->__construct('pgsql:host=info...', 'reserva', 'res.isw.2013', Array)
+#1 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connectors\PostgresConnector.php(35): Illuminate\Database\Connectors\Connector->createConnection('pgsql:host=info...', Array, Array)
+#2 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connectors\ConnectionFactory.php(41): Illuminate\Database\Connectors\PostgresConnector->connect(Array)
+#3 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\DatabaseManager.php(113): Illuminate\Database\Connectors\ConnectionFactory->make(Array, 'pgsql')
+#4 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\DatabaseManager.php(64): Illuminate\Database\DatabaseManager->makeConnection('pgsql')
+#5 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(2337): Illuminate\Database\DatabaseManager->connection(NULL)
+#6 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(2303): Illuminate\Database\Eloquent\Model::resolveConnection(NULL)
+#7 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1429): Illuminate\Database\Eloquent\Model->getConnection()
+#8 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1363): Illuminate\Database\Eloquent\Model->newBaseQueryBuilder()
+#9 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Auth\EloquentUserProvider.php(56): Illuminate\Database\Eloquent\Model->newQuery()
+#10 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Auth\Guard.php(275): Illuminate\Auth\EloquentUserProvider->retrieveByCredentials(Array)
+#11 [internal function]: Illuminate\Auth\Guard->attempt(Array)
+#12 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Support\Manager.php(127): call_user_func_array(Array, Array)
+#13 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Support\Facades\Facade.php(177): Illuminate\Support\Manager->__call('attempt', Array)
+#14 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Support\Facades\Facade.php(177): Illuminate\Auth\AuthManager->attempt(Array)
+#15 C:\wamp\www\laravel\app\controllers\AuthController.php(25): Illuminate\Support\Facades\Facade::__callStatic('attempt', Array)
+#16 C:\wamp\www\laravel\app\controllers\AuthController.php(25): Illuminate\Support\Facades\Auth::attempt(Array)
+#17 [internal function]: AuthController->postIndex()
+#18 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#19 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('postIndex', Array)
+#20 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'postIndex', Array)
+#21 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#22 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#23 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#24 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#25 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(530): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#26 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(506): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#27 C:\wamp\www\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#28 {main} [] []
+[2013-08-20 22:41:18] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\MethodNotAllowedHttpException' in C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1439
+Stack trace:
+#0 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\MethodNotAllowedException))
+#1 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(530): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(506): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\wamp\www\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-08-20 22:41:54] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\MethodNotAllowedHttpException' in C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1439
+Stack trace:
+#0 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\MethodNotAllowedException))
+#1 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(530): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(506): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\wamp\www\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-08-20 22:44:45] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\MethodNotAllowedHttpException' in C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1439
+Stack trace:
+#0 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\MethodNotAllowedException))
+#1 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(530): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(506): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\wamp\www\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-08-20 22:45:28] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\MethodNotAllowedHttpException' in C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1439
+Stack trace:
+#0 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\MethodNotAllowedException))
+#1 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(530): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(506): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\wamp\www\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-08-20 22:45:35] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\MethodNotAllowedHttpException' in C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1439
+Stack trace:
+#0 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\MethodNotAllowedException))
+#1 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(530): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(506): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\wamp\www\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-08-20 22:48:11] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\MethodNotAllowedHttpException' in C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1439
+Stack trace:
+#0 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\MethodNotAllowedException))
+#1 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(530): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(506): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\wamp\www\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-08-20 23:32:36] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\MethodNotAllowedHttpException' in C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1439
+Stack trace:
+#0 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\MethodNotAllowedException))
+#1 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(530): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(506): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\wamp\www\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []

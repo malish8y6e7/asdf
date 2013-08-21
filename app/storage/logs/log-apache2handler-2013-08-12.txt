@@ -1,0 +1,60 @@
+[2013-08-12 00:05:43] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'echo' (T_ECHO)' in C:\wamp\www\laravel\app\storage\views\6505ac7ded36f1a27db08f5646b5ced7:34
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-08-12 00:09:35] log.ERROR: exception 'PDOException' with message 'SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «q»' in C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:273
+Stack trace:
+#0 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(273): PDOStatement->execute(Array)
+#1 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(520): Illuminate\Database\Connection->Illuminate\Database\{closure}(Object(Illuminate\Database\PostgresConnection), 'select count(*)...', Array)
+#2 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(276): Illuminate\Database\Connection->run('select count(*)...', Array, Object(Closure))
+#3 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(966): Illuminate\Database\Connection->select('select count(*)...', Array)
+#4 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(956): Illuminate\Database\Query\Builder->runSelect()
+#5 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(943): Illuminate\Database\Query\Builder->getFresh(Array)
+#6 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1283): Illuminate\Database\Query\Builder->get(Array)
+#7 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1225): Illuminate\Database\Query\Builder->aggregate('count', Array)
+#8 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Validation\DatabasePresenceVerifier.php(57): Illuminate\Database\Query\Builder->count()
+#9 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Validation\Validator.php(709): Illuminate\Validation\DatabasePresenceVerifier->getCount('RECURSOS', 'ID_Recurso', 'q', NULL, NULL, Array)
+#10 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Validation\Validator.php(216): Illuminate\Validation\Validator->validateUnique('id', 'q', Array, Object(Illuminate\Validation\Validator))
+#11 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Validation\Validator.php(179): Illuminate\Validation\Validator->validate('id', 'Unique:RECURSOS...')
+#12 C:\wamp\www\laravel\app\controllers\RecursosController.php(38): Illuminate\Validation\Validator->passes()
+#13 [internal function]: RecursosController->postFormulario()
+#14 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#15 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('postFormulario', Array)
+#16 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'postFormulario', Array)
+#17 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#18 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#19 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#20 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#21 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(530): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#22 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(506): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#23 C:\wamp\www\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#24 {main}
+
+Next exception 'Exception' with message 'SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «q» (SQL: select count(*) as aggregate from "RECURSOS" where "ID_Recurso" = ?) (Bindings: array (
+  0 => 'q',
+))' in C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:555
+Stack trace:
+#0 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(528): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'select count(*)...', Array)
+#1 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(276): Illuminate\Database\Connection->run('select count(*)...', Array, Object(Closure))
+#2 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(966): Illuminate\Database\Connection->select('select count(*)...', Array)
+#3 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(956): Illuminate\Database\Query\Builder->runSelect()
+#4 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(943): Illuminate\Database\Query\Builder->getFresh(Array)
+#5 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1283): Illuminate\Database\Query\Builder->get(Array)
+#6 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1225): Illuminate\Database\Query\Builder->aggregate('count', Array)
+#7 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Validation\DatabasePresenceVerifier.php(57): Illuminate\Database\Query\Builder->count()
+#8 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Validation\Validator.php(709): Illuminate\Validation\DatabasePresenceVerifier->getCount('RECURSOS', 'ID_Recurso', 'q', NULL, NULL, Array)
+#9 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Validation\Validator.php(216): Illuminate\Validation\Validator->validateUnique('id', 'q', Array, Object(Illuminate\Validation\Validator))
+#10 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Validation\Validator.php(179): Illuminate\Validation\Validator->validate('id', 'Unique:RECURSOS...')
+#11 C:\wamp\www\laravel\app\controllers\RecursosController.php(38): Illuminate\Validation\Validator->passes()
+#12 [internal function]: RecursosController->postFormulario()
+#13 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#14 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('postFormulario', Array)
+#15 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'postFormulario', Array)
+#16 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#17 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#18 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#19 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#20 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(530): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#21 C:\wamp\www\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(506): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#22 C:\wamp\www\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#23 {main} [] []

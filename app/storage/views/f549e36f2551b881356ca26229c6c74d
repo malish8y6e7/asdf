@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8"/> 
+<title>  Página de las Reservas </title>  
+</head>
+
+<body>
+<?php $__env->startSection('content'); ?>
+<?php echo HTML::style('css/style.css'); ?>
+
+<h1> Reservas </h1>
+
+<table align="center" class="links">
+<tr> 
+	<td>  <?php echo HTML::link('PDF3','Crear PDF'); ?>                       </td>
+</tr>
+</table>
+
+<br>
+<br>
+<table class="datos" border="1">
+<?php if($reservas): ?>
+
+	<tr>
+		<td align="center">ID Reserva</td>   
+		<td align="center">ID Recurso</td>  
+		<td align="center">ID Usuario</td>
+		<td align="center">Fecha de la Reserva</td>
+		<td align="center">Periodo</td>
+	</tr> 
+
+		<?php foreach($reservas as $reserva): ?>
+
+		<tr><td><?php echo $reserva->id_reserva; ?> </td>
+			<td><?php echo $reserva->id_recurso; ?> </td>
+			<td><?php echo $reserva->id_usuario; ?> </td>
+			<td><?php echo $reserva->fech_ini; ?>   </td>
+			<td><?php echo $reserva->horario; ?>    </td>		
+		</tr>
+		
+		<?php endforeach; ?>
+
+</table>
+	
+<?php else: ?>
+ Todavia no hay ningun usuario
+<?php endif; ?>
+<?php $__env->stopSection(); ?>
+<?php $__env->stopSection(); ?>
+
+</body>
+</html>
+<?php echo $__env->make('admin.layout', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

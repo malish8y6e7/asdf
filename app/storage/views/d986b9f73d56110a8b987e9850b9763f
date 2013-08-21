@@ -1,0 +1,7 @@
+BUSCAR USUARIO
+
+<?php echo Form::open(); ?>
+Buscar: <?php echo Form::text('buscar'); ?>
+<?php echo Form::submit('Buscar'); ?>
+<?php echo Form::close(); ?>
+

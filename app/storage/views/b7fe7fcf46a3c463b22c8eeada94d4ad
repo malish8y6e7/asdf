@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="UTF-8"/> 
+<title>  Formulario Recursos </title>  
+</head>
+
+<body>
+
+<?php $__env->startSection('content'); ?>
+<?php echo HTML::style('css/style.css'); ?>
+
+<h1>Crear Recurso<h1>
+
+
+<?php echo Form::open(); ?>
+<table>
+<tr class="login">
+  <td class="login"><?php echo Form::label('nombre','Nombre Recurso:'); ?>                  </td>
+  <td class="login"><?php echo Form::text('nombre'); ?>                                      </td>
+</tr>
+
+<tr class="login">
+  <td class="login"><?php echo Form::label('id_recurso','ID Recurso:'); ?>                  </td>
+  <td class="login"><?php echo Form::text('id'); ?>                                          </td>
+</tr>
+
+<tr class="login">    
+  <td class="login"><?php echo Form::label('tipo','Tipo de Usuario:'); ?>                   </td>
+  <td class="login"> <?php echo Form::select('tipo', array(
+                  1 => 'Laboratorio',
+                  2 => 'Proyector',
+                  3 => 'Computador',
+                  4 => 'Otros'));; ?>                                            </td>
+</tr>
+
+<tr class="login">
+  <td class="login"> <?php echo Form::label('descripcion','Descripción:'); ?>               </td>
+  <td class="login"> <?php echo Form::textarea('descripcion'); ?> </td>
+</tr> 
+
+<tr class="login">
+  <td class="login"> <?php echo Form::label('encargado_label','Encargado:'); ?>                                              </td>
+  <td class="login"> <?php echo Form::text('encargado'); ?>    <?php echo Form::label('encargado_label2','Rut del Encargado'); ?>      </td> 
+</tr>
+
+<tr class="login">
+  <td class="login"> <?php echo Form::label('estado','Estado:'); ?>                          </td>
+  <td class="login"> <?php echo Form::select('estado', array(
+                  1 => 'Activo',
+                  0 => 'No activo'));; ?>                                         </td>
+</tr>
+
+<tr class="login"> 
+  <td class="login"> <?php echo Form::submit('Crear Recurso'); ?>                           </td>    
+</tr>
+
+</table>
+<?php echo Form::close(); ?>
+
+      <?php if(Session::has('mensaje')): ?>
+ 
+     <?php echo Session::get('mensaje'); ?>
+                     
+     <?php endif; ?>
+
+    <?php if($errors->has()): ?>  
+    <ul>
+            <?php echo $errors->first('nombre','<li> :message </li>'); ?>
+            <?php echo $errors->first('id','<li> :message </li>'); ?>
+            <?php echo $errors->first('tipo','<li> :message </li>'); ?>
+            <?php echo $errors->first('descripcion','<li> :message </li>'); ?>
+            <?php echo $errors->first('encargado','<li> :message </li>'); ?>
+            <?php echo $errors->first('estado','<li> :message </li>'); ?>
+
+    </ul>	
+    <?php endif; ?>
+    <?php $__env->stopSection(); ?>
+    <?php $__env->stopSection(); ?>
+
+</body>
+</html>
+
+<?php echo $__env->make('admin.layout', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

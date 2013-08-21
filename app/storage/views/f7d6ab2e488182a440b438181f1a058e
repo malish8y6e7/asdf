@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html lang="es">
+
+<?php if(Auth::check()): ?>
+<?php endif; ?>
+
+<?php echo HTML::style('css/style.css'); ?>
+
+<body class="fondo">
+
+<h3>Administrador</h3> 
+
+	<table align="center" class="links">
+	<tr> 
+	<td><?php echo HTML::link('usuarios','Usuarios'); ?> </td> 
+	<td><?php echo HTML::link('recursos','Recursos'); ?> </td> 
+	<td><?php echo HTML::link('reservas','Reservas'); ?> </td> 
+	<td><?php echo HTML::link('horario','Horario'); ?> </td> 
+	<td><?php echo HTML::link('logout','Logout'); ?> </td> 
+	</tr> 
+	</table>
+
+<?php echo $__env->yieldContent('content'); ?>
+</body>
+</html>

@@ -1,0 +1,8 @@
+[2013-07-12 06:19:17] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to undefined method Illuminate\Http\RedirectResponse::with_input()' in C:\wamp\www\laravel\app\controllers\UserController.php:70
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-07-12 06:27:10] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to undefined method Illuminate\Http\RedirectResponse::with_errors()' in C:\wamp\www\laravel\app\controllers\UserController.php:70
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
