@@ -14,8 +14,7 @@
 <table align="center" class="links">
 <tr> 
     <td> <?php echo HTML::link('PDF2','Crear PDF'); ?>                       </td>
-    <td> <?php echo HTML::link('historial','Historial'); ?>                  </td> 
-    <td> <?php echo HTML::link('recursos/formulario','Crear un Recurso'); ?> </td> 
+    <td> <?php echo HTML::link('recursos/formulario','Crear Recurso'); ?> </td> 
 
 </tr> 
 </table>
@@ -33,7 +32,7 @@
 		<tr>
 			 <td> ID </td> 
 			 <td> Nombre</td>
-			 <td> Descrpción </td> 
+			 <td> Descripción </td> 
 			 <td> Tipo </td>
 			 <td> Estado</td> 
 			 <td> Encargado </td> 
@@ -41,8 +40,8 @@
 
 		<?php foreach($recursos as $recurso): ?>
 		<tr>
-			<td> <?php echo $recurso->id_recursos; ?>    </td>
-			<td> <?php echo $recurso->nombre_recurso; ?> </td>
+			<td> <?php echo $recurso->codigo; ?>    </td>
+			<td> <?php echo $recurso->nombre; ?> </td>
 			<td> <?php echo $recurso->descripcion; ?>    </td>
 			<td> <?php echo $recurso->tipo; ?>			  </td>
 			<td> <?php if($recurso->estado): ?> 
@@ -51,8 +50,8 @@
 				 No Activo  
 		    	<?php endif; ?>	 </td>
 			<td> <?php echo $recurso->id_encargado; ?> </td> 
-			<td> <?php echo HTML::link('recursos/delete/'.$recurso->id_recursos,'Borrar'); ?>   </td>
-			<td><?php echo HTML::link('recursos/update/'.$recurso->id_recursos,'Actualizar'); ?> </td> 
+			<td> <?php echo HTML::link('recursos/delete/'.$recurso->codigo,'Borrar'); ?>   </td>
+			<td><?php echo HTML::link('recursos/update/'.$recurso->codigo,'Actualizar'); ?> </td> 
 		</tr>
 					<?php endforeach; ?> 
 </table>

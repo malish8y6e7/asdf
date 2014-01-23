@@ -6,10 +6,17 @@ use Illuminate\Auth\Reminders\RemindableInterface;
 
 class User extends Eloquent implements UserInterface, RemindableInterface 
 {
-	protected $table = 'tbl_usuarios'; 
+	/*protected $table = 'tbl_usuarios'; 
 	protected $primaryKey = 'id_usuario';	 
 	protected $hidden = array('password'); 
+	public $timestamps = false;         */
+ 
+	protected $table = 'users'; 
+	protected $primaryKey = 'id';	 
+	protected $hidden = array('password'); 
 	public $timestamps = false;
+
+	use HasRole;
 
 	public function getAuthIdentifier()
 	{

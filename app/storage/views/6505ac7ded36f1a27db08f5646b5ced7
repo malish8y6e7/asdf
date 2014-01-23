@@ -42,8 +42,13 @@
         <td class="login"> <?php echo Form::text('email'); ?>                                       </td>
     </tr>   
     <tr class="login">
-        <td class="login"> <?php echo Form::label('telefono','Telefono:'); ?>                       </td>
+        <td class="login"> <?php echo Form::label('telefono','Teléfono:'); ?>                       </td>
         <td class="login"> <?php echo Form::text('telefono'); ?>                                     </td>
+
+    <tr class="login">
+       <td class="login"> <?php echo Form::label('direccion','Dirección:'); ?>                       </td>
+       <td class="login"> <?php echo Form::text('direccion'); ?>                                      </td>
+    </tr>
 
     <tr class="login">
         <td class="login">	<?php echo Form::submit('Crear usuario'); ?>                             </td>

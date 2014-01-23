@@ -10,7 +10,7 @@
 <?php $__env->startSection('content'); ?>
 <?php echo HTML::style('css/style.css'); ?>
  
-<h1>Actualizar Usuario: <?php echo $user->id_usuario; ?><h1>
+<h1>Actualizar Usuario: <?php echo $user->id; ?><h1>
 
     <?php echo Form::open(); ?> 
 <table>
@@ -35,6 +35,10 @@
    <tr class="login"> 
     <td class="login"> Telefóno:                             </td>
     <td class="login"> <?php echo Form::text('fono'); ?>               </td>
+   </tr> 
+   <tr class="login"> 
+    <td class="login"> Dirección:                             </td>
+    <td class="login"> <?php echo Form::text('direccion'); ?>               </td>
    </tr> 
 
 <tr class="login"> <td class="login"> <?php echo Form::submit('Actualizar Usuario'); ?> </td> </tr>

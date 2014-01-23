@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
 <html lang="es">
-
+<img src="css/hombre-bienvenido.png" style="float:right"/>
 @if(Auth::check())
 @endif
 
@@ -14,8 +14,7 @@
 	<tr> 
 	<td>{{  HTML::link('usuarios','Usuarios')  }} </td> 
 	<td>{{  HTML::link('recursos','Recursos')  }} </td> 
-	<td>{{  HTML::link('reservas','Reservas')  }} </td> 
-	<td>{{  HTML::link('horario','Horario')    }} </td> 
+	<td>{{  HTML::link('reservas','Reservas')  }} </td>  
 	<td>{{  HTML::link('logout','Logout')  	   }} </td> 
 	</tr> 
 	</table>

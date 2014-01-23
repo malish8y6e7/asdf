@@ -36,21 +36,23 @@
 		<td align="center"> {{Form::label('perfil_usuario','Perfil de Usuario') }}  </td>
 		<td align="center"> {{Form::label('email','Email') }}  </td>
 		<td align="center"> {{Form::label('telefono','Teléfono') }} </td>
+		<td align="center"> {{Form::label('direccion','Dirección') }} </td>
 	</tr> 
 
 		@foreach($users as $user)
 
-		<tr><td>{{$user->id_usuario}} </td>
-			<td> {{$user->nombre_user}} </td>
+		<tr><td>{{$user->id}} </td>
+			<td> {{$user->real_name	}} </td>
 			<td> @if($user->perfil == 1)
 			Administrador
 			 @else
 			Usuario
 			 @endif</td>
 			 <td>{{$user->email}}</td>
-			 <td>{{$user->fono}}</td>
-			 <td>{{ HTML::link('usuarios/delete/'.$user->id_usuario,'Borrar') }} </td>
-			 <td> {{ HTML::link('usuarios/update/'.$user->id_usuario,'Actualizar') }}</td>
+			 <td>{{$user->telefono}}</td>
+			 <td>{{$user->direccion}}</td>
+			 <td>{{ HTML::link('usuarios/delete/'.$user->id,'Borrar') }} </td>
+			 <td> {{ HTML::link('usuarios/update/'.$user->id,'Actualizar') }}</td>
 		</tr>
 		
 		@endforeach

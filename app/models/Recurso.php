@@ -4,9 +4,9 @@ class Recurso extends Eloquent
 
 {
 
-	protected $table = 'tbl_recurso'; 
+	protected $table = 'recursos'; 
 
-	protected $primaryKey = 'id_recursos';	 
+	protected $primaryKey = 'codigo';	 
 
 	public $timestamps = false;
 

@@ -11,7 +11,7 @@
 @section('content')
 {{ HTML::style('css/style.css') }}
  
-<h1>Actualizar Usuario: {{$user->id_usuario}}<h1>
+<h1>Actualizar Usuario: {{$user->id}}<h1>
 
     {{Form::open()}} 
 <table>
@@ -36,6 +36,10 @@
    <tr class="login"> 
     <td class="login"> Telefóno:                             </td>
     <td class="login"> {{ Form::text('fono')}}               </td>
+   </tr> 
+   <tr class="login"> 
+    <td class="login"> Dirección:                             </td>
+    <td class="login"> {{ Form::text('direccion')}}               </td>
    </tr> 
 
 <tr class="login"> <td class="login"> {{ Form::submit('Actualizar Usuario') }} </td> </tr>

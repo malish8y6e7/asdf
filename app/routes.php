@@ -11,11 +11,12 @@
 |
 */
 
-Route::get('/', function()
-{
-	return View::make('auth.login');
-});
- 
+Route::get('/',function(){
+
+return Redirect::to('login');
+
+});    
+
 Route::controller('usuarios','UserController');  
 
 Route::controller('recursos','RecursosController');
@@ -24,7 +25,7 @@ Route::controller('reservas','ReservasController');
 
 Route::controller('horario','HorarioController');
 
-Route::controller('login','AuthController');  
+Route::controller('login','AuthController');    
 
 Route::get('logout','AuthController@getLogout');
 

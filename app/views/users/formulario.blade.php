@@ -43,8 +43,13 @@
         <td class="login"> {{ Form::text('email')}}                                       </td>
     </tr>   
     <tr class="login">
-        <td class="login"> {{Form::label('telefono','Telefono:') }}                       </td>
+        <td class="login"> {{Form::label('telefono','Teléfono:') }}                       </td>
         <td class="login"> {{Form::text('telefono')}}                                     </td>
+
+    <tr class="login">
+       <td class="login"> {{Form::label('direccion','Dirección:') }}                       </td>
+       <td class="login"> {{Form::text('direccion')}}                                      </td>
+    </tr>
 
     <tr class="login">
         <td class="login">	{{Form::submit('Crear usuario')}}                             </td>

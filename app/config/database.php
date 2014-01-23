@@ -26,7 +26,7 @@ return array(
 	|
 	*/
 
-	'default' => 'pgsql', //mysql pgsql
+	'default' => 'mysql', //mysql pgsql
 
 	/*
 	|--------------------------------------------------------------------------
@@ -55,7 +55,7 @@ return array(
 		'mysql' => array(
 			'driver'    => 'mysql',
 			'host'      => 'localhost',
-			'database'  => 'proyecto',
+			'database'  => 'proyecto2',
 			'username'  => 'root',
 			'password'  => '',
 			'charset'   => 'utf8',

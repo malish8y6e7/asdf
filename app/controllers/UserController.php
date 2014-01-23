@@ -4,11 +4,11 @@
 
 
 class UserController extends BaseController 
-{    
+{     /*
     public function __construct() // no deja acceder a nada de UserController sin estar autentificado
    {  
         $this->beforeFilter('auth');
-   }  
+   }  */
 
     public function getIndex() 
   {
@@ -23,9 +23,9 @@ class UserController extends BaseController
 
     public function postFormulario()
   {
-         $r= Input::get('rut');  // rut ingresado por el usuario.
-         $dv = Input::get('digito_verificador'); // digito verificador ingresado por el usuario.
-         $telefono = Input::get('telefono');
+      $r= Input::get('rut');  // rut ingresado por el usuario.
+      $dv = Input::get('digito_verificador'); // digito verificador ingresado por el usuario.
+      $telefono = Input::get('telefono');
 
          function esRut($r)
     {
@@ -64,32 +64,41 @@ class UserController extends BaseController
           $dv2= dv($r); // obtengo el digito verificador del rut ingresado
 
           if($dv != $dv2 )  // compara el digito verificador ingresado con el obtenido.
-               return Redirect::back()->with('mensaje','El digito verificador no corresponde al RUT')->withInput(); 
+               return Redirect::back()->with('mensaje','Rut inválido')->withInput(); 
 
     $rules = array(  
       'nombre'                => 'Required|Min:3|Max:50',
-      'rut'                   => 'Required|Integer|unique:tbl_usuarios,id_usuario', 
+      'rut'                   => 'Required|Integer|unique:users,id', 
       'digito_verificador'    => 'Required|Integer',
       'password'              => 'Required|min:4|max:20|Confirmed',
       'password_confirmation' => 'Required',
       'perfil'                => 'Required|Integer|Between:1,4', 
-      'email'                 => 'Required|Email|unique:tbl_usuarios,email',
-      'telefono'              => 'Required|min:7|max:9|Unique:tbl_usuarios,fono'
+      'email'                 => 'Required|Email|unique:users,email',
+      'telefono'              => 'Required|min:7|max:9|Unique:users,telefono', // **cambios en los nombres de las tablas
+      'direccion'             => 'Required',
     );
            
     $validator = Validator::make(Input::all(),$rules);  //Input::all()
    
               if($validator->passes())
           {
-                                   
+                     
               $user = new User;
-
+/*
               $user->nombre_user = Input::get('nombre');
               $user->id_usuario  = Input::get('rut');
               $user->password    = Input::get('password');
               $user->perfil      = Input::get('perfil');
               $user->email       = Input::get('email');
               $user->fono        = Input::get('telefono'); 
+*/
+              $user->real_name   = Input::get('nombre');
+              $user->id          = Input::get('rut');
+              $user->password    = Input::get('password');
+              $user->perfil      = Input::get('perfil');
+              $user->email       = Input::get('email');
+              $user->telefono    = Input::get('telefono'); 
+              $user->direccion   = Input::get('direccion');
               
               $user->save();
 
@@ -105,17 +114,18 @@ class UserController extends BaseController
  {     
       $user= User::find($user_id);
 
-      $recurso = DB::table('tbl_recurso')->where('id_encargado', $user_id)->first();
+      $recurso = DB::table('recursos')->where('id_encargado', $user_id)->first();
+      $reserva = DB::table('reservas')->where('id', $user_id)->first();
 
-            if(is_null($recurso)){
-
+            if(is_null($recurso) && is_null($reserva))
+            {
               $user->delete();
               return Redirect::to('usuarios')->with('mensaje','usuario eliminado');
             }
         
       else
         
-         return Redirect::to('usuarios')->with('mensaje','El usuario es encargado de algún recurso');
+         return Redirect::to('usuarios')->with('mensaje','El usuario es encargado de algún recurso o reserva');
 
  }
 
@@ -138,8 +148,9 @@ class UserController extends BaseController
       'nombre'                => 'Min:3|Max:50',
       'password'              => 'Between:4,8',
       'perfil'                => 'Integer|Between:1,4', 
-      'email'                 => 'Between:6,30|Email|Unique:tbl_usuarios,email',
-      'fono'                  => 'Integer|Unique:tbl_usuarios,fono'
+      'email'                 => 'Between:6,30|Email|Unique:users,email',
+      'telefono'              => 'Integer|Unique:users,fono'
+      
       );
 
     $validator = Validator::make(Input::all(),$rules); 
@@ -153,9 +164,10 @@ class UserController extends BaseController
 		{
 		  return Redirect::to('usuarios');
 		}
+
     if (Input::has('nombre'))
     {
-     $user->nombre_user = Input::get('nombre');
+     $user->real_name = Input::get('nombre');
     }
 
     if (Input::has('email'))
@@ -167,15 +179,23 @@ class UserController extends BaseController
     {
      $user->perfil = Input::get('perfil');
     }
+
 		if (Input::has('password'))
 		{
 
       $user->password = Input::get('password');
 		}
+
     if (Input::has('fono'))
     {
-       $user->fono = Input::get('fono');
+       $user->telefono = Input::get('fono');
     }
+
+    if (Input::has('direccion'))
+    {
+       $user->direccion = Input::get('direccion');
+    }
+
 
 		$user->save();
 

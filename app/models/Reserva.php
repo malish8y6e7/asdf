@@ -4,9 +4,9 @@ class Reserva extends Eloquent
 {
 
 
-	protected $table = 'tbl_reservas';
+	protected $table = 'reservas';
 
-	protected $primaryKey = 'id_reserva';	 
+	protected $primaryKey = 'codigo_reserva';	 
 
 	public $timestamps = false;
 

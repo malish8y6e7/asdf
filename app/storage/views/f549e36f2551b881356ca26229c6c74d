@@ -14,6 +14,7 @@
 <table align="center" class="links">
 <tr> 
 	<td>  <?php echo HTML::link('PDF3','Crear PDF'); ?>                       </td>
+	<td> <?php echo HTML::link('reservas/formulario','Crear un Reserva'); ?> </td> 
 </tr>
 </table>
 
@@ -26,17 +27,16 @@
 		<td align="center">ID Reserva</td>   
 		<td align="center">ID Recurso</td>  
 		<td align="center">ID Usuario</td>
-		<td align="center">Fecha de la Reserva</td>
-		<td align="center">Periodo</td>
+		<td align="center">Fecha</td>
 	</tr> 
 
 		<?php foreach($reservas as $reserva): ?>
 
-		<tr><td><?php echo $reserva->id_reserva; ?> </td>
-			<td><?php echo $reserva->id_recurso; ?> </td>
-			<td><?php echo $reserva->id_usuario; ?> </td>
-			<td><?php echo $reserva->fech_ini; ?>   </td>
-			<td><?php echo $reserva->horario; ?>    </td>		
+		<tr><td><?php echo $reserva->codigo_reserva; ?> </td>
+			<td><?php echo $reserva->codigo_recurso; ?> </td>
+			<td><?php echo $reserva->id; ?>             </td>
+			<td><?php echo $reserva->fecha; ?>           </td>
+			<td> <?php echo HTML::link('reservas/delete/'.$reserva->codigo_reserva,'Borrar'); ?>   </td>
 		</tr>
 		
 		<?php endforeach; ?>

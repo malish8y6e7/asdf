@@ -1,17 +1,44 @@
+@extends('admin.layout')
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="UTF-8"/> 
+<title>  Formulario Reservas </title>  
+</head>
 
-<h1>Crear reserva </h1>
+<body>
+{{ HTML::style('css/style.css') }}
+@section('content')
 
-{{ Form::open() }}
+<h1>Crear Reserva</h1>
 
-Usuario {{ Form::text('persona','agregarlo solo no se como xd')}} <br />
+{{Form::open()}}
+<table>
+<tr class="login">
+  <td class="login">{{Form::label('codigo_reserva','Código Reserva:') }}   </td>
+  <td class="login">{{Form::text('codigo_reserva')}}                       </td>
+</tr>
 
-Recurso:  {{ Form::text('recurso',$recurso->ID_Recurso)}} <br />
+<tr class="login">
+  <td class="login">{{Form::label('codigo','ID Recurso:') }}               </td>
+  <td class="login">{{Form::text('codigo')}}                               </td>
+</tr>
 
-Hora Inicio:  {{ Form::text('hora_inicio','no se')}} <br />
+<tr class="login">
+  <td class="login">{{Form::label('id','ID Usuario:') }}                   </td>
+  <td class="login">{{Form::text('id')}}                                   </td>
+</tr>
 
-Hora Fin: {{ Form::text('hora_fin','tampoco se')}} <br />
+<tr class="login">
+  <td class="login">{{Form::label('fecha','Fecha:') }}                     </td>
+  <td class="login">{{Form::text('fecha') }}                               </td>
+</tr>
 
-{{ Form::submit('Crear Reserva')}}
+<tr class="login"> 
+  <td class="login"> {{ Form::submit('Crear Reserva') }}                   </td>    
+</tr>
+</table>
+{{Form::close()}}
 
-{{ Form::close()}}
-
+</body>
+</html>

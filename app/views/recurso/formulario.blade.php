@@ -29,10 +29,10 @@
 <tr class="login">    
   <td class="login">{{Form::label('tipo','Tipo de Usuario:') }}                   </td>
   <td class="login"> {{  Form::select('tipo', array(
-                  1 => 'Laboratorio',
-                  2 => 'Proyector',
-                  3 => 'Computador',
-                  4 => 'Otros'));   }}                                            </td>
+                  1 => 'Camión 1',
+                  2 => 'Camión 2',
+                  3 => 'Camión 3',
+                  4 => 'Camión 4'));   }}                                            </td>
 </tr>
 
 <tr class="login">

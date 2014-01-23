@@ -15,7 +15,7 @@ class AuthController extends BaseController
       );
 
       $userdata= array(
-      'id_usuario' => Input::get('rut'),   
+      'id' => Input::get('rut'),   //id_usuario
       'password' => Input::get('password'));  
 
       $validator = Validator::make(Input::all(),$rules); 
@@ -26,19 +26,19 @@ class AuthController extends BaseController
             { 
                   if (Auth::check())
                 { 
-                  $user_RUT = Auth::user()->id_usuario;  
+                  $user_RUT = Auth::user()->id;  // Auth::user()->id_usuario; 
 
-                  $user = DB::table('tbl_usuarios') 
-                   ->where('id_usuario','=',$user_RUT) 
-                   ->first(array('perfil'));        
+                  $user = DB::table('users')  //tbl_usuarios
+                   ->where('id','=',$user_RUT); //id_usuario 
+                 //  ->first(array('perfil'));        
 
-                     if($user->perfil == 1) // si es de tipo 1 (administrador) 
-                   {   
+                 //    if($user->perfil == 1) // si es de tipo 1 (administrador) 
+                //   {   
                         return View::make('admin.layout');
-                   }else
-                        {                     
-                          return Redirect::to('logout');
-                        } 
+                 //  }else
+                 //       {                     
+                 //         return Redirect::to('logout');
+                 //       } 
                 } 
               }else{    
    	               return Redirect::to('login')->with('login_errors',true);

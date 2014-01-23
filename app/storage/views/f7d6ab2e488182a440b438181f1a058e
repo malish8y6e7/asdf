@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
 <html lang="es">
-
+<img src="css/hombre-bienvenido.png" style="float:right"/>
 <?php if(Auth::check()): ?>
 <?php endif; ?>
 
@@ -14,8 +14,7 @@
 	<tr> 
 	<td><?php echo HTML::link('usuarios','Usuarios'); ?> </td> 
 	<td><?php echo HTML::link('recursos','Recursos'); ?> </td> 
-	<td><?php echo HTML::link('reservas','Reservas'); ?> </td> 
-	<td><?php echo HTML::link('horario','Horario'); ?> </td> 
+	<td><?php echo HTML::link('reservas','Reservas'); ?> </td>  
 	<td><?php echo HTML::link('logout','Logout'); ?> </td> 
 	</tr> 
 	</table>

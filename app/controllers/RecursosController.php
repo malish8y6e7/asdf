@@ -27,10 +27,10 @@ class RecursosController extends \BaseController {
 
     $rules = array(  
       'nombre'         => 'Required|Min:3|Max:50',
-      'id'             => 'Required|Unique:tbl_recurso,id_recursos',
+      'id'             => 'Required|Unique:recursos,codigo',
       'tipo'           => 'Required|Integer|Between:1,4',
       'descripcion'    => 'Required',
-      'encargado'      => 'Required|exists:tbl_usuarios,id_usuario',
+      'encargado'      => 'Required|exists:users,id',
       'estado'         => 'Required|Integer|Between:0,1', 
       );
 
@@ -66,15 +66,15 @@ class RecursosController extends \BaseController {
   { 
       $recurso = new Recurso;
 
-      $recurso->nombre_recurso = Input::get('nombre'); // falta en el formulario   
-      $recurso->id_recursos = Input::get('id');
+      $recurso->nombre = Input::get('nombre'); // falta en el formulario   
+      $recurso->codigo = Input::get('id');
       $recurso->tipo = Input::get('tipo');
       $recurso->descripcion = Input::get('descripcion');
       $recurso->id_encargado = Input::get('encargado');
       $recurso->estado = Input::get('estado');
 
       $recurso->save();
-
+/*
       $ingresa = New Ingresa;
       //$ingresa->id_ini = serial
       date_default_timezone_set("America/Santiago");
@@ -84,7 +84,7 @@ class RecursosController extends \BaseController {
       $ingresa->fecha_ini = $currentDate;
 
       $ingresa->save();
-
+*/
 
       return Redirect::to('recursos');
      
@@ -99,7 +99,7 @@ class RecursosController extends \BaseController {
     {  
       $recurso= Recurso::find($recurso_id);
 
-      $reserva = DB::table('tbl_reservas')->where('id_recurso', $recurso_id)->first();
+      $reserva = DB::table('reservas')->where('codigo_recurso', $recurso_id)->first();
 
       if(is_null($reserva))
       {
@@ -107,14 +107,6 @@ class RecursosController extends \BaseController {
           {
           	return Redirect::to('recursos'); // nombre de la ruta
           } 
-
-          $eliminar = New Elimina;
-          date_default_timezone_set("America/Santiago");
-          $currentDate = date("Y-m-d");
-          $eliminar->id_recurso = $recurso->id_recursos;
-          $eliminar->fecha_elim = $currentDate;  	
-          $eliminar->nombre_recurso = $recurso->nombre_recurso;
-          $eliminar->save();
       
           $recurso->delete();
 

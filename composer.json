@@ -33,4 +33,20 @@
 		"preferred-install": "dist"
 	},
 	"minimum-stability": "dev"
+
 }
+
+    /////////GRID
+	{
+    "require": {
+        "cartalyst/data-grid": "1.0.*"
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "http://packages.cartalyst.com"
+        }
+    ],
+    "minimum-stability": "dev"
+	}
+	//////////////////////////////////

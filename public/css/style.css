@@ -1,24 +1,44 @@
+#header {
+  background-position:  center center;
+  background-repeat: no-repeat;
+  background-image: url(camiones.jpg);
+  border-radius: 20px;
+  height: 188px;
+}
 
-body{			background:white ;
+body{				
+					background: black;
+					background-image: url(fondo1.jpg);
+
 				}
+.fondo{ 
+	background-image: url(fondo2.jpg);
+
+}
+
 
 .contenedor{	width:270px;
 				margin-left: auto;
 				margin-right: auto;
+
 				}
 
 .formulario{	width: :100%;
 				background-color: white;	
-				border: 1px solid;	
+				border: 4px inset #101010   ;
+				border-radius: 20px;
+				border-style:outset; 
+				
 				}
 
 .label{			color:DarkGreen;
 				}
 
 
-h2{		   		color:DarkGreen;				
+h2{		   		color:#B0B0B0 ;				
 				text-align:center;
 				font: 200% bold;
+				text-shadow: -1px -1px white, 1px 1px #333;
 				}
 
 .errores{		color:red;
@@ -28,6 +48,14 @@ h2{		   		color:DarkGreen;
 				}
 
 h1{				text-align: center;
+				text-align: auto;
+				margin-right: auto;
+				color: #181818 ;
+				text-shadow: 1px 1px white, -1px -1px #333
+
+				}	
+h3{				text-shadow: 0 0 0.2em #87F, 0 0 0.2em #87F,0 0 0.2em #87F;
+				font-size: 200%;
 				}				
 
 .boton{			text-align: center;
@@ -45,15 +73,18 @@ li{				list-style-position:inside;}
 				border-collapse: collapse; 
 				border-spacing: 5px;
 				white-space: 10px;
+				
 				}
 
 td,tr{			width:25%,
 				text-align:left;
 				vertical-align: top;
 				border: 1px solid #000;
-				border-spacing: 10;
+				border-spacing: 200;
+				border-collapse: separate;
 				padding: 0.5em;
 				border-radius: 10px;
+				background-color: #F8F8F8 ;
 
 				}	
 
@@ -65,4 +96,7 @@ td,tr{			width:25%,
 
 .links{			padding: 0.5em;
 				text-align: center;
+				margin-left: auto;
+				margin-right: auto;
+
 				}

@@ -41,7 +41,7 @@ return array(
 	|
 	*/
 
-	'table' => 'tbl_usuarios', // nombre de la tabla
+	'table' => 'users', // nombre de la tabla tbl_usuarios
 
 	/*
 	|--------------------------------------------------------------------------

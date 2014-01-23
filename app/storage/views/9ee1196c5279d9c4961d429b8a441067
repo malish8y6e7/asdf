@@ -1,17 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="UTF-8"/> 
+<title>  Formulario Reservas </title>  
+</head>
 
-<h1>Crear reserva </h1>
+<body>
+<?php echo HTML::style('css/style.css'); ?>
+<?php $__env->startSection('content'); ?>
+
+<h1>Crear Reserva</h1>
 
 <?php echo Form::open(); ?>
+<table>
+<tr class="login">
+  <td class="login"><?php echo Form::label('codigo_reserva','Código Reserva:'); ?>   </td>
+  <td class="login"><?php echo Form::text('codigo_reserva'); ?>                       </td>
+</tr>
 
-Usuario <?php echo Form::text('persona','agregarlo solo no se como xd'); ?> <br />
+<tr class="login">
+  <td class="login"><?php echo Form::label('codigo','ID Recurso:'); ?>               </td>
+  <td class="login"><?php echo Form::text('codigo'); ?>                               </td>
+</tr>
 
-Recurso:  <?php echo Form::text('recurso',$recurso->ID_Recurso); ?> <br />
+<tr class="login">
+  <td class="login"><?php echo Form::label('id','ID Usuario:'); ?>                   </td>
+  <td class="login"><?php echo Form::text('id'); ?>                                   </td>
+</tr>
 
-Hora Inicio:  <?php echo Form::text('hora_inicio','no se'); ?> <br />
+<tr class="login">
+  <td class="login"><?php echo Form::label('fecha','Fecha:'); ?>                     </td>
+  <td class="login"><?php echo Form::text('fecha'); ?>                               </td>
+</tr>
 
-Hora Fin: <?php echo Form::text('hora_fin','tampoco se'); ?> <br />
-
-<?php echo Form::submit('Crear Reserva'); ?>
-
+<tr class="login"> 
+  <td class="login"> <?php echo Form::submit('Crear Reserva'); ?>                   </td>    
+</tr>
+</table>
 <?php echo Form::close(); ?>
 
+</body>
+</html>
+
+<?php echo $__env->make('admin.layout', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
